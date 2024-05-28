@@ -1,14 +1,14 @@
 
 
 RADUA                                                         J. Coretta
-Internet-Draft                                         February 29, 2024
+Internet-Draft                                           August 27, 2024
 Intended status: Experimental
 Obsoletes: X660LDAP
-Expires: August 27, 2024
+Expires: February 23, 2025
 
 
                    The OID Directory: The RA DUA
-                 draft-coretta-oiddir-radua-00.txt
+                 draft-coretta-oiddir-radua-01.txt
 
 Abstract
 
@@ -33,7 +33,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on August 27, 2024.
+   This Internet-Draft will expire on February 23, 2025.
 
 Copyright Notice
 
@@ -55,9 +55,9 @@ Copyright Notice
 
 
 
-Coretta                Expires August 27, 2024                  [Page 1]
+Coretta                Expires February 23, 2025                [Page 1]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
 Table of Contents
@@ -113,9 +113,9 @@ Table of Contents
 
 
 
-Coretta                Expires August 27, 2024                  [Page 2]
+Coretta                Expires February 23, 2025                [Page 2]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
 1.2.1.  Definitions
@@ -171,9 +171,9 @@ Coretta                Expires August 27, 2024                  [Page 2]
    that has been OPTIMIZED for use within the terms of this ID series.
 
 
-Coretta                Expires August 27, 2024                  [Page 3]
+Coretta                Expires February 23, 2025                [Page 3]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
 2.1.  Defined Parameters
@@ -229,9 +229,9 @@ Coretta                Expires August 27, 2024                  [Page 3]
 
 
 
-Coretta                Expires August 27, 2024                  [Page 4]
+Coretta                Expires February 23, 2025                [Page 4]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
 2.2.  Procedures
@@ -287,9 +287,9 @@ Coretta                Expires August 27, 2024                  [Page 4]
      - 'rADITProfile'       ; ex.: dc=example,dc=com
      - 'rATTL'              ; ex.: 86400
 
-Coretta                Expires August 27, 2024                  [Page 5]
+Coretta                Expires February 23, 2025                [Page 5]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
    These attribute types are extended through use of the 'rADUAConfig'
@@ -345,9 +345,9 @@ Coretta                Expires August 27, 2024                  [Page 5]
 
 
 
-Coretta                Expires August 27, 2024                  [Page 6]
+Coretta                Expires February 23, 2025                [Page 6]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
 2.2.2.1.  Processing
@@ -403,9 +403,9 @@ Coretta                Expires August 27, 2024                  [Page 6]
 
 
 
-Coretta                Expires August 27, 2024                  [Page 7]
+Coretta                Expires February 23, 2025                [Page 7]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
       1.  Verify presence and accessibility of entries identified by the
@@ -461,9 +461,9 @@ Coretta                Expires August 27, 2024                  [Page 7]
    of 'registration' entries.
 
 
-Coretta                Expires August 27, 2024                  [Page 8]
+Coretta                Expires February 23, 2025                [Page 8]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
    In the case of "2b", the RA DUA SHOULD include all attribute types
@@ -519,9 +519,9 @@ Coretta                Expires August 27, 2024                  [Page 8]
 
 
 
-Coretta                Expires August 27, 2024                  [Page 9]
+Coretta                Expires February 23, 2025                [Page 9]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
    The RA DUA MUST handle the value of this instance as follows:
@@ -577,9 +577,9 @@ Coretta                Expires August 27, 2024                  [Page 9]
    by way of its DN.  This will return either one (1) entry, or none.
 
 
-Coretta                Expires August 27, 2024                 [Page 10]
+Coretta                Expires February 23, 2025               [Page 10]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
    Foreknowledge of the DN is required for a Read Operation attempt of
@@ -635,9 +635,9 @@ Coretta                Expires August 27, 2024                 [Page 10]
    returned, the RA DUA SHOULD first read the 'objectClass' values and
    make note of all that originate in Section 2.5 of the RASCHEMA ID.
 
-Coretta                Expires August 27, 2024                 [Page 11]
+Coretta                Expires February 23, 2025               [Page 11]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
    The 'registration' ABSTRACT object class is a required class for any
@@ -680,7 +680,7 @@ Coretta                Expires August 27, 2024                 [Page 11]
    Presence of the 'spatialContext' AUXILIARY class is only permitted
    for 'registration' entries.  It extends seven (7) spatial reference
    attribute types used to describe arrangement of allocations within
-   the spectrum.  Additional collective incarnations of some of these
+   the OID tree.  Additional collective incarnations of some of these
    attribute types may be indicated.
 
    Presence of the 'registrationSupplement' AUXILIARY class is only
@@ -693,9 +693,9 @@ Coretta                Expires August 27, 2024                 [Page 11]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 12]
+Coretta                Expires February 23, 2025               [Page 12]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
    Presence of the 'firstAuthorityContext', 'currentAuthorityContext',
@@ -751,9 +751,9 @@ Coretta                Expires August 27, 2024                 [Page 12]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 13]
+Coretta                Expires February 23, 2025               [Page 13]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
    The RA DUA MAY decide how to handle the case of reading a previously
@@ -809,9 +809,9 @@ Coretta                Expires August 27, 2024                 [Page 13]
    do not have superiors.
 
 
-Coretta                Expires August 27, 2024                 [Page 14]
+Coretta                Expires February 23, 2025               [Page 14]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
 2.2.3.3.2. Subordinate Vertical References
@@ -867,9 +867,9 @@ Coretta                Expires August 27, 2024                 [Page 14]
    of Number Form ('n') numerical magnitude.
 
 
-Coretta                Expires August 27, 2024                 [Page 15]
+Coretta                Expires February 23, 2025               [Page 15]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
    The 'minArc' and 'c-minArc' attribute types are used to reference the
@@ -925,9 +925,9 @@ Coretta                Expires August 27, 2024                 [Page 15]
    The significance of value magnitude -- whether collective or not --
    is as follows:
 
-Coretta                Expires August 27, 2024                 [Page 16]
+Coretta                Expires February 23, 2025               [Page 16]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
       - A value less than or equal to "0" is equivalent to a TTL being
@@ -983,9 +983,9 @@ Coretta                Expires August 27, 2024                 [Page 16]
    that would influence or mandate the composition of new entries in a
    particular way.
 
-Coretta                Expires August 27, 2024                 [Page 17]
+Coretta                Expires February 23, 2025               [Page 17]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
 2.2.4.1.  Verification
@@ -1010,8 +1010,8 @@ Coretta                Expires August 27, 2024                 [Page 17]
    For example, consider the entry of retroactive 'registration' entries
    -- obsolete and wholly invalid by today's standards -- by an end user
    simply to build a thorough and well-formed implementation of the OID
-   spectrum, versus a new registration being created today, and governed
-   by today's standards.  The two scenarios have radically different
+   tree, versus a new registration being created today, and governed by
+   today's standards.  These two scenarios have radically different
    implications, yet the effective action is unchanged.
 
    Depending on the nature and intended audience of an RA DUA solution,
@@ -1041,9 +1041,9 @@ Coretta                Expires August 27, 2024                 [Page 17]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 18]
+Coretta                Expires February 23, 2025               [Page 18]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
       baseObject = n=4,n=1,n=6,n=3,n=1,ou=Registrations,o=rA
@@ -1099,9 +1099,9 @@ Coretta                Expires August 27, 2024                 [Page 18]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 19]
+Coretta                Expires February 23, 2025               [Page 19]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
 2.2.4.1.2.  Number Form Uniqueness
@@ -1157,9 +1157,9 @@ Coretta                Expires August 27, 2024                 [Page 19]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 20]
+Coretta                Expires February 23, 2025               [Page 20]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
 2.2.4.1.3.  Ranged Allocations
@@ -1215,9 +1215,9 @@ Coretta                Expires August 27, 2024                 [Page 20]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 21]
+Coretta                Expires February 23, 2025               [Page 21]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
    The RA DUA MAY opt to impose a 'typesOnly' value of FALSE to allow
@@ -1273,9 +1273,9 @@ Coretta                Expires August 27, 2024                 [Page 21]
       - Correction of bogus attribute type values
       - Relegation of a currentAuthority to a firstAuthority
 
-Coretta                Expires August 27, 2024                 [Page 22]
+Coretta                Expires February 23, 2025               [Page 22]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
    In an even more exceptional (and unlikely) scenario, the correction
@@ -1331,9 +1331,9 @@ Coretta                Expires August 27, 2024                 [Page 22]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 23]
+Coretta                Expires February 23, 2025               [Page 23]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
    [RFC2696]  C. Weider, A. Herron, A. Anantha, Microsoft, T. Howes
@@ -1389,9 +1389,9 @@ Coretta                Expires August 27, 2024                 [Page 23]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 24]
+Coretta                Expires February 23, 2025               [Page 24]
 
-Internet-Draft      The OID Directory: RA Client           February 2024
+Internet-Draft      The OID Directory: RA Client             August 2024
 
 
    [X.660]    International Telecommunication Union - Telecommunication
@@ -1448,4 +1448,4 @@ Author's Address
 
 
 
-Coretta                Expires August 27, 2024                 [Page 25]
+Coretta                Expires February 23, 2025               [Page 25]

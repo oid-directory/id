@@ -1,14 +1,14 @@
 
 
 RADIT                                                         J. Coretta
-Internet-Draft                                         February 29, 2024
+Internet-Draft                                           August 27, 2024
 Intended status: Experimental
 Obsoletes: X660LDAP
-Expires: August 27, 2024
+Expires: February 23, 2025
 
 
                     The OID Directory: The RA DIT
-                  draft-coretta-oiddir-radit-00.txt
+                  draft-coretta-oiddir-radit-01.txt
 
 Abstract
 
@@ -33,7 +33,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on August 27, 2024.
+   This Internet-Draft will expire on February 23, 2025.
 
 Copyright Notice
 
@@ -55,9 +55,9 @@ Copyright Notice
 
 
 
-Coretta                Expires August 27, 2024                  [Page 1]
+Coretta                Expires February 23, 2025                [Page 1]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
 Table of Contents
@@ -70,7 +70,7 @@ Table of Contents
       1.4. Allocations ................................................3
    2. Assessments .....................................................3
       2.1. Schema Availability ........................................4
-      2.2. Spectral Coverage ..........................................4
+      2.2. Implementation Size and Coverage ...........................4
       2.3. Content Capacity and Location ..............................5
       2.4. User Base ..................................................5
       2.5. Class and Attribute Usage ..................................5
@@ -113,9 +113,9 @@ Table of Contents
    in BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in
    all capitals, as shown here.
 
-Coretta                Expires August 27, 2024                  [Page 2]
+Coretta                Expires February 23, 2025                [Page 2]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
 1.2.  Acronyms Used
@@ -171,9 +171,9 @@ Coretta                Expires August 27, 2024                  [Page 2]
    To aid in this process, the following subsections outline relevant
    assessment categories for consideration.
 
-Coretta                Expires August 27, 2024                  [Page 3]
+Coretta                Expires February 23, 2025                [Page 3]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
 2.1.  Schema Availability
@@ -193,11 +193,11 @@ Coretta                Expires August 27, 2024                  [Page 3]
    respectively are REQUIRED for the effective construction of the RA
    DIT.
 
-2.2.  Spectral Coverage
+2.2.  Implementation Size and Coverage
 
    The overall "size" of the planned implementation is a very important
-   consideration.  Adopters should decide how thorough their planned
-   RA DIT shall be in terms of content.
+   consideration.  Adopters should decide how thorough their planned RA
+   DIT shall be in terms of content.
 
      - Which of the three (3) ITU-T Rec. X.660 root arcs will
        be implemented?
@@ -229,9 +229,9 @@ Coretta                Expires August 27, 2024                  [Page 3]
 
 
 
-Coretta                Expires August 27, 2024                  [Page 4]
+Coretta                Expires February 23, 2025                [Page 4]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
 2.3.  Content Capacity and Location
@@ -244,7 +244,7 @@ Coretta                Expires August 27, 2024                  [Page 4]
    to consider whether a particularly large RA DIT may be better suited
    for context segmentation, whether or not distribution is indicated,
    to allow for larger portions of the RA DIT to function independently
-   and with dedicated resources and specialized security policies.
+   with dedicated resources and specialized security policies.
 
    ITU-T Rec. X.518 defines the concepts of the distributed directory.
 
@@ -287,9 +287,9 @@ Coretta                Expires August 27, 2024                  [Page 4]
 
 
 
-Coretta                Expires August 27, 2024                  [Page 5]
+Coretta                Expires February 23, 2025                [Page 5]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
    Consult Section 2.3 of the RASCHEMA ID for the particulars of the
@@ -306,8 +306,8 @@ Coretta                Expires August 27, 2024                  [Page 5]
 2.6.  Content Sourcing
 
    This ID acknowledges that -- even in complete implementations -- no
-   single RA manages ALL of the OID spectrum directly.  Most, if not all
-   of this content is under the authority of external entities.
+   single RA manages ALL of the OID tree directly.  Most, if not all of
+   this content is under the authority of external entities.
 
    In lieu of this, this ID assumes some mechanism may be in place meant
    to obtain and synchronize content from appropriate sources.  While
@@ -345,9 +345,9 @@ Coretta                Expires August 27, 2024                  [Page 5]
 
 
 
-Coretta                Expires August 27, 2024                  [Page 6]
+Coretta                Expires February 23, 2025                [Page 6]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
 3.1.  Directory Models
@@ -403,9 +403,9 @@ Coretta                Expires August 27, 2024                  [Page 6]
      1.3.6.1.4.1.56521.101.3.1.2
 
 
-Coretta                Expires August 27, 2024                  [Page 7]
+Coretta                Expires February 23, 2025                [Page 7]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
    Per Section 3.1.1, this model is available for informal, unofficial
@@ -461,9 +461,9 @@ Coretta                Expires August 27, 2024                  [Page 7]
 
 
 
-Coretta                Expires August 27, 2024                  [Page 8]
+Coretta                Expires February 23, 2025                [Page 8]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
 3.1.3.  The Three Dimensional Model
@@ -491,7 +491,7 @@ Coretta                Expires August 27, 2024                  [Page 8]
    -- performed by the RA DUA -- between DNs and numeric OIDs.
 
    For example, the following DN represents OID '1.3.6.1.4.1.56521.999'.
-   In this syntax, a DN is divided into two (2) logical abstractions:
+   In this scenario, a DN is divided into two (2) logical abstractions:
                                                                         
       n=999,n=56521,n=1,n=4,n=1,n=6,n=3,n=1 ,ou=Registrations,o=rA
       ------------------------------------- ----------------------
@@ -519,9 +519,9 @@ Coretta                Expires August 27, 2024                  [Page 8]
    The following subsections discuss various topics that pertain to DIT
    content management within the spirit of this ID series.
 
-Coretta                Expires August 27, 2024                  [Page 9]
+Coretta                Expires February 23, 2025                [Page 9]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
    Certain examples are defined for consumption by adopters of this ID.
@@ -577,9 +577,9 @@ Coretta                Expires August 27, 2024                  [Page 9]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 10]
+Coretta                Expires February 23, 2025               [Page 10]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
 3.2.1.1.1.  Dedicated Registrants
@@ -613,7 +613,6 @@ Coretta                Expires August 27, 2024                 [Page 10]
    Use of the 'registrantID' attribute type as the principal RDN type
    is STRONGLY RECOMMENDED as shown.
 
-
    The concept of a dedicated registrant entry is unfixed.  Attribute
    types related to authority information extended via the RASCHEMA
    ID are present largely for convenience and reasons of clarity.
@@ -635,9 +634,10 @@ Coretta                Expires August 27, 2024                 [Page 10]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 11]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Coretta                Expires February 23, 2025               [Page 11]
+
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
    Use of the 'extensibleObject' AUXILIARY object class defined within
@@ -647,7 +647,7 @@ Coretta                Expires August 27, 2024                 [Page 11]
    RA DUA.
 
    To offer a more complete example of this alternative use, the above
-   'registrant' entry bearing the 'registrantID' value of 'a0efcce18a'
+   'registrant' entry bearing the 'registrantID' value of "a0efcce18a"
    implements 'cn' and 'mail' over their sub typed counterparts defined
    within the RASCHEMA ID.
 
@@ -674,8 +674,8 @@ Coretta                Expires August 27, 2024                 [Page 11]
       firstAuthorityOrg: ITU-T SG 7 & ISO/IEC JTC 1/SC 33
 
    If the implementation, instead, favors use of the indicated super
-   types, the context of the above 'registrant' entry will have to
-   be split into two (2) distinct entries:
+   types, the context of the above 'registrant' entry will have to be
+   split into two (2) distinct entries:
 
       dn: registrantID=b7ea16ef5e,ou=Registrants,o=rA
       objectClass: registrant
@@ -693,9 +693,9 @@ Coretta                Expires August 27, 2024                 [Page 11]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 12]
+Coretta                Expires February 23, 2025               [Page 12]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
    With a cogent "dedicated registrant" policy devised, 'registration'
@@ -751,9 +751,9 @@ Coretta                Expires August 27, 2024                 [Page 12]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 13]
+Coretta                Expires February 23, 2025               [Page 13]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
 3.2.2.1.  Root Arcs
@@ -809,9 +809,9 @@ Coretta                Expires August 27, 2024                 [Page 13]
       registrationClassification: Standards development organization
 
 
-Coretta                Expires August 27, 2024                 [Page 14]
+Coretta                Expires February 23, 2025               [Page 14]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
    This registration may also be expressed in minimalistic form:
@@ -867,9 +867,9 @@ Coretta                Expires August 27, 2024                 [Page 14]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 15]
+Coretta                Expires February 23, 2025               [Page 15]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
    See Section 3.2.1.1.1 for authority entry examples referenced here.
@@ -925,9 +925,9 @@ Coretta                Expires August 27, 2024                 [Page 15]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 16]
+Coretta                Expires February 23, 2025               [Page 16]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
 3.2.2.2.1.  Identified-Organization
@@ -944,6 +944,7 @@ Coretta                Expires August 27, 2024                 [Page 16]
       aSN1Notation: {iso(1) identified-organization(3)}
       isFrozen: TRUE
       dotNotation: 1.3
+      dotEncoding:: BgEr
       unicodeValue: Identified-Organization
       registrationModified: 20120101000000Z
       registrationCreated: 19870101000000Z
@@ -982,10 +983,9 @@ Coretta                Expires August 27, 2024                 [Page 16]
 
 
 
+Coretta                Expires February 23, 2025               [Page 17]
 
-Coretta                Expires August 27, 2024                 [Page 17]
-
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
 3.2.2.2.3.  X
@@ -1041,9 +1041,9 @@ Coretta                Expires August 27, 2024                 [Page 17]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 18]
+Coretta                Expires February 23, 2025               [Page 18]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
       dn: n=101,n=56521,n=1,n=4,n=1,n=6,n=3,n=1,ou=Registrations,o=rA
@@ -1099,9 +1099,9 @@ Coretta                Expires August 27, 2024                 [Page 18]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 19]
+Coretta                Expires February 23, 2025               [Page 19]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
       dn: n=1,n=3,n=2,n=101,n=56521,n=1,n=4,n=1,n=6,n=3,n=1,
@@ -1157,9 +1157,9 @@ Coretta                Expires August 27, 2024                 [Page 19]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 20]
+Coretta                Expires February 23, 2025               [Page 20]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
       dn: n=7,n=2,n=101,n=56521,n=1,n=4,n=1,n=6,n=3,n=1,
@@ -1215,9 +1215,9 @@ Coretta                Expires August 27, 2024                 [Page 20]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 21]
+Coretta                Expires February 23, 2025               [Page 21]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
       dn: n=1,n=3,n=101,n=56521,n=1,n=4,n=1,n=6,n=3,n=1,
@@ -1273,9 +1273,9 @@ Coretta                Expires August 27, 2024                 [Page 21]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 22]
+Coretta                Expires February 23, 2025               [Page 22]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
 3.2.2.2.5.  Registration Ranges
@@ -1331,9 +1331,9 @@ Coretta                Expires August 27, 2024                 [Page 22]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 23]
+Coretta                Expires February 23, 2025               [Page 23]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
    The most obvious benefit to the composite approach is the reduced
@@ -1372,7 +1372,7 @@ Coretta                Expires August 27, 2024                 [Page 23]
 
    In thorough implementations of this ID series, this can often provide
    considerable savings in terms of administrative effort in addition to
-   reduced risk relating to potentially content updates applied manually
+   reduced risk relating to large-scale content updates applied manually
    to the RA DIT.  In such cases, collective attributes are RECOMMENDED.
 
    Every attribute type in collective form is conceptually based upon a
@@ -1389,9 +1389,9 @@ Coretta                Expires August 27, 2024                 [Page 23]
    certain 'subtreeSpecification' examples where appropriate.
 
 
-Coretta                Expires August 27, 2024                 [Page 24]
+Coretta                Expires February 23, 2025               [Page 24]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
    Specific methodologies relating to use varies greatly among the
@@ -1447,9 +1447,9 @@ Coretta                Expires August 27, 2024                 [Page 24]
    This attribute type is defined in Section 2.3.2 of the RASCHEMA ID.
 
 
-Coretta                Expires August 27, 2024                 [Page 25]
+Coretta                Expires February 23, 2025               [Page 25]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
 3.2.4.3.  'registrationInformation'
@@ -1505,9 +1505,9 @@ Coretta                Expires August 27, 2024                 [Page 25]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 26]
+Coretta                Expires February 23, 2025               [Page 26]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
 3.2.4.6.  'registrationStatus'
@@ -1524,8 +1524,8 @@ Coretta                Expires August 27, 2024                 [Page 26]
    Section 2 of [RFC2578] also defines "current" and "deprecated" for
    use in this context.
 
-   Values of "active" or "in-force" may be used, though generally this
-   is OPTIONAL.
+   Explicit values of "active" or "in-force" may be used, although this
+   is generally OPTIONAL.
 
    Absence of this attribute type within a given entry MAY be viewed
    as an implied deference to the 'registrationStatus' value held by
@@ -1548,9 +1548,10 @@ Coretta                Expires August 27, 2024                 [Page 26]
    This attribute type associates a classification with a registration.
 
    While independent of the 'registrationStatus' attribute type defined
-   in Section 2.3.14, there may be cases of overlap with respect to the
-   declaration of obsolescence or deallocation for a given registration,
-   as both attribute types recognize and express such states.
+   in Section 2.3.14 of the RASCHEMA ID, there may be cases of overlap
+   with respect to the declaration of obsolescence or deallocation for a
+   given registration, as both attribute types recognize and express such
+   states.
 
    This type is defined in Section 2.3.15 of the RASCHEMA ID.
 
@@ -1562,10 +1563,9 @@ Coretta                Expires August 27, 2024                 [Page 26]
    Absence of this attribute type SHOULD be interpreted as an implicit
    FALSE value.  This is the most common scenario.
 
+Coretta                Expires February 23, 2025               [Page 27]
 
-Coretta                Expires August 27, 2024                 [Page 27]
-
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
    A value of FALSE indicates there are no restrictions regarding the
@@ -1621,9 +1621,9 @@ Coretta                Expires August 27, 2024                 [Page 27]
    This attribute type allows Long Arc instances to be assigned to a
    registration.
 
-Coretta                Expires August 27, 2024                 [Page 28]
+Coretta                Expires February 23, 2025               [Page 28]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
    Per [X.660], entries that bear values of this attribute type MUST
@@ -1637,12 +1637,6 @@ Coretta                Expires August 27, 2024                 [Page 28]
    in this context.
 
    This type is defined in Section 2.3.20 the of the RASCHEMA ID.
-
-   The 'minArc' and 'c-minArc' attribute types are defined in Section
-   2.3.27 and 2.3.28 of the RASCHEMA ID.
-
-   The 'maxArc' and 'c-maxArc' attribute types are defined in Section
-   2.3.30 and 2.3.31 of the RASCHEMA ID.
 
 3.2.4.11.  'discloseTo'
 
@@ -1678,16 +1672,17 @@ Coretta                Expires August 27, 2024                 [Page 28]
    'registration' ABSTRACT class, defined within Section 2.5.1 of the
    RASCHEMA ID.
 
-
-Coretta                Expires August 27, 2024                 [Page 29]
-
-Internet-Draft        The OID Directory: RA DIT            February 2024
-
-
    For distinguished registrants -- such as an RFC or ID -- the official
    identifier MAY be used as an alternative to an auto-generated value.
 
    This type is defined in Section 2.3.34 of the RASCHEMA ID.
+
+
+
+Coretta                Expires February 23, 2025               [Page 29]
+
+Internet-Draft        The OID Directory: RA DIT              August 2024
+
 
 3.2.4.13.  'firstAuthority', 'currentAuthority' and 'sponsor'
 
@@ -1735,17 +1730,17 @@ Coretta                Expires August 27, 2024                 [Page 29]
    registrant bases within an RA DIT.  The RA DUA reads these values
    to determine where particular operations shall be conducted.
 
-
-
-Coretta                Expires August 27, 2024                 [Page 30]
-
-Internet-Draft        The OID Directory: RA DIT            February 2024
-
-
    Instances of these types MUST NOT be assigned to entries which bear
    the instances of the 'rADITProfile' attribute type.
 
    See the RADSA ID for details regarding use of this attribute type.
+
+
+
+Coretta                Expires February 23, 2025               [Page 30]
+
+Internet-Draft        The OID Directory: RA DIT              August 2024
+
 
    These attribute types are defined in Sections 2.3.95 and 2.3.96 of
    the RASCHEMA ID respectively.
@@ -1792,18 +1787,18 @@ Coretta                Expires August 27, 2024                 [Page 30]
    The 'seeAlso' attribute type is defined in Section 2.30 of [RFC4519]
    and clause 6.10.6 of ITU-T Rec. X.520.
 
-
-
-
-Coretta                Expires August 27, 2024                 [Page 31]
-
-Internet-Draft        The OID Directory: RA DIT            February 2024
-
-
    Under the terms of this ID series, the 'seeAlso' attribute type is
    used to describe associations between multiple entries of related
    context, and is made available through use of certain object classes
    extended by this ID series.
+
+
+
+
+Coretta                Expires February 23, 2025               [Page 31]
+
+Internet-Draft        The OID Directory: RA DIT              August 2024
+
 
    To offer a practical use case, the OID which identifies the Kingdom
    of the Netherlands Registration Authority (0.2.205) also refers to
@@ -1848,16 +1843,6 @@ Coretta                Expires August 27, 2024                 [Page 31]
    defined in order to describe horizontal relationships among sibling
    registrations.  The following diagram describes these relationships:
 
-
-
-
-
-
-Coretta                Expires August 27, 2024                 [Page 32]
-
-Internet-Draft        The OID Directory: RA DIT            February 2024
-
-
                          example registration
                       (1.3.6.1.4.1.56521.999.140)
                                   |
@@ -1868,6 +1853,11 @@ Coretta                Expires August 27, 2024                 [Page 32]
                  |            |       |            |
               minimum        left   right       maximum
  
+Coretta                Expires February 23, 2025               [Page 32]
+
+Internet-Draft        The OID Directory: RA DIT              August 2024
+
+
    To offer an example of these relationships expressed as an LDIF:
 
       dn: n=140,n=999,n=56521,n=1,n=4,n=1,n=6,n=3,n=1,
@@ -1908,14 +1898,6 @@ Coretta                Expires August 27, 2024                 [Page 32]
    references the DN of the nearest sibling registration with an 'n'
    value greater than that of the bearer.
 
-
-
-
-Coretta                Expires August 27, 2024                 [Page 33]
-
-Internet-Draft        The OID Directory: RA DIT            February 2024
-
-
    Contrary to minimum and maximum values, the effective left and right
    values are always registration specific, and shall not be considered
    valid candidates for collective assignment.  This exposes a potential
@@ -1926,6 +1908,21 @@ Coretta                Expires August 27, 2024                 [Page 33]
 
    In cases where 'rightArc' and 'maxArc' would share a common value,
    both values should be specified for optimal client support.
+
+
+
+Coretta                Expires February 23, 2025               [Page 33]
+
+Internet-Draft        The OID Directory: RA DIT              August 2024
+
+
+   The 'minArc' and 'c-minArc' attribute types are defined in Section
+   2.3.27 and 2.3.28 of the RASCHEMA ID.  The 'leftArc' attribute type
+   is defined in Section 2.3.26 of the RASCHEMA ID.
+
+   The 'maxArc' and 'c-maxArc' attribute types are defined in Section
+   2.3.30 and 2.3.31 of the RASCHEMA ID.  The 'rightArc' attribute type
+   is defined in Section 2.3.29 of the RASCHEMA ID.
 
 3.2.4.19.1.1.  Collective Use
 
@@ -1940,8 +1937,8 @@ Coretta                Expires August 27, 2024                 [Page 33]
    'subtreeSpecification' value MUST be limited to ONLY the immediate
    children of the specified parent:
 
-      "{ base 'n=140,n=999,n=56521,n=1,n=4,n=1,n=6,n=3,n=1', 
-         minimum 1, maximum 1 }"
+       { base "n=140,n=999,n=56521,n=1,n=4,n=1,n=6,n=3,n=1", 
+         minimum 1, maximum 1 }
 
 3.2.4.19.2.  Superior Vertical References
 
@@ -1965,13 +1962,16 @@ Coretta                Expires August 27, 2024                 [Page 33]
    In cases where 'supArc' and 'topArc' would share a common value,
    both values should be specified for optimal client support.
 
+   The 'supArc' and 'c-supArc' attribute types are defined in Section
+   2.3.21 and 2.3.22 of the RASCHEMA ID.
+
+   The 'topArc' and 'c-topArc' attribute types are defined in Section
+   2.3.23 and 2.3.24 of the RASCHEMA ID.
 
 
+Coretta                Expires February 23, 2025               [Page 34]
 
-
-Coretta                Expires August 27, 2024                 [Page 34]
-
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
 3.2.4.19.2.1.  Collective Use 
@@ -1986,8 +1986,8 @@ Coretta                Expires August 27, 2024                 [Page 34]
    association, the appropriate 'subtreeSpecification' value MUST be
    limited to ONLY the immediate children of the specified parent:
 
-      "{ base 'n=140,n=999,n=56521,n=1,n=4,n=1,n=6,n=3,n=1', 
-         minimum 1, maximum 1 }"
+       { base "n=140,n=999,n=56521,n=1,n=4,n=1,n=6,n=3,n=1", 
+         minimum 1, maximum 1 }
 
    As the 'c-topArc' attribute type is in service to a vertically global
    association for ALL subordinate registrations without exception, the
@@ -1996,7 +1996,7 @@ Coretta                Expires August 27, 2024                 [Page 34]
    is in use, the 'subtreeSpecification' setting should reflect the
    following value for all ISO ("{iso(1)}") registrations:
 
-      "{ base 'n=1' }"
+       { base "n=1" }
 
 3.2.4.19.3.  Subordinate Vertical References
 
@@ -2027,9 +2027,9 @@ Coretta                Expires August 27, 2024                 [Page 34]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 35]
+Coretta                Expires February 23, 2025               [Page 35]
 
-Internet-Draft        The OID Directory: RA DIT            February 2024
+Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
    Instead, enumerated subordinate registration DNs may be retrieved
@@ -2048,6 +2048,53 @@ Coretta                Expires August 27, 2024                 [Page 35]
 
    Alternatively, the RA DUA MAY perform the necessary sort operation if
    it is given this capability.
+
+3.2.4.20.  'dotEncoding'
+
+   The 'dotEncoding' attribute type serves the same effective purpose
+   as its counterpart 'dotNotation' in that they each contain a value
+   that defines the numeric object identifier of a registration.
+
+   The difference is that 'dotEncoding' stores the ASN.1 encoded form
+   of the OID, and not its numeric (human readable) form.  Due to the
+   use of the Octet String syntax, clients SHOULD expect values of the
+   'dotEncoding' attribute type to be Base64-encoded.
+
+   For example, if a registration bears a 'dotNotation' value of "1.3",
+   the Base64-encoded 'dotEncoding' value should be "BgEr".  When this
+   value is Base64-decoded, a (raw) Octet String value of "%x06.01.2B"
+   is revealed:
+
+      ASN.1 OID TAG   NUMBER OF BYTES   ENCODED BYTE(S)
+           |                |                 |
+           06               01                2B
+
+   The total (decoded) length of a well-formed value SHALL NOT be less
+   than three (3).  No limit is imposed on the number of encoded bytes,
+   so long as the number is at least one (1), as shown above.
+
+   The condition of a 'dotNotation' value not matching the decoded form
+   of its corresponding 'dotEncoding' value is considered an error.  No
+   valid 'registration' entry shall exist in this state.
+
+   Implementations MAY opt to impose content verification procedures to
+   ensure that only valid byte sequences are present within instances of
+   this type.  For example, during an Add or Modify Operation, the RA
+   DSA might check that the first byte of the proposed 'dotEncoding'
+   value is the official ASN.1 OBJECT IDENTIFIER tag (6).  Additional
+   measures MAY be implemented at the risk of performance penalities.
+
+
+Coretta                Expires February 23, 2025               [Page 36]
+
+Internet-Draft        The OID Directory: RA DIT              August 2024
+
+
+   The semantics of encoding an object identifier per ITU-T Rec. X.680
+   are extensive, and are well outside the scope of this ID series.
+
+   The 'dotEncoding' attribute type is defined within Section 2.3.103 of
+   the RASCHEMA ID.
 
 4.  IANA Considerations
 
@@ -2085,11 +2132,6 @@ Coretta                Expires August 27, 2024                 [Page 35]
    RADUA      Coretta, J., "The OID Directory: The RA DUA",
               draft-coretta-oiddir-radua, February 2024.
 
-Coretta                Expires August 27, 2024                 [Page 36]
-
-Internet-Draft        The OID Directory: RA DIT            February 2024
-
-
    RASCHEMA   Coretta, J., "The OID Directory: The RA Schema",
               draft-coretta-oiddir-schema, February 2024.
 
@@ -2099,6 +2141,12 @@ Coretta                Expires August 27, 2024                 [Page 36]
    [RFC3671]  Zeilenga, K., "Collective Attributes in the Lightweight
               Directory Access Protocol (LDAP)", RFC 3671, December
               2003.
+
+
+Coretta                Expires February 23, 2025               [Page 37]
+
+Internet-Draft        The OID Directory: RA DIT              August 2024
+
 
    [RFC4511]  J. Sermersheim, Ed. "Lightweight Directory Access Protocol
               (LDAP): The Protocol", RFC 4511, June 2006.
@@ -2141,13 +2189,6 @@ Coretta                Expires August 27, 2024                 [Page 36]
               and Netscape, "LDAP Control Extension for Simple Paged
               Results Manipulation", RFC 2696, September 1999.
 
-
-
-Coretta                Expires August 27, 2024                 [Page 37]
-
-Internet-Draft        The OID Directory: RA DIT            February 2024
-
-
    [RFC4370]  Weltman, R., "Lightweight Directory Access Protocol
               (LDAP): Proxy Authorization Control", RFC 4370, February
               2006.
@@ -2159,6 +2200,11 @@ Coretta                Expires August 27, 2024                 [Page 37]
    [X.501]    International Telecommunication Union - Telecommunication
               Standardization Sector, "The Directory: Models", ITU-T
               X.501, October 2016.
+
+Coretta                Expires February 23, 2025               [Page 38]
+
+Internet-Draft        The OID Directory: RA DIT              August 2024
+
 
    [X.518]    International Telecommunication Union - Telecommunication
               Standardization Sector, "The Directory: Procedures for
@@ -2202,4 +2248,16 @@ Author's Address
 
 
 
-Coretta                Expires August 27, 2024                 [Page 38]
+
+
+
+
+
+
+
+
+
+
+
+
+Coretta                Expires February 23, 2025               [Page 39]

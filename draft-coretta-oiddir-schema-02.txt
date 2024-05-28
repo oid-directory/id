@@ -1,14 +1,14 @@
 
 
 RASCHEMA                                                      J. Coretta
-Internet-Draft                                         February 29, 2024
+Internet-Draft                                           August 27, 2024
 Intended status: Experimental
 Obsoletes: X660LDAP
-Expires: August 27, 2024
+Expires: February 23, 2025
 
 
                    The OID Directory: The Schema
-                draft-coretta-oiddir-schema-01.txt
+                draft-coretta-oiddir-schema-02.txt
 
 Abstract
 
@@ -33,7 +33,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on August 27, 2024.
+   This Internet-Draft will expire on February 23, 2025.
 
 Copyright Notice
 
@@ -55,9 +55,9 @@ Copyright Notice
 
 
 
-Coretta                Expires August 27, 2024                  [Page 1]
+Coretta                Expires February 23, 2025                [Page 1]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
 Table of Contents
@@ -113,9 +113,9 @@ Table of Contents
          2.3.40. 'currentAuthorityCountryName' .......................23
          2.3.41. 'currentAuthorityEmail' .............................23
 
-Coretta                Expires August 27, 2024                  [Page 2]
+Coretta                Expires February 23, 2025                [Page 2]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
          2.3.42. 'currentAuthorityFax' ...............................23
@@ -171,9 +171,9 @@ Coretta                Expires August 27, 2024                  [Page 2]
          2.3.92. 'sponsorTitle' ......................................42
          2.3.93. 'sponsorURI' ........................................42
 
-Coretta                Expires August 27, 2024                  [Page 3]
+Coretta                Expires February 23, 2025                [Page 3]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
          2.3.94. 'rADITProfile' ......................................43
@@ -185,6 +185,7 @@ Coretta                Expires August 27, 2024                  [Page 3]
          2.3.100. 'rATTL' ............................................45
          2.3.101. 'c-rATTL' ..........................................45
          2.3.102. 'registeredUUID' ...................................46
+         2.3.103. 'dotEncoding' ......................................XX
       2.4. Matching Rule Uses ........................................46
       2.5. Object Classes ............................................46
          2.5.1. 'registration' .......................................46
@@ -228,10 +229,9 @@ Coretta                Expires August 27, 2024                  [Page 3]
    In context, the definitions set forth are based on concepts derived
    from ITU-T Recommendations [X.660], [X.680], [RFC2578] et al.
 
+Coretta                Expires February 23, 2025                [Page 4]
 
-Coretta                Expires August 27, 2024                  [Page 4]
-
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
    The intended end result is a directory service specially suited to
@@ -287,9 +287,9 @@ Coretta                Expires August 27, 2024                  [Page 4]
      - 1.3.6.1.4.1.1466.115.121.1.12 (DN syntax and matching rule, per
        Section 4.2.15 of [RFC4517])
 
-Coretta                Expires August 27, 2024                  [Page 5]
+Coretta                Expires February 23, 2025                [Page 5]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
      - 1.3.6.1.4.1.1466.115.121.1.24 (Generalized Time syntax, per
@@ -345,9 +345,9 @@ Coretta                Expires August 27, 2024                  [Page 5]
    sub types of attribute types defined in the following Standards, and
    as such are considered dependencies:
 
-Coretta                Expires August 27, 2024                  [Page 6]
+Coretta                Expires February 23, 2025                [Page 6]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
      - [RFC2079] for URI support
@@ -403,9 +403,9 @@ Coretta                Expires August 27, 2024                  [Page 6]
    clause 34.3 of ITU-T Rec. [X.680], is as follows:
 
 
-Coretta                Expires August 27, 2024                  [Page 7]
+Coretta                Expires February 23, 2025                [Page 7]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
      subArcId   = SOLIDUS arcId [ subArcId ]
@@ -461,9 +461,9 @@ Coretta                Expires August 27, 2024                  [Page 7]
 
      uval = 1*iunreserved
 
-Coretta                Expires August 27, 2024                  [Page 8]
+Coretta                Expires February 23, 2025                [Page 8]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
    The ABNF production 'iunreserved' is defined in Section 2.2 of
@@ -519,9 +519,9 @@ Coretta                Expires August 27, 2024                  [Page 8]
       HYPHEN      = "%x2d"            ; "-"
 
 
-Coretta                Expires August 27, 2024                  [Page 9]
+Coretta                Expires February 23, 2025                [Page 9]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
    The attribute type 'name', as defined in Section 2.18 of [RFC4519],
@@ -577,9 +577,9 @@ Coretta                Expires August 27, 2024                  [Page 9]
    The 'registrationURI' attribute type allows for the assignment of one
    (1) or more URI values, with optional labels, to a registration.
 
-Coretta                Expires August 27, 2024                 [Page 10]
+Coretta                Expires February 23, 2025               [Page 10]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
    The attribute type 'labeledURI', as defined in [RFC2079], is a super
@@ -635,9 +635,9 @@ Coretta                Expires August 27, 2024                 [Page 10]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 11]
+Coretta                Expires February 23, 2025               [Page 11]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
 2.3.13.  'registrationRange'
@@ -693,9 +693,9 @@ Coretta                Expires August 27, 2024                 [Page 11]
    Examples: "Standard", "Individual", "ASN.1 Modules"
 
 
-Coretta                Expires August 27, 2024                 [Page 12]
+Coretta                Expires February 23, 2025               [Page 12]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
 2.3.16.  'isLeafNode'
@@ -751,9 +751,9 @@ Coretta                Expires August 27, 2024                 [Page 12]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 13]
+Coretta                Expires February 23, 2025               [Page 13]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
      SPACE = "%x20"      ; " "
@@ -809,9 +809,9 @@ Coretta                Expires August 27, 2024                 [Page 13]
      intUV      = number        ; integer unicode value
 
 
-Coretta                Expires August 27, 2024                 [Page 14]
+Coretta                Expires February 23, 2025               [Page 14]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
       ( 1.3.6.1.4.1.56521.101.2.3.20
@@ -867,9 +867,9 @@ Coretta                Expires August 27, 2024                 [Page 14]
           COLLECTIVE )
 
 
-Coretta                Expires August 27, 2024                 [Page 15]
+Coretta                Expires February 23, 2025               [Page 15]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
    Example: "n=1,n=2,ou=Registrations,o=rA"
@@ -925,9 +925,9 @@ Coretta                Expires August 27, 2024                 [Page 15]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 16]
+Coretta                Expires February 23, 2025               [Page 16]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
 2.3.25.  'subArc'
@@ -983,9 +983,9 @@ Coretta                Expires August 27, 2024                 [Page 16]
    Section 3 of [RFC4514].
 
 
-Coretta                Expires August 27, 2024                 [Page 17]
+Coretta                Expires February 23, 2025               [Page 17]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
    The attribute type 'distinguishedName', as defined in Section 2.7 of
@@ -1041,16 +1041,16 @@ Coretta                Expires August 27, 2024                 [Page 17]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 18]
+Coretta                Expires February 23, 2025               [Page 18]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
       ( 1.3.6.1.4.1.56521.101.2.3.29
           NAME 'rightArc'
           DESC 'Nearest subsequent registration DN'
-          SINGLE-VALUE
-          SUP distinguishedName )
+          SUP distinguishedName
+          SINGLE-VALUE )
 
    Example: "n=2,n=2,ou=Registrations,o=rA"
 
@@ -1099,9 +1099,9 @@ Coretta                Expires August 27, 2024                 [Page 18]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 19]
+Coretta                Expires February 23, 2025               [Page 19]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
 2.3.32.  'discloseTo'
@@ -1157,9 +1157,9 @@ Coretta                Expires August 27, 2024                 [Page 19]
 
    No specific syntax is implied for values of this type.
 
-Coretta                Expires August 27, 2024                 [Page 20]
+Coretta                Expires February 23, 2025               [Page 20]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
       ( 1.3.6.1.4.1.56521.101.2.3.34
@@ -1215,9 +1215,9 @@ Coretta                Expires August 27, 2024                 [Page 20]
    [RFC4519], is a super type of this attribute type.
 
 
-Coretta                Expires August 27, 2024                 [Page 21]
+Coretta                Expires February 23, 2025               [Page 21]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
       ( 1.3.6.1.4.1.56521.101.2.3.36
@@ -1273,9 +1273,9 @@ Coretta                Expires August 27, 2024                 [Page 21]
    The attribute type 'c', as defined in Section 2.2 of [RFC4519],
    is a super type of this attribute type.
 
-Coretta                Expires August 27, 2024                 [Page 22]
+Coretta                Expires February 23, 2025               [Page 22]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
    A practical ABNF production is found in Section 3.3.4 in [RFC4517].
@@ -1331,9 +1331,9 @@ Coretta                Expires August 27, 2024                 [Page 22]
    of a facsimile telephone number to a current authority entry.
 
 
-Coretta                Expires August 27, 2024                 [Page 23]
+Coretta                Expires February 23, 2025               [Page 23]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
    The attribute type 'facsimileTelephoneNumber', as defined in Section
@@ -1389,9 +1389,9 @@ Coretta                Expires August 27, 2024                 [Page 23]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 24]
+Coretta                Expires February 23, 2025               [Page 24]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
 2.3.45.  'currentAuthorityOrg'
@@ -1447,9 +1447,9 @@ Coretta                Expires August 27, 2024                 [Page 24]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 25]
+Coretta                Expires February 23, 2025               [Page 25]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
       ( 1.3.6.1.4.1.56521.101.2.3.47
@@ -1505,9 +1505,9 @@ Coretta                Expires August 27, 2024                 [Page 25]
    is a super type of this attribute type.
 
 
-Coretta                Expires August 27, 2024                 [Page 26]
+Coretta                Expires February 23, 2025               [Page 26]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
    A practical ABNF production is found in Section 3.3.6 in [RFC4517].
@@ -1563,9 +1563,9 @@ Coretta                Expires August 27, 2024                 [Page 26]
    one (1) or more URI values to a current authority entry.
 
 
-Coretta                Expires August 27, 2024                 [Page 27]
+Coretta                Expires February 23, 2025               [Page 27]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
    The attribute type 'labeledURI', as defined in [RFC2079], is a super
@@ -1621,9 +1621,9 @@ Coretta                Expires August 27, 2024                 [Page 27]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 28]
+Coretta                Expires February 23, 2025               [Page 28]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
       ( 1.3.6.1.4.1.56521.101.2.3.55
@@ -1679,9 +1679,9 @@ Coretta                Expires August 27, 2024                 [Page 28]
    The 'firstAuthorityCommonName' attribute type allows for a common
    name to be assigned to a previous registration authority entry.
 
-Coretta                Expires August 27, 2024                 [Page 29]
+Coretta                Expires February 23, 2025               [Page 29]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
    The attribute type 'cn', as defined in Section 2.3 of [RFC4519], is
@@ -1737,9 +1737,9 @@ Coretta                Expires August 27, 2024                 [Page 29]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 30]
+Coretta                Expires February 23, 2025               [Page 30]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
 2.3.61.  'firstAuthorityEmail'
@@ -1795,9 +1795,9 @@ Coretta                Expires August 27, 2024                 [Page 30]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 31]
+Coretta                Expires February 23, 2025               [Page 31]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
       ( 1.3.6.1.4.1.56521.101.2.3.63
@@ -1853,9 +1853,9 @@ Coretta                Expires August 27, 2024                 [Page 31]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 32]
+Coretta                Expires February 23, 2025               [Page 32]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
    The attribute type 'postOfficeBox', as defined in Section 2.25 of
@@ -1911,9 +1911,9 @@ Coretta                Expires August 27, 2024                 [Page 32]
 
    Examples: "92262", "34216"
 
-Coretta                Expires August 27, 2024                 [Page 33]
+Coretta                Expires February 23, 2025               [Page 33]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
 2.3.69.  'firstAuthorityState'
@@ -1969,9 +1969,9 @@ Coretta                Expires August 27, 2024                 [Page 33]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 34]
+Coretta                Expires February 23, 2025               [Page 34]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
       ( 1.3.6.1.4.1.56521.101.2.3.71
@@ -2027,9 +2027,9 @@ Coretta                Expires August 27, 2024                 [Page 34]
    A practical ABNF production for this attribute type can be found in
    Section 3 of [RFC4514].
 
-Coretta                Expires August 27, 2024                 [Page 35]
+Coretta                Expires February 23, 2025               [Page 35]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
    The attribute type 'distinguishedName', as defined in Section 2.7 of
@@ -2085,9 +2085,9 @@ Coretta                Expires August 27, 2024                 [Page 35]
    Example: "20130105135904Z"
 
 
-Coretta                Expires August 27, 2024                 [Page 36]
+Coretta                Expires February 23, 2025               [Page 36]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
 2.3.77.  'sponsorEndTimestamp'
@@ -2143,9 +2143,9 @@ Coretta                Expires August 27, 2024                 [Page 36]
           SUP c
           SINGLE-VALUE )
 
-Coretta                Expires August 27, 2024                 [Page 37]
+Coretta                Expires February 23, 2025               [Page 37]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
    Examples: "US", "CA"
@@ -2201,9 +2201,9 @@ Coretta                Expires August 27, 2024                 [Page 37]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 38]
+Coretta                Expires February 23, 2025               [Page 38]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
       ( 1.3.6.1.4.1.56521.101.2.3.82
@@ -2259,9 +2259,9 @@ Coretta                Expires August 27, 2024                 [Page 38]
    The attribute type 'o', as defined in Section 2.19 of [RFC4519],
    is a super type of this attribute type.
 
-Coretta                Expires August 27, 2024                 [Page 39]
+Coretta                Expires February 23, 2025               [Page 39]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
    A practical ABNF production is found in Section 3.3.6 in [RFC4517].
@@ -2317,9 +2317,9 @@ Coretta                Expires August 27, 2024                 [Page 39]
    The 'sponsorPostalCode' attribute type allows for a postal code
    to be assigned to a sponsor.
 
-Coretta                Expires August 27, 2024                 [Page 40]
+Coretta                Expires February 23, 2025               [Page 40]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
    The attribute type 'postalCode', as defined in Section 2.23 of
@@ -2375,9 +2375,9 @@ Coretta                Expires August 27, 2024                 [Page 40]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 41]
+Coretta                Expires February 23, 2025               [Page 41]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
 2.3.91.  'sponsorTelephone'
@@ -2433,9 +2433,9 @@ Coretta                Expires August 27, 2024                 [Page 41]
           DESC 'Uniform Resource Identifier for a sponsor'
           SUP labeledURI )
 
-Coretta                Expires August 27, 2024                 [Page 42]
+Coretta                Expires February 23, 2025               [Page 42]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
    Examples: "http://example.com Example", "http://example.com"
@@ -2491,9 +2491,9 @@ Coretta                Expires August 27, 2024                 [Page 42]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 43]
+Coretta                Expires February 23, 2025               [Page 43]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
       ( 1.3.6.1.4.1.56521.101.2.3.96
@@ -2549,9 +2549,9 @@ Coretta                Expires August 27, 2024                 [Page 43]
    type of this attribute type.
 
 
-Coretta                Expires August 27, 2024                 [Page 44]
+Coretta                Expires February 23, 2025               [Page 44]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
    A practical ABNF production for this attribute type is defined within
@@ -2607,9 +2607,9 @@ Coretta                Expires August 27, 2024                 [Page 44]
           SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
           COLLECTIVE )
 
-Coretta                Expires August 27, 2024                 [Page 45]
+Coretta                Expires February 23, 2025               [Page 45]
 
-Internet-Draft        The OID Directory: Schema            February 2024
+Internet-Draft        The OID Directory: Schema              August 2024
 
 
 2.3.102.  'registeredUUID'
@@ -2630,6 +2630,31 @@ Coretta                Expires August 27, 2024                 [Page 45]
 
    Example: "e6bcf22c-00bf-4b3d-b11f-36ec0522aa93"
 
+2.3.103.  'dotEncoding'
+
+   The 'dotEncoding' attributeType allows the storage of the raw ASN.1
+   encoding of the 'dotNotation' for a registration.  Clients SHOULD
+   expect values of the 'dotEncoding' attribute type to manifest as
+   Base64-encoded content.
+
+   A practical ABNF production for this attribute type is as follows:
+
+     dotEncoding   = tag length bytes
+     tag           = %x06             ; ASN.1 OBJECT IDENTIFIER tag (6)
+     length        = 1*OCTET          ; number of (encoded) bytes
+     bytes         = 1*OCTET          ; encoded bytes
+
+   The 'OCTET' ABNF production is defined within RFC 4512 Section 1.4.
+
+      ( 1.3.6.1.4.1.56521.101.2.3.103
+          NAME 'dotEncoding'
+          DESC 'ASN.1 encoded numeric OID'
+          EQUALITY octetStringMatch
+          SYNTAX 1.3.6.1.4.1.1466.115.121.1.40
+          SINGLE-VALUE )
+
+   Example: "BgEr"
+
 2.4.  Matching Rule Uses
 
    No LDAP Matching Rule Uses definitions are defined anywhere in this
@@ -2639,6 +2664,11 @@ Coretta                Expires August 27, 2024                 [Page 45]
 
    The following subsections describe sixteen (16) LDAP object classes
    defined within this ID.
+
+Coretta                Expires February 23, 2025               [Page 46]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
 
 2.5.1.  'registration'
 
@@ -2665,11 +2695,6 @@ Coretta                Expires August 27, 2024                 [Page 45]
      - ISO ({iso(1)})
      - Joint-ISO-ITU-T ({joint-iso-itu-t(2)})
 
-Coretta                Expires August 27, 2024                 [Page 46]
-
-Internet-Draft        The OID Directory: Schema            February 2024
-
-
       ( 1.3.6.1.4.1.56521.101.2.5.2
           NAME 'rootArc'
           DESC 'X.660, cl. A.2: root arc class'
@@ -2689,6 +2714,19 @@ Coretta                Expires August 27, 2024                 [Page 46]
 
    The 'x660Context' AUXILIARY class extends a collection of attribute
    types derived from Rec. ITU-T [X.660].
+
+
+
+
+
+
+
+
+
+Coretta                Expires February 23, 2025               [Page 47]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
 
       ( 1.3.6.1.4.1.56521.101.2.5.4
           NAME 'x660Context'
@@ -2719,20 +2757,12 @@ Coretta                Expires August 27, 2024                 [Page 46]
    The 'x680Context' AUXILIARY class extends a collection of attribute
    types derived from ITU-T Rec. [X.680].
 
-
-
-
-
-Coretta                Expires August 27, 2024                 [Page 47]
-
-Internet-Draft        The OID Directory: Schema            February 2024
-
-
       ( 1.3.6.1.4.1.56521.101.2.5.6
           NAME 'x680Context'
           DESC 'X.680 contextual class'
           SUP registration AUXILIARY
           MAY ( aSN1Notation $
+                dotEncoding $
                 dotNotation $
                 identifier $
                 iRI $
@@ -2749,6 +2779,12 @@ Coretta                Expires August 27, 2024                 [Page 47]
    class SHALL NOT appear on entries bearing the 'iSORegistration' (per
    Section 2.5.8) or 'jointISOITUTRegistration' (per Section 2.5.9)
    class.
+
+
+Coretta                Expires February 23, 2025               [Page 48]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
 
    The 'x660Context' (Section 2.5.4) and 'x680Context' (Section 2.5.6)
    are super classes of this class.
@@ -2775,17 +2811,6 @@ Coretta                Expires August 27, 2024                 [Page 47]
    The 'x660Context' (Section 2.5.4) and 'x680Context' (Section 2.5.6)
    are super classes of this class.
 
-
-
-
-
-
-
-Coretta                Expires August 27, 2024                 [Page 48]
-
-Internet-Draft        The OID Directory: Schema            February 2024
-
-
       ( 1.3.6.1.4.1.56521.101.2.5.8
           NAME 'iSORegistration'
           DESC 'X.660, cl. A.2: ISO'
@@ -2811,6 +2836,14 @@ Coretta                Expires August 27, 2024                 [Page 48]
    The 'x660Context' (Section 2.5.4) and 'x680Context' (Section 2.5.6)
    are super classes of this class.
 
+
+
+
+Coretta                Expires February 23, 2025               [Page 49]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
+
       ( 1.3.6.1.4.1.56521.101.2.5.9
           NAME 'jointISOITUTRegistration'
           DESC 'X.660, cl. A.2: Joint ISO/ITU-T Administration'
@@ -2830,19 +2863,6 @@ Coretta                Expires August 27, 2024                 [Page 48]
    vertical movement across entire ancestries.
 
    See the RADIT ID for further details on this topic.
-
-
-
-
-
-
-
-
-
-Coretta                Expires August 27, 2024                 [Page 49]
-
-Internet-Draft        The OID Directory: Schema            February 2024
-
 
       ( 1.3.6.1.4.1.56521.101.2.5.10
           NAME 'spatialContext'
@@ -2875,6 +2895,13 @@ Coretta                Expires August 27, 2024                 [Page 49]
    The 'firstAuthorityContext' AUXILIARY class extends attribute types
    intended to store previous authority information.
 
+
+
+Coretta                Expires February 23, 2025               [Page 50]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
+
       ( 1.3.6.1.4.1.56521.101.2.5.12
           NAME 'firstAuthorityContext'
           DESC 'Initial registration authority class'
@@ -2896,11 +2923,6 @@ Coretta                Expires August 27, 2024                 [Page 49]
                 firstAuthorityTelephone $
                 firstAuthorityTitle $
                 firstAuthorityURI ) )
-
-Coretta                Expires August 27, 2024                 [Page 50]
-
-Internet-Draft        The OID Directory: Schema            February 2024
-
 
 2.5.13.  'currentAuthorityContext'
 
@@ -2927,6 +2949,16 @@ Coretta                Expires August 27, 2024                 [Page 50]
                 currentAuthorityTelephone $
                 currentAuthorityTitle $
                 currentAuthorityURI ) )
+
+
+
+
+
+
+Coretta                Expires February 23, 2025               [Page 51]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
 
 2.5.14.  'sponsorContext'
 
@@ -2955,11 +2987,6 @@ Coretta                Expires August 27, 2024                 [Page 50]
                 sponsorTitle $
                 sponsorURI ) )
 
-Coretta                Expires August 27, 2024                 [Page 51]
-
-Internet-Draft        The OID Directory: Schema            February 2024
-
-
 2.5.15.  'registrant'
 
    The 'registrant' object class allows for current, previous (first)
@@ -2978,6 +3005,18 @@ Coretta                Expires August 27, 2024                 [Page 51]
           SUP top STRUCTURAL
           MUST registrantID
           MAY ( description $ seeAlso $ rATTL ) )
+
+
+
+
+
+
+
+
+Coretta                Expires February 23, 2025               [Page 52]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
 
 2.5.16.  'rADUAConfig'
 
@@ -3011,13 +3050,6 @@ Coretta                Expires August 27, 2024                 [Page 51]
    manner, they are advised to consider the composition and use of one
    (1) or more custom rules of this design.
 
-
-
-Coretta                Expires August 27, 2024                 [Page 52]
-
-Internet-Draft        The OID Directory: Schema            February 2024
-
-
 2.7.  Name Forms
 
    This section defines three (3) Name Forms for use in the composition
@@ -3037,6 +3069,12 @@ Coretta                Expires August 27, 2024                 [Page 52]
           DESC 'root arc name form for a number form RDN'
           OC rootArc
           MUST n )
+
+
+Coretta                Expires February 23, 2025               [Page 53]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
 
 2.7.2.  'nArcForm'
 
@@ -3070,12 +3108,6 @@ Coretta                Expires August 27, 2024                 [Page 52]
    No DIT structure rules are officially defined anywhere in this ID
    series.
 
-
-Coretta                Expires August 27, 2024                 [Page 53]
-
-Internet-Draft        The OID Directory: Schema            February 2024
-
-
    The name form definitions per Section 2.7 may be used in the creation
    of custom DIT structure rules by the directory administrator(s) if
    desired.  See Section 4.1.7.1 of [RFC4512] for details.
@@ -3087,6 +3119,20 @@ Coretta                Expires August 27, 2024                 [Page 53]
 4.  Security Considerations
 
    There are no security considerations applicable to this ID.
+
+
+
+
+
+
+
+
+
+
+Coretta                Expires February 23, 2025               [Page 54]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
 
 5.  References
 
@@ -3127,13 +3173,6 @@ Coretta                Expires August 27, 2024                 [Page 53]
    [RFC4122]  Leach, P., "A Universally Unique IDentifier (UUID) URN
               Namespace", RFC 4122, July 2005.
 
-
-
-Coretta                Expires August 27, 2024                 [Page 54]
-
-Internet-Draft        The OID Directory: Schema            February 2024
-
-
    [RFC4512]  Zeilenga, K., "Lightweight Directory Access Protocol
               (LDAP): Directory Information Models", RFC 4512, June
               2006.
@@ -3145,6 +3184,13 @@ Coretta                Expires August 27, 2024                 [Page 54]
    [RFC4517]  Legg, Ed., S., "Lightweight Directory Access Protocol
               (LDAP): Syntaxes and Matching Rules", RFC 4517, June
               2006.
+
+
+
+Coretta                Expires February 23, 2025               [Page 55]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
 
    [RFC4519]  Sciberras, Ed., A., "Lightweight Directory Access Protocol
               (LDAP): Schema for User Applications", RFC 4519, June
@@ -3187,11 +3233,6 @@ Coretta                Expires August 27, 2024                 [Page 54]
               Standardization Sector, "The Directory: Overview of
               concepts, models and services", ITU-T X.500, October 2019.
 
-Coretta                Expires August 27, 2024                 [Page 55]
-
-Internet-Draft        The OID Directory: Schema            February 2024
-
-
    [X.672]    International Telecommunication Union - Telecommunication
               Standardization Sector, "OID resolution system: Problems,
               requirements and potential solutions", ITU-T X.672, March
@@ -3205,42 +3246,4 @@ Author's Address
    Email: jesse.coretta@icloud.com
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Coretta                Expires August 27, 2024                 [Page 56]
+Coretta                Expires February 23, 2025               [Page 56]

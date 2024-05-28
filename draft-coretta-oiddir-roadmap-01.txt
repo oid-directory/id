@@ -1,22 +1,22 @@
 
 
 RADIR                                                         J. Coretta
-Internet-Draft                                         February 29, 2024
+Internet-Draft                                           August 27, 2024
 Intended status: Experimental
 Obsoletes: X660LDAP
-Expires: August 27, 2024
+Expires: February 23, 2025
 
 
                         The OID Directory:
                         A Technical Roadmap
-                draft-coretta-oiddir-roadmap-00.txt
+                draft-coretta-oiddir-roadmap-01.txt
 
 Abstract
 
    This ID outlines a series of experimental standards documents which
    define the abstracts of the "OID Directory": a proposed philosophy
    and set of procedures used to facilitate the storage and management
-   of the "OID spectrum" -- in part or in whole -- within an X.500/LDAP
+   of the "OID tree" -- in part or in whole -- within an X.500/LDAP
    service implementation.
 
 Status of This Memo
@@ -34,7 +34,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on August 27, 2024.
+   This Internet-Draft will expire on February 23, 2025.
 
 Copyright Notice
 
@@ -55,9 +55,9 @@ Copyright Notice
 
 
 
-Coretta                Expires August 27, 2024                  [Page 1]
+Coretta                Expires February 23, 2025                [Page 1]
 
-Internet-Draft        The OID Directory: Roadmap           February 2024
+Internet-Draft        The OID Directory: Roadmap             August 2024
 
 
 Table of Contents
@@ -98,7 +98,7 @@ Table of Contents
    and procedures of the "OID Directory" construct.
 
    The "OID Directory" is the X.500/LDAP facility for managing the "OID
-   Spectrum" -- in part or in whole -- in the context of Registration
+   tree" -- in part or in whole -- in the context of OID Registration
    Authority operations, whether public or private.
 
    Additionally, unofficial components have been devised or appropriated
@@ -113,9 +113,9 @@ Table of Contents
    for any testing or proof-of-concept efforts.
 
 
-Coretta                Expires August 27, 2024                  [Page 2]
+Coretta                Expires February 23, 2025                [Page 2]
 
-Internet-Draft        The OID Directory: Roadmap           February 2024
+Internet-Draft        The OID Directory: Roadmap             August 2024
 
 
 1.1.  Relation to 'draft-coretta-x660-ldap'
@@ -171,9 +171,9 @@ Coretta                Expires August 27, 2024                  [Page 2]
      - Author's physical address has reduced specificity.
 
 
-Coretta                Expires August 27, 2024                  [Page 3]
+Coretta                Expires February 23, 2025                [Page 3]
 
-Internet-Draft        The OID Directory: Roadmap           February 2024
+Internet-Draft        The OID Directory: Roadmap             August 2024
 
 
 1.2.  Conventions
@@ -189,9 +189,7 @@ Coretta                Expires August 27, 2024                  [Page 3]
    implies not only those IDs cited in Section 2, but also any future
    IDs that may be submitted as extensions by any author.
 
-   The conventions "OID spectrum" and "OID tree" -- while not defined in
-   any document within this standard -- are terms used frequently within
-   the ID series.  These terms describe the hypothetical data structure
+   The convention "OID tree" describes the hypothetical data structure
    that houses or represents all known public or private registrations
    that have ever been allocated.
 
@@ -229,9 +227,11 @@ Coretta                Expires August 27, 2024                  [Page 3]
       OID    ASN.1 Object Identifier
       ORS    OID Resolution Service
 
-Coretta                Expires August 27, 2024                  [Page 4]
 
-Internet-Draft        The OID Directory: Roadmap           February 2024
+
+Coretta                Expires February 23, 2025                [Page 4]
+
+Internet-Draft        The OID Directory: Roadmap             August 2024
 
 
       OTP    One-Time Pass
@@ -287,9 +287,9 @@ Coretta                Expires August 27, 2024                  [Page 4]
 
 
 
-Coretta                Expires August 27, 2024                  [Page 5]
+Coretta                Expires February 23, 2025                [Page 5]
 
-Internet-Draft        The OID Directory: Roadmap           February 2024
+Internet-Draft        The OID Directory: Roadmap             August 2024
 
 
    Should this ID series be elevated to RFC status, the aforementioned
@@ -345,9 +345,9 @@ Coretta                Expires August 27, 2024                  [Page 5]
    "Search Operation".
 
 
-Coretta                Expires August 27, 2024                  [Page 6]
+Coretta                Expires February 23, 2025                [Page 6]
 
-Internet-Draft        The OID Directory: Roadmap           February 2024
+Internet-Draft        The OID Directory: Roadmap             August 2024
 
 
    The DAP EntryInformationSelection ASN.1 SET is defined in clause 7.6
@@ -403,9 +403,9 @@ Coretta                Expires August 27, 2024                  [Page 6]
 
 
 
-Coretta                Expires August 27, 2024                  [Page 7]
+Coretta                Expires February 23, 2025                [Page 7]
 
-Internet-Draft        The OID Directory: Roadmap           February 2024
+Internet-Draft        The OID Directory: Roadmap             August 2024
 
 
    The Read Operation is used to retrieve or "call" specific individual
@@ -461,9 +461,9 @@ Coretta                Expires August 27, 2024                  [Page 7]
    Use of a filter adds conditions to the successful matching of entries
    to be retrieved by way of the Read or Search Operations.
 
-Coretta                Expires August 27, 2024                  [Page 8]
+Coretta                Expires February 23, 2025                [Page 8]
 
-Internet-Draft        The OID Directory: Roadmap           February 2024
+Internet-Draft        The OID Directory: Roadmap             August 2024
 
 
    Although generally not required of the user, certain procedures set
@@ -519,9 +519,9 @@ Coretta                Expires August 27, 2024                  [Page 8]
    new 'registrant' entries MUST ONLY occur below the appropriate
    'rARegistrantBase' value.
 
-Coretta                Expires August 27, 2024                  [Page 9]
+Coretta                Expires February 23, 2025                [Page 9]
 
-Internet-Draft        The OID Directory: Roadmap           February 2024
+Internet-Draft        The OID Directory: Roadmap             August 2024
 
 
    RA DUAs MUST observe the MAY and MUST clauses of the object class
@@ -577,9 +577,9 @@ Coretta                Expires August 27, 2024                  [Page 9]
    Should any of these IDs be updated or revised in any way, the highest
    revision number supersedes any previous revision.
 
-Coretta                Expires August 27, 2024                 [Page 10]
+Coretta                Expires February 23, 2025               [Page 10]
 
-Internet-Draft        The OID Directory: Roadmap           February 2024
+Internet-Draft        The OID Directory: Roadmap             August 2024
 
 
 2.1.  'draft-coretta-oiddir-schema'
@@ -635,9 +635,9 @@ Coretta                Expires August 27, 2024                 [Page 10]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 11]
+Coretta                Expires February 23, 2025               [Page 11]
 
-Internet-Draft        The OID Directory: Roadmap           February 2024
+Internet-Draft        The OID Directory: Roadmap             August 2024
 
 
 5.2.  Informative References
@@ -693,9 +693,9 @@ Coretta                Expires August 27, 2024                 [Page 11]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 12]
+Coretta                Expires February 23, 2025               [Page 12]
 
-Internet-Draft        The OID Directory: Roadmap           February 2024
+Internet-Draft        The OID Directory: Roadmap             August 2024
 
 
    [X.667]    International Telecommunication Union - Telecommunication
@@ -751,4 +751,4 @@ Author's Address
 
    Email: jesse.coretta@icloud.com
 
-Coretta                Expires August 27, 2024                 [Page 13]
+Coretta                Expires February 23, 2025               [Page 13]
