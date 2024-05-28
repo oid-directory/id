@@ -778,7 +778,6 @@ Coretta                Expires February 23, 2025               [Page 13]
 
    A practical ABNF production for this attribute type is as follows:
 
-     nonf       = ( nanf  / number )        ; nanf OR numberForm
      nanf       = name LPAREN number RPAREN ; name AND numberForm
      name       = identifier                ; name form
 
@@ -795,7 +794,7 @@ Coretta                Expires February 23, 2025               [Page 13]
           SYNTAX 1.3.6.1.4.1.1466.115.121.1.15
           SINGLE-VALUE )
 
-   Examples: "private(4)", "itu-t(0)", "56521"
+   Examples: "private(4)", "itu-t(0)"
 
 2.3.20.  'longArc'
 
@@ -807,6 +806,7 @@ Coretta                Expires February 23, 2025               [Page 13]
      longArc    = SOLIDUS ( intUV / nintUV )
      nintUV     = 1*iunreserved ; non-integer unicode value
      intUV      = number        ; integer unicode value
+
 
 
 Coretta                Expires February 23, 2025               [Page 14]
