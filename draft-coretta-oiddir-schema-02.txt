@@ -194,16 +194,17 @@ Coretta                Expires February 23, 2025                [Page 3]
          2.5.4. 'x660Context .........................................47
          2.5.5. 'x667Context .........................................48
          2.5.6. 'x680Context .........................................48
-         2.5.7. 'iTUTRegistration' ...................................48
-         2.5.8. 'iSORegistration' ....................................49
-         2.5.9. 'jointISOITUTRegistration' ...........................49
-         2.5.10. 'spatialContext' ....................................50
-         2.5.11. 'registrationSupplement' ............................50
-         2.5.12. 'firstAuthorityContext' .............................50
-         2.5.13. 'currentAuthorityContext' ...........................51
-         2.5.14. 'sponsorContext' ....................................51
-         2.5.15. 'registrant' ........................................52
-         2.5.16. 'rADUAConfig' .......................................52
+         2.5.7. 'x690Context .........................................48
+         2.5.8. 'iTUTRegistration' ...................................48
+         2.5.9. 'iSORegistration' ....................................49
+         2.5.10. 'jointISOITUTRegistration' ..........................49
+         2.5.11. 'spatialContext' ....................................50
+         2.5.12. 'registrationSupplement' ............................50
+         2.5.13. 'firstAuthorityContext' .............................50
+         2.5.14. 'currentAuthorityContext' ...........................51
+         2.5.15. 'sponsorContext' ....................................51
+         2.5.16. 'registrant' ........................................52
+         2.5.17. 'rADUAConfig' .......................................52
       2.6. DIT Content Rules .........................................52
       2.7. Name Forms ................................................53
          2.7.1. 'nRootArcForm' .......................................53
@@ -226,13 +227,15 @@ Coretta                Expires February 23, 2025                [Page 3]
    The schema is used to define content and -- to a degree -- structure
    within the directory.
 
-   In context, the definitions set forth are based on concepts derived
-   from ITU-T Recommendations [X.660], [X.680], [RFC2578], et al.
+
 
 Coretta                Expires February 23, 2025                [Page 4]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
+
+   In context, the definitions set forth are based on concepts derived
+   from ITU-T Recommendations [X.660], [X.680], [RFC2578], et al.
 
    The intended end result is a directory service specially suited to
    operate as an object identifier registration authority service.
@@ -284,13 +287,12 @@ Coretta                Expires February 23, 2025                [Page 4]
      - 1.3.6.1.1.16.1 (UUID syntax, matching rule and ordering rule, per
        Sections 2.1, 2.2 and 2.3 of [RFC4530] respectively)
 
-     - 1.3.6.1.4.1.1466.115.121.1.12 (DN syntax and matching rule, per
-       Section 4.2.15 of [RFC4517])
-
 Coretta                Expires February 23, 2025                [Page 5]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
+     - 1.3.6.1.4.1.1466.115.121.1.12 (DN syntax and matching rule, per
+       Section 4.2.15 of [RFC4517])
 
      - 1.3.6.1.4.1.1466.115.121.1.24 (Generalized Time syntax, per
        Section 3.3.13 of [RFC4517])
@@ -338,17 +340,19 @@ Coretta                Expires February 23, 2025                [Page 5]
 
 2.3.  Attribute Types
 
-   The following subsections detail one hundred two (102) LDAP attribute
+   The following subsections detail one hundred three (103) attribute
    types created for use within implementations of this specification.
 
-   Please note that a great many of these attribute type definitions are
-   sub types of attribute types defined in the following Standards, and
-   as such are considered dependencies:
+
 
 Coretta                Expires February 23, 2025                [Page 6]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
+
+   Please note that a great many of these attribute type definitions are
+   sub types of attribute types defined in the following Standards, and
+   as such are considered dependencies:
 
      - [RFC2079] for URI support
      - [RFC4519] for so-called "core" schema elements
@@ -399,14 +403,13 @@ Coretta                Expires February 23, 2025                [Page 6]
    The 'iRI' attribute type allows the assignment of one (1) or more
    OID-IRI values to a registration.
 
-   A practical ABNF production for this attribute type, as derived from
-   clause 34.3 of ITU-T Rec. [X.680], is as follows:
-
-
 Coretta                Expires February 23, 2025                [Page 7]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
+
+   A practical ABNF production for this attribute type, as derived from
+   clause 34.3 of ITU-T Rec. [X.680], is as follows:
 
      subArcId   = SOLIDUS arcId [ subArcId ]
      arcId      = SOLIDUS ( intUV / nintUV )
@@ -454,17 +457,21 @@ Coretta                Expires February 23, 2025                [Page 7]
 
    Examples: "{itu-t(0)}", "{iso(1) identified-organization(3)}"
 
+
+
+
+
+Coretta                Expires February 23, 2025                [Page 8]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
+
 2.3.5.  'unicodeValue'
 
    The 'unicodeValue' attribute type allows the assignment of a single
    non-integer Unicode label to a registration, per ITU-T Rec. [X.660].
 
    A practical ABNF production for this attribute type is as follows:
-
-Coretta                Expires February 23, 2025                [Page 8]
-
-Internet-Draft        The OID Directory: Schema              August 2024
-
 
      uval = 1*iunreserved
 
@@ -509,6 +516,14 @@ Coretta                Expires February 23, 2025                [Page 8]
    As a practical ABNF production, the above clause translates as
    follows:
 
+
+
+
+Coretta                Expires February 23, 2025                [Page 9]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
+
       identifier  = leadkeychar *keychar
       leadkeychar = LOWER
       keychar     = *( [ HYPHEN ] ( ALPHA / DIGIT ) )
@@ -518,11 +533,6 @@ Coretta                Expires February 23, 2025                [Page 8]
       LOWER       = "%x61-%x7a"       ; a-z
       DIGIT       = "%x30-%x39"       ; 0-9
       HYPHEN      = "%x2d"            ; "-"
-
-Coretta                Expires February 23, 2025                [Page 9]
-
-Internet-Draft        The OID Directory: Schema              August 2024
-
 
    The attribute type 'name', as defined in Section 2.18 of [RFC4519],
    is a super type of this attribute type.
@@ -564,16 +574,6 @@ Coretta                Expires February 23, 2025                [Page 9]
    applicable in any non-zero quantity or combination, as no defined
    syntax or standard exists to govern this type.
 
-      ( 1.3.6.1.4.1.56521.101.2.3.9
-          NAME 'registrationInformation'
-          DESC 'Extended octet-based registration data'
-          SYNTAX 1.3.6.1.4.1.1466.115.121.1.40 )
-
-   Example: "Acme, Co., Research & Development, Copyright (c) 2024"
-
-
-
-
 
 
 
@@ -581,6 +581,13 @@ Coretta                Expires February 23, 2025               [Page 10]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
+
+      ( 1.3.6.1.4.1.56521.101.2.3.9
+          NAME 'registrationInformation'
+          DESC 'Extended octet-based registration data'
+          SYNTAX 1.3.6.1.4.1.1466.115.121.1.40 )
+
+   Example: "Acme, Co., Research & Development, Copyright (c) 2024"
 
 2.3.10.  'registrationURI'
 
@@ -628,17 +635,17 @@ Coretta                Expires February 23, 2025               [Page 10]
    A practical ABNF production for this attribute type is defined within
    Section 3.3.13 of [RFC4517].
 
+Coretta                Expires February 23, 2025               [Page 11]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
+
       ( 1.3.6.1.4.1.56521.101.2.3.12
           NAME 'registrationModified'
           DESC 'Generalized timestamps for registration modifications'
           EQUALITY generalizedTimeMatch
           ORDERING generalizedTimeOrderingMatch
           SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 )
-
-Coretta                Expires February 23, 2025               [Page 11]
-
-Internet-Draft        The OID Directory: Schema              August 2024
-
 
    Examples: "19951231115959Z", "20130109033116Z"
 
@@ -686,17 +693,16 @@ Coretta                Expires February 23, 2025               [Page 11]
    A practical ABNF production for the super type, 'description', can be
    found within Section 3.3.6 in [RFC4517].
 
+Coretta                Expires February 23, 2025               [Page 12]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
+
       ( 1.3.6.1.4.1.56521.101.2.3.15
           NAME 'registrationClassification'
           DESC 'Known registration classification'
           SUP description
           SINGLE-VALUE )
-
-
-Coretta                Expires February 23, 2025               [Page 12]
-
-Internet-Draft        The OID Directory: Schema              August 2024
-
 
    Examples: "Standard", "Individual", "ASN.1 Modules"
 
@@ -744,17 +750,17 @@ Coretta                Expires February 23, 2025               [Page 12]
    A.3 of ITU-T Rec. [X.660], to a registration only if its 'identifier'
    value is considered standardized.
 
-   A practical ABNF production for this attribute type is as follows:
-
-     stdnf = LCURL nonfs RCURL
-     nonfs = nonf *( SPACE nonf )
-     nonf  = ( identifier / number ) ; name OR number
-
 
 Coretta                Expires February 23, 2025               [Page 13]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
+
+   A practical ABNF production for this attribute type is as follows:
+
+     stdnf = LCURL nonfs RCURL
+     nonfs = nonf *( SPACE nonf )
+     nonf  = ( identifier / number ) ; name OR number
 
      SPACE = "%x20"      ; " "
      LCURL = "%x7b"      ; "{"
@@ -803,16 +809,14 @@ Coretta                Expires February 23, 2025               [Page 13]
 
    A practical ABNF production for this attribute type is as follows:
 
-     longArc    = SOLIDUS ( intUV / nintUV )
-     nintUV     = 1*iunreserved ; non-integer unicode value
-     intUV      = number        ; integer unicode value
-
-
-
 Coretta                Expires February 23, 2025               [Page 14]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
+
+     longArc    = SOLIDUS ( intUV / nintUV )
+     nintUV     = 1*iunreserved ; non-integer unicode value
+     intUV      = number        ; integer unicode value
 
       ( 1.3.6.1.4.1.56521.101.2.3.20
           NAME 'longArc'
@@ -860,17 +864,19 @@ Coretta                Expires February 23, 2025               [Page 14]
    The attribute type 'distinguishedName', as defined in Section 2.7 of
    [RFC4519], is a super type of this attribute type.
 
-      ( 1.3.6.1.4.1.56521.101.2.3.22
-          NAME 'c-supArc'
-          DESC 'Collective immediate superior registration DN'
-          SUP distinguishedName
-          COLLECTIVE )
+
 
 
 Coretta                Expires February 23, 2025               [Page 15]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
+
+      ( 1.3.6.1.4.1.56521.101.2.3.22
+          NAME 'c-supArc'
+          DESC 'Collective immediate superior registration DN'
+          SUP distinguishedName
+          COLLECTIVE )
 
    Example: "n=1,n=2,ou=Registrations,o=rA"
 
@@ -918,17 +924,13 @@ Coretta                Expires February 23, 2025               [Page 15]
           SUP distinguishedName
           COLLECTIVE )
 
-   Example: "n=2,ou=Registrations,o=rA"
-
-
-
-
-
 
 Coretta                Expires February 23, 2025               [Page 16]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
+
+   Example: "n=2,ou=Registrations,o=rA"
 
 2.3.25.  'subArc'
 
@@ -979,14 +981,15 @@ Coretta                Expires February 23, 2025               [Page 16]
    to a registration.  The value SHOULD reference the entry which bears
    the lowest 'n' value of any of its siblings.
 
-   A practical ABNF production for this attribute type can be found in
-   Section 3 of [RFC4514].
 
 
 Coretta                Expires February 23, 2025               [Page 17]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
+
+   A practical ABNF production for this attribute type can be found in
+   Section 3 of [RFC4514].
 
    The attribute type 'distinguishedName', as defined in Section 2.7 of
    [RFC4519], is a super type of this attribute type.
@@ -1036,9 +1039,6 @@ Coretta                Expires February 23, 2025               [Page 17]
 
    The attribute type 'distinguishedName', as defined in Section 2.7 of
    [RFC4519], is a super type of this attribute type.
-
-
-
 
 
 Coretta                Expires February 23, 2025               [Page 18]
@@ -1984,7 +1984,6 @@ Coretta                Expires February 23, 2025               [Page 34]
 
 2.3.72.  'firstAuthorityTitle'
 
-
    The 'firstAuthorityTitle' attribute type allows for the assignment
    of an official or professional title to a previous authority entry.
 
@@ -2026,6 +2025,7 @@ Coretta                Expires February 23, 2025               [Page 34]
 
    A practical ABNF production for this attribute type can be found in
    Section 3 of [RFC4514].
+
 
 Coretta                Expires February 23, 2025               [Page 35]
 
@@ -2672,7 +2672,7 @@ Coretta                Expires February 23, 2025               [Page 46]
 
 2.5.  Object Classes
 
-   The following subsections describe sixteen (16) LDAP object classes
+   The following subsections describe seventeen (17) object classes
    defined within this ID.
 
 2.5.1.  'registration'
@@ -2715,7 +2715,7 @@ Coretta                Expires February 23, 2025               [Page 46]
           DESC 'X.660, cl. A.3-A.5: subordinate arc class'
           SUP registration STRUCTURAL )
 
-2.5.4. 'x660Context'
+2.5.4.  'x660Context'
 
    The 'x660Context' AUXILIARY class extends a collection of attribute
    types derived from Rec. ITU-T [X.660].
@@ -2740,7 +2740,7 @@ Coretta                Expires February 23, 2025               [Page 47]
                 standardizedNameForm $
                 unicodeValue ) )
 
-2.5.5. 'x667Context'
+2.5.5.  'x667Context'
 
    The 'x667Context' AUXILIARY class extends a single attribute type,
    'registeredUUID' as defined in Section 2.3.101, for use within the
@@ -2752,7 +2752,7 @@ Coretta                Expires February 23, 2025               [Page 47]
           SUP registration AUXILIARY
           MUST registeredUUID )
 
-2.5.6. 'x680Context'
+2.5.6.  'x680Context'
 
    The 'x680Context' AUXILIARY class extends a collection of attribute
    types derived from ITU-T Rec. [X.680].
@@ -2768,7 +2768,25 @@ Coretta                Expires February 23, 2025               [Page 47]
                 iRI $
                 nameAndNumberForm ) )
 
-2.5.7.  'iTUTRegistration'
+2.5.7.  'x690Context'
+
+   The 'x690Context' AUXILIARY class extends a collection of attribute
+   types derived from ITU-T Rec. [X.690].  Additional encoding types
+   that may be added in future revisions or extensions of this ID will
+   be specified in the MAY clause of this class.
+
+      ( 1.3.6.1.4.1.56521.101.2.5.7
+          NAME 'x690Context'
+          DESC 'X.690 contextual class'
+          SUP registration AUXILIARY
+          MAY dotEncoding )
+
+Coretta                Expires February 23, 2025               [Page 48]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
+
+2.5.8.  'iTUTRegistration'
 
    The 'iTUTRegistration' AUXILIARY class labels the registration as
    belonging to the International Telecommunications Union (ITU-T) in
@@ -2777,26 +2795,21 @@ Coretta                Expires February 23, 2025               [Page 47]
    It is NOT RECOMMENDED to assign this class to any entry which bears
    the 'rootArc' STRUCTURAL object class, per in Section 2.5.1.  This
    class SHALL NOT appear on entries bearing the 'iSORegistration' (per
-   Section 2.5.8) or 'jointISOITUTRegistration' (per Section 2.5.9)
+   Section 2.5.9) or 'jointISOITUTRegistration' (per Section 2.5.10)
    class.
 
+   The 'x660Context' (Section 2.5.4), 'x680Context' (Section 2.5.6) and
+   'x690Context' (Section 2.5.7) are super classes of this class.
 
-Coretta                Expires February 23, 2025               [Page 48]
-
-Internet-Draft        The OID Directory: Schema              August 2024
-
-
-   The 'x660Context' (Section 2.5.4) and 'x680Context' (Section 2.5.6)
-   are super classes of this class.
-
-      ( 1.3.6.1.4.1.56521.101.2.5.7
+      ( 1.3.6.1.4.1.56521.101.2.5.8
           NAME 'iTUTRegistration'
           DESC 'X.660, cl. A.2: ITU-T'
           SUP ( x660Context $
-                x680Context )
+                x680Context $
+                x690Context )
           AUXILIARY )
 
-2.5.8.  'iSORegistration'
+2.5.9.  'iSORegistration'
 
    The 'iSORegistration' AUXILIARY class labels the OID registration as
    belonging to the International Organization for Standardization (ISO)
@@ -2805,54 +2818,53 @@ Coretta                Expires February 23, 2025               [Page 48]
    It is NOT RECOMMENDED to assign this class to any entry which bears
    the 'rootArc' STRUCTURAL object class, per Section 2.5.1.  This class
    SHALL NOT appear on entries bearing the 'iTUTRegistration' (defined
-   in Section 2.5.7) or 'jointISOITUTRegistration' (per Section 2.5.9)
+   in Section 2.5.8) or 'jointISOITUTRegistration' (per Section 2.5.10)
    class.
 
-   The 'x660Context' (Section 2.5.4) and 'x680Context' (Section 2.5.6)
-   are super classes of this class.
+   The 'x660Context' (Section 2.5.4), 'x680Context' (Section 2.5.6) and
+   'x690Context' (Section 2.5.7) are super classes of this class.
 
-      ( 1.3.6.1.4.1.56521.101.2.5.8
+      ( 1.3.6.1.4.1.56521.101.2.5.9
           NAME 'iSORegistration'
           DESC 'X.660, cl. A.2: ISO'
           SUP ( x660Context $
-                x680Context )
+                x680Context $
+                x690Context )
           AUXILIARY )
 
-2.5.9.  'jointISOITUTRegistration'
+2.5.10.  'jointISOITUTRegistration'
 
    The 'jointISOITUTRegistration' AUXILIARY class labels a registration
    as being jointly administered by the International Organization for
    Standardization (ISO) and the International Telecommunications Union
    (ITU-T) in cooperative fashion.
 
-   It is NOT RECOMMENDED to assign this class to any entry which bears
-   the 'rootArc' STRUCTURAL object class, per Section 2.5.1.  This class
-   SHALL NOT appear on entries bearing the 'iTUTRegistration' (defined
-   in Section 2.5.7) or 'iSORegistration' (per Section 2.5.8) class.
-
-   This class extends use of the 'longArc' attribute type, as defined in
-   Section 2.3.20.
-
-   The 'x660Context' (Section 2.5.4) and 'x680Context' (Section 2.5.6)
-   are super classes of this class.
-
-
-
-
 Coretta                Expires February 23, 2025               [Page 49]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
 
-      ( 1.3.6.1.4.1.56521.101.2.5.9
+   It is NOT RECOMMENDED to assign this class to any entry which bears
+   the 'rootArc' STRUCTURAL object class, per Section 2.5.1.  This class
+   SHALL NOT appear on entries bearing the 'iTUTRegistration' (defined
+   in Section 2.5.8) or 'iSORegistration' (per Section 2.5.9) class.
+
+   This class extends use of the 'longArc' attribute type, as defined in
+   Section 2.3.20.
+
+   The 'x660Context' (Section 2.5.4), 'x680Context' (Section 2.5.6) and
+   'x690Context' (Section 2.5.7) are super classes of this class.
+
+      ( 1.3.6.1.4.1.56521.101.2.5.10
           NAME 'jointISOITUTRegistration'
           DESC 'X.660, cl. A.2: Joint ISO/ITU-T Administration'
           SUP ( x660Context $
-                x680Context )
+                x680Context $
+                x690Context )
           AUXILIARY
           MAY longArc )
 
-2.5.10.  'spatialContext'
+2.5.11.  'spatialContext'
 
    The 'spatialContext' AUXILIARY class extends vertical and horizontal
    associative attribute types intended to describe the logical position
@@ -2864,20 +2876,33 @@ Coretta                Expires February 23, 2025               [Page 49]
 
    See the RADIT ID for further details on this topic.
 
-      ( 1.3.6.1.4.1.56521.101.2.5.10
+      ( 1.3.6.1.4.1.56521.101.2.5.11
           NAME 'spatialContext'
           DESC 'Logical spatial orientation and association class'
           SUP registration AUXILIARY
-          MAY ( topArc $ supArc $ subArc $
-                minArc $ maxArc $
-                leftArc $ rightArc ) )
+          MAY ( topArc $
+                supArc $
+                subArc $
+                minArc $
+                maxArc $
+                leftArc $
+                rightArc ) )
 
-2.5.11.  'registrationSupplement'
+2.5.12.  'registrationSupplement'
 
    The 'registrationSupplement' AUXILIARY class extends a variety of
    miscellaneous and non-standard attribute types for OPTIONAL.
 
-      ( 1.3.6.1.4.1.56521.101.2.5.11
+
+
+
+
+Coretta                Expires February 23, 2025               [Page 50]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
+
+      ( 1.3.6.1.4.1.56521.101.2.5.12
           NAME 'registrationSupplement'
           DESC 'Supplemental registration class'
           SUP registration AUXILIARY
@@ -2890,19 +2915,12 @@ Coretta                Expires February 23, 2025               [Page 49]
                 registrationStatus $
                 registrationURI ) )
 
-2.5.12.  'firstAuthorityContext'
+2.5.13.  'firstAuthorityContext'
 
    The 'firstAuthorityContext' AUXILIARY class extends attribute types
    intended to store previous authority information.
 
-
-
-Coretta                Expires February 23, 2025               [Page 50]
-
-Internet-Draft        The OID Directory: Schema              August 2024
-
-
-      ( 1.3.6.1.4.1.56521.101.2.5.12
+      ( 1.3.6.1.4.1.56521.101.2.5.13
           NAME 'firstAuthorityContext'
           DESC 'Initial registration authority class'
           SUP top AUXILIARY
@@ -2925,12 +2943,24 @@ Coretta                Expires February 23, 2025               [Page 50]
                 firstAuthorityTitle $
                 firstAuthorityURI ) )
 
-2.5.13.  'currentAuthorityContext'
+2.5.14.  'currentAuthorityContext'
 
    The 'currentAuthorityContext' AUXILIARY class extends attribute types
    intended to store current authority information.
 
-      ( 1.3.6.1.4.1.56521.101.2.5.13
+
+
+
+
+
+
+
+Coretta                Expires February 23, 2025               [Page 51]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
+
+      ( 1.3.6.1.4.1.56521.101.2.5.14
           NAME 'currentAuthorityContext'
           DESC 'Current registration authority class'
           SUP top AUXILIARY
@@ -2952,20 +2982,12 @@ Coretta                Expires February 23, 2025               [Page 50]
                 currentAuthorityTitle $
                 currentAuthorityURI ) )
 
-
-
-
-Coretta                Expires February 23, 2025               [Page 51]
-
-Internet-Draft        The OID Directory: Schema              August 2024
-
-
-2.5.14.  'sponsorContext'
+2.5.15.  'sponsorContext'
 
    The 'currentAuthorityContext' AUXILIARY class extends attribute types
    intended to store sponsoring authority information.
 
-      ( 1.3.6.1.4.1.56521.101.2.5.14
+      ( 1.3.6.1.4.1.56521.101.2.5.15
           NAME 'sponsorContext'
           DESC 'Registration sponsoring authority class'
           SUP top AUXILIARY
@@ -2988,7 +3010,15 @@ Coretta                Expires February 23, 2025               [Page 51]
                 sponsorTitle $
                 sponsorURI ) )
 
-2.5.15.  'registrant'
+
+
+
+Coretta                Expires February 23, 2025               [Page 52]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
+
+2.5.16.  'registrant'
 
    The 'registrant' object class allows for current, previous (first)
    and/or sponsorship data to be stored within an entry.
@@ -3000,32 +3030,21 @@ Coretta                Expires February 23, 2025               [Page 51]
    of so-called dedicated authority entries, as described within the
    RADIT ID.
 
-      ( 1.3.6.1.4.1.56521.101.2.5.15
+      ( 1.3.6.1.4.1.56521.101.2.5.16
           NAME 'registrant'
           DESC 'Generalized auxiliary class for registrant data'
           SUP top STRUCTURAL
           MUST registrantID
           MAY ( description $ seeAlso $ rATTL ) )
 
-
-
-
-
-
-
-Coretta                Expires February 23, 2025               [Page 52]
-
-Internet-Draft        The OID Directory: Schema              August 2024
-
-
-2.5.16.  'rADUAConfig'
+2.5.17.  'rADUAConfig'
 
    The 'rADUAConfig' object class allows for the storage of so-called
    auto-discovered attribute types meant to guide the RA DUA in its
    attempt to access registration and/or registrant information stored
    within the RA DIT served by the RA DSA.
 
-      ( 1.3.6.1.4.1.56521.101.2.5.16
+      ( 1.3.6.1.4.1.56521.101.2.5.17
           NAME 'rADUAConfig'
           DESC 'RA DUA configuration advertisement class'
           SUP top AUXILIARY
@@ -3050,6 +3069,13 @@ Coretta                Expires February 23, 2025               [Page 52]
    manner, they are advised to consider the composition and use of one
    (1) or more custom rules of this design.
 
+
+
+Coretta                Expires February 23, 2025               [Page 53]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
+
 2.7.  Name Forms
 
    This section defines three (3) Name Forms for use in the composition
@@ -3069,12 +3095,6 @@ Coretta                Expires February 23, 2025               [Page 52]
           DESC 'root arc name form for a number form RDN'
           OC rootArc
           MUST n )
-
-
-Coretta                Expires February 23, 2025               [Page 53]
-
-Internet-Draft        The OID Directory: Schema              August 2024
-
 
 2.7.2.  'nArcForm'
 
@@ -3108,6 +3128,12 @@ Coretta                Expires February 23, 2025               [Page 53]
    No DIT structure rules are officially defined anywhere in this ID
    series.
 
+
+Coretta                Expires February 23, 2025               [Page 54]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
+
    The name form definitions per Section 2.7 may be used in the creation
    of custom DIT structure rules by the directory administrator(s) if
    desired.  See Section 4.1.7.1 of [RFC4512] for details.
@@ -3119,20 +3145,6 @@ Coretta                Expires February 23, 2025               [Page 53]
 4.  Security Considerations
 
    There are no security considerations applicable to this ID.
-
-
-
-
-
-
-
-
-
-
-Coretta                Expires February 23, 2025               [Page 54]
-
-Internet-Draft        The OID Directory: Schema              August 2024
-
 
 5.  References
 
@@ -3173,6 +3185,13 @@ Coretta                Expires February 23, 2025               [Page 54]
    [RFC4122]  Leach, P., "A Universally Unique IDentifier (UUID) URN
               Namespace", RFC 4122, July 2005.
 
+
+
+Coretta                Expires February 23, 2025               [Page 55]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
+
    [RFC4512]  Zeilenga, K., "Lightweight Directory Access Protocol
               (LDAP): Directory Information Models", RFC 4512, June
               2006.
@@ -3184,13 +3203,6 @@ Coretta                Expires February 23, 2025               [Page 54]
    [RFC4517]  Legg, Ed., S., "Lightweight Directory Access Protocol
               (LDAP): Syntaxes and Matching Rules", RFC 4517, June
               2006.
-
-
-
-Coretta                Expires February 23, 2025               [Page 55]
-
-Internet-Draft        The OID Directory: Schema              August 2024
-
 
    [RFC4519]  Sciberras, Ed., A., "Lightweight Directory Access Protocol
               (LDAP): Schema for User Applications", RFC 4519, June
@@ -3223,6 +3235,21 @@ Coretta                Expires February 23, 2025               [Page 55]
               (ASN.1): Specification of basic notation", ITU-T X.680,
               July 2002.
 
+   [X.690]    International Telecommunication Union - Telecommunication
+              Standardization Sector, "ASN.1 encoding rules:
+              Specification of Basic Encoding Rules (BER), Canonical
+              Encoding Rules (CER) and Distinguished Encoding Rules
+              (DER)", ITU-T X.690, February 2021.
+
+
+
+
+
+Coretta                Expires February 23, 2025               [Page 56]
+
+Internet-Draft        The OID Directory: Schema              August 2024
+
+
 5.2.  Informative References
 
    [RFC1155]  Rose, M., "Structure and Identification of Management
@@ -3246,4 +3273,35 @@ Author's Address
    Email: jesse.coretta@icloud.com
 
 
-Coretta                Expires February 23, 2025               [Page 56]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Coretta                Expires February 23, 2025               [Page 57]
