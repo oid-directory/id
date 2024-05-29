@@ -185,19 +185,19 @@ Coretta                Expires February 23, 2025                [Page 3]
          2.3.100. 'rATTL' ............................................45
          2.3.101. 'c-rATTL' ..........................................45
          2.3.102. 'registeredUUID' ...................................46
-         2.3.103. 'dotEncoding' ......................................XX
+         2.3.103. 'dotEncoding' ......................................46
       2.4. Matching Rule Uses ........................................46
-      2.5. Object Classes ............................................46
-         2.5.1. 'registration' .......................................46
-         2.5.2. 'rootArc' ............................................46
+      2.5. Object Classes ............................................47
+         2.5.1. 'registration' .......................................47
+         2.5.2. 'rootArc' ............................................47
          2.5.3. 'arc' ................................................47
          2.5.4. 'x660Context .........................................47
-         2.5.5. 'x667Context .........................................47
-         2.5.6. 'x680Context .........................................47
+         2.5.5. 'x667Context .........................................48
+         2.5.6. 'x680Context .........................................48
          2.5.7. 'iTUTRegistration' ...................................48
-         2.5.8. 'iSORegistration' ....................................48
+         2.5.8. 'iSORegistration' ....................................49
          2.5.9. 'jointISOITUTRegistration' ...........................49
-         2.5.10. 'spatialContext' ....................................49
+         2.5.10. 'spatialContext' ....................................50
          2.5.11. 'registrationSupplement' ............................50
          2.5.12. 'firstAuthorityContext' .............................50
          2.5.13. 'currentAuthorityContext' ...........................51
@@ -227,7 +227,7 @@ Coretta                Expires February 23, 2025                [Page 3]
    within the directory.
 
    In context, the definitions set forth are based on concepts derived
-   from ITU-T Recommendations [X.660], [X.680], [RFC2578] et al.
+   from ITU-T Recommendations [X.660], [X.680], [RFC2578], et al.
 
 Coretta                Expires February 23, 2025                [Page 4]
 
@@ -252,7 +252,7 @@ Coretta                Expires February 23, 2025                [Page 4]
 1.3.  Allocations
 
    This specification extends the previously defined ID series OID root
-   '1.3.6.1.4.1.56521.101', defined in Section 1.6 of the RADIR ID:
+   1.3.6.1.4.1.56521.101, defined in Section 1.6 of the RADIR ID:
 
      - 1.3.6.1.4.1.56521.101.2 (schema)
      - 1.3.6.1.4.1.56521.101.2.3 (attributeTypes)
@@ -435,13 +435,15 @@ Coretta                Expires February 23, 2025                [Page 7]
    A practical ABNF production for this attribute type is as follows:
 
      asn1notation = LCURL forms RCURL
-     forms        = nanf *( SPACE nanf )
+     forms        = ( nanf / identifier ) *( SPACE ( nanf / number ) )
 
      SPACE        = "%x20"   ; " "
      LCURL        = "%x7b"   ; "{"
      RCURL        = "%x7d"   ; "}"
 
-   The 'nanf' ABNF originates in Section 2.3.19.
+   The 'nanf' ABNF originates in Section 2.3.19.  The 'identifier' ABNF
+   production originates in Section 2.3.7.  The 'number' ABNF production
+   originates in Section 1.4 of [RFC4512].
 
       ( 1.3.6.1.4.1.56521.101.2.3.4
           NAME 'aSN1Notation'
@@ -459,12 +461,12 @@ Coretta                Expires February 23, 2025                [Page 7]
 
    A practical ABNF production for this attribute type is as follows:
 
-     uval = 1*iunreserved
-
 Coretta                Expires February 23, 2025                [Page 8]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
+
+     uval = 1*iunreserved
 
    The ABNF production 'iunreserved' is defined in Section 2.2 of
    [RFC3987].
@@ -484,8 +486,7 @@ Coretta                Expires February 23, 2025                [Page 8]
    of one (1) or more additional non-integer Unicode labels, per clause
    3.5.2 of ITU-T Rec. [X.660], to a registration.
 
-   A practical ABNF production for this attribute type is defined within
-   Section 2.3.5.
+   A practical ABNF production for this type is defined in Section 2.3.5.
 
       ( 1.3.6.1.4.1.56521.101.2.3.6
           NAME 'additionalUnicodeValue'
@@ -517,7 +518,6 @@ Coretta                Expires February 23, 2025                [Page 8]
       LOWER       = "%x61-%x7a"       ; a-z
       DIGIT       = "%x30-%x39"       ; 0-9
       HYPHEN      = "%x2d"            ; "-"
-
 
 Coretta                Expires February 23, 2025                [Page 9]
 
@@ -572,15 +572,20 @@ Coretta                Expires February 23, 2025                [Page 9]
    Example: "Acme, Co., Research & Development, Copyright (c) 2024"
 
 
-2.3.10.  'registrationURI'
 
-   The 'registrationURI' attribute type allows for the assignment of one
-   (1) or more URI values, with optional labels, to a registration.
+
+
+
 
 Coretta                Expires February 23, 2025               [Page 10]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
+
+2.3.10.  'registrationURI'
+
+   The 'registrationURI' attribute type allows for the assignment of one
+   (1) or more URI values, with optional labels, to a registration.
 
    The attribute type 'labeledURI', as defined in [RFC2079], is a super
    type of this attribute type.
@@ -630,15 +635,12 @@ Coretta                Expires February 23, 2025               [Page 10]
           ORDERING generalizedTimeOrderingMatch
           SYNTAX 1.3.6.1.4.1.1466.115.121.1.24 )
 
-   Examples: "19951231115959Z", "20130109033116Z"
-
-
-
-
 Coretta                Expires February 23, 2025               [Page 11]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
+
+   Examples: "19951231115959Z", "20130109033116Z"
 
 2.3.13.  'registrationRange'
 
@@ -690,13 +692,13 @@ Coretta                Expires February 23, 2025               [Page 11]
           SUP description
           SINGLE-VALUE )
 
-   Examples: "Standard", "Individual", "ASN.1 Modules"
-
 
 Coretta                Expires February 23, 2025               [Page 12]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
+
+   Examples: "Standard", "Individual", "ASN.1 Modules"
 
 2.3.16.  'isLeafNode'
 
@@ -747,8 +749,6 @@ Coretta                Expires February 23, 2025               [Page 12]
      stdnf = LCURL nonfs RCURL
      nonfs = nonf *( SPACE nonf )
      nonf  = ( identifier / number ) ; name OR number
-
-
 
 
 Coretta                Expires February 23, 2025               [Page 13]
@@ -2645,6 +2645,7 @@ Coretta                Expires February 23, 2025               [Page 45]
      bytes         = 1*OCTET          ; encoded bytes
 
    The 'OCTET' ABNF production is defined within RFC 4512 Section 1.4.
+   The OID encoding scheme is defined in clause 8.19 of ITU-T Rec. X.690.
 
       ( 1.3.6.1.4.1.56521.101.2.3.103
           NAME 'dotEncoding'
@@ -2660,15 +2661,19 @@ Coretta                Expires February 23, 2025               [Page 45]
    No LDAP Matching Rule Uses definitions are defined anywhere in this
    ID series.
 
-2.5.  Object Classes
 
-   The following subsections describe sixteen (16) LDAP object classes
-   defined within this ID.
+
+
 
 Coretta                Expires February 23, 2025               [Page 46]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
+
+2.5.  Object Classes
+
+   The following subsections describe sixteen (16) LDAP object classes
+   defined within this ID.
 
 2.5.1.  'registration'
 
@@ -2714,11 +2719,6 @@ Coretta                Expires February 23, 2025               [Page 46]
 
    The 'x660Context' AUXILIARY class extends a collection of attribute
    types derived from Rec. ITU-T [X.660].
-
-
-
-
-
 
 
 
@@ -2909,13 +2909,14 @@ Coretta                Expires February 23, 2025               [Page 50]
           MAY ( firstAuthorityCommonName $
                 firstAuthorityCountryCode $
                 firstAuthorityCountryName $
-                firstAuthorityCountryName $
                 firstAuthorityEmail $
                 firstAuthorityEndTimestamp $
                 firstAuthorityFax $
                 firstAuthorityLocality $
                 firstAuthorityMobile $
                 firstAuthorityOrg $
+                firstAuthorityPOBox $
+                firstAuthorityPostalAddress $
                 firstAuthorityPostalCode $
                 firstAuthorityStartTimestamp $
                 firstAuthorityState $
@@ -2936,12 +2937,13 @@ Coretta                Expires February 23, 2025               [Page 50]
           MAY ( currentAuthorityCommonName $
                 currentAuthorityCountryCode $
                 currentAuthorityCountryName $
-                currentAuthorityCountryName $
                 currentAuthorityEmail $
                 currentAuthorityFax $
                 currentAuthorityLocality $
                 currentAuthorityMobile $
                 currentAuthorityOrg $
+                currentAuthorityPOBox $
+                currentAuthorityPostalAddress $
                 currentAuthorityPostalCode $
                 currentAuthorityStartTimestamp $
                 currentAuthorityState $
@@ -2949,8 +2951,6 @@ Coretta                Expires February 23, 2025               [Page 50]
                 currentAuthorityTelephone $
                 currentAuthorityTitle $
                 currentAuthorityURI ) )
-
-
 
 
 
@@ -2972,13 +2972,14 @@ Coretta                Expires February 23, 2025               [Page 51]
           MAY ( sponsorCommonName $
                 sponsorCountryCode $
                 sponsorCountryName $
-                sponsorCountryName $
                 sponsorEmail $
                 sponsorEndTimestamp $
                 sponsorFax $
                 sponsorLocality $
                 sponsorMobile $
                 sponsorOrg $
+                sponsorPOBox $
+                sponsorPostalAddress $
                 sponsorPostalCode $
                 sponsorStartTimestamp $
                 sponsorState $
@@ -3005,7 +3006,6 @@ Coretta                Expires February 23, 2025               [Page 51]
           SUP top STRUCTURAL
           MUST registrantID
           MAY ( description $ seeAlso $ rATTL ) )
-
 
 
 
