@@ -75,12 +75,12 @@ Table of Contents
          2.3.2. 'dotNotation' .........................................7
          2.3.3. 'iRI' .................................................7
          2.3.4. 'aSN1Notation' ........................................8
-         2.3.5. 'unicodeValue' ........................................8
+         2.3.5. 'unicodeValue' ........................................9
          2.3.6. 'additionalUnicodeValue' ..............................9
          2.3.7. 'identifier' ..........................................9
          2.3.8. 'secondaryIdentifier' ................................10
          2.3.9. 'registrationInformation' ............................10
-         2.3.10. 'registrationURI' ...................................10
+         2.3.10. 'registrationURI' ...................................11
          2.3.11. 'registrationCreated' ...............................11
          2.3.12. 'registrationModified' ..............................11
          2.3.13. 'registrationRange' .................................12
@@ -195,28 +195,28 @@ Coretta                Expires February 23, 2025                [Page 3]
          2.5.5. 'x667Context .........................................48
          2.5.6. 'x680Context .........................................48
          2.5.7. 'x690Context .........................................48
-         2.5.8. 'iTUTRegistration' ...................................48
+         2.5.8. 'iTUTRegistration' ...................................49
          2.5.9. 'iSORegistration' ....................................49
          2.5.10. 'jointISOITUTRegistration' ..........................49
          2.5.11. 'spatialContext' ....................................50
          2.5.12. 'registrationSupplement' ............................50
-         2.5.13. 'firstAuthorityContext' .............................50
+         2.5.13. 'firstAuthorityContext' .............................51
          2.5.14. 'currentAuthorityContext' ...........................51
-         2.5.15. 'sponsorContext' ....................................51
-         2.5.16. 'registrant' ........................................52
-         2.5.17. 'rADUAConfig' .......................................52
-      2.6. DIT Content Rules .........................................52
-      2.7. Name Forms ................................................53
-         2.7.1. 'nRootArcForm' .......................................53
-         2.7.2. 'nArcForm' ...........................................53
-         2.7.3. 'dotNotationArcForm' .................................53
-      2.8. DIT Structure Rules .......................................53
-   3. IANA Considerations ............................................54
-   4. Security Considerations ........................................54
-   5. References .....................................................54
-      5.1. Normative References ......................................54
-      5.2. Informative References ....................................55
-   Author's Address ..................................................56
+         2.5.15. 'sponsorContext' ....................................52
+         2.5.16. 'registrant' ........................................53
+         2.5.17. 'rADUAConfig' .......................................53
+      2.6. DIT Content Rules .........................................53
+      2.7. Name Forms ................................................54
+         2.7.1. 'nRootArcForm' .......................................54
+         2.7.2. 'nArcForm' ...........................................54
+         2.7.3. 'dotNotationArcForm' .................................54
+      2.8. DIT Structure Rules .......................................54
+   3. IANA Considerations ............................................55
+   4. Security Considerations ........................................55
+   5. References .....................................................55
+      5.1. Normative References ......................................55
+      5.2. Informative References ....................................57
+   Author's Address ..................................................57
 
 1.  Introduction
 
@@ -493,7 +493,8 @@ Coretta                Expires February 23, 2025                [Page 8]
    of one (1) or more additional non-integer Unicode labels, per clause
    3.5.2 of ITU-T Rec. [X.660], to a registration.
 
-   A practical ABNF production for this type is defined in Section 2.3.5.
+   A practical ABNF production for this attribute type is defined within
+   Section 2.3.5.
 
       ( 1.3.6.1.4.1.56521.101.2.3.6
           NAME 'additionalUnicodeValue'
@@ -515,7 +516,6 @@ Coretta                Expires February 23, 2025                [Page 8]
 
    As a practical ABNF production, the above clause translates as
    follows:
-
 
 
 
@@ -2645,7 +2645,8 @@ Coretta                Expires February 23, 2025               [Page 45]
      bytes         = 1*OCTET          ; encoded bytes
 
    The 'OCTET' ABNF production is defined within RFC 4512 Section 1.4.
-   The OID encoding scheme is defined in clause 8.19 of ITU-T Rec. X.690.
+   The OID encoding scheme is defined within clause 8.19 of ITU-T Rec.
+   X.690.
 
       ( 1.3.6.1.4.1.56521.101.2.3.103
           NAME 'dotEncoding'
@@ -2660,7 +2661,6 @@ Coretta                Expires February 23, 2025               [Page 45]
 
    No LDAP Matching Rule Uses definitions are defined anywhere in this
    ID series.
-
 
 
 
@@ -2686,8 +2686,7 @@ Coretta                Expires February 23, 2025               [Page 46]
           DESC 'Abstract OID arc class'
           SUP top ABSTRACT
           MUST n
-          MAY ( description $
-                seeAlso ) )
+          MAY ( description $ seeAlso $ rATTL ) )
 
 2.5.2.  'rootArc'
 
@@ -2720,6 +2719,7 @@ Coretta                Expires February 23, 2025               [Page 46]
 
    The 'x660Context' AUXILIARY class extends a collection of attribute
    types derived from Rec. ITU-T [X.660].
+
 
 
 
@@ -2762,7 +2762,6 @@ Coretta                Expires February 23, 2025               [Page 47]
           DESC 'X.680 contextual class'
           SUP registration AUXILIARY
           MAY ( aSN1Notation $
-                dotEncoding $
                 dotNotation $
                 identifier $
                 iRI $
@@ -2780,6 +2779,7 @@ Coretta                Expires February 23, 2025               [Page 47]
           DESC 'X.690 contextual class'
           SUP registration AUXILIARY
           MAY dotEncoding )
+
 
 Coretta                Expires February 23, 2025               [Page 48]
 
@@ -2906,10 +2906,7 @@ Coretta                Expires February 23, 2025               [Page 50]
           NAME 'registrationSupplement'
           DESC 'Supplemental registration class'
           SUP registration AUXILIARY
-          MAY ( discloseTo $
-                rATTL $
-                isFrozen $
-                isLeafNode $
+          MAY ( discloseTo $ isFrozen $ isLeafNode $
                 registrationClassification $
                 registrationCreated $
                 registrationInformation $
@@ -2950,6 +2947,9 @@ Coretta                Expires February 23, 2025               [Page 50]
 
    The 'currentAuthorityContext' AUXILIARY class extends attribute types
    intended to store current authority information.
+
+
+
 
 
 
@@ -3037,7 +3037,7 @@ Coretta                Expires February 23, 2025               [Page 52]
           MUST registrantID
           MAY ( description $
                     seeAlso $
-                      rATTL ) )
+                    rATTL ) )
 
 2.5.17.  'rADUAConfig'
 
