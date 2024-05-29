@@ -2686,7 +2686,8 @@ Coretta                Expires February 23, 2025               [Page 46]
           DESC 'Abstract OID arc class'
           SUP top ABSTRACT
           MUST n
-          MAY ( description $ seeAlso $ rATTL ) )
+          MAY ( description $
+                seeAlso ) )
 
 2.5.2.  'rootArc'
 
@@ -2719,7 +2720,6 @@ Coretta                Expires February 23, 2025               [Page 46]
 
    The 'x660Context' AUXILIARY class extends a collection of attribute
    types derived from Rec. ITU-T [X.660].
-
 
 
 
@@ -2906,7 +2906,10 @@ Coretta                Expires February 23, 2025               [Page 50]
           NAME 'registrationSupplement'
           DESC 'Supplemental registration class'
           SUP registration AUXILIARY
-          MAY ( discloseTo $ isFrozen $ isLeafNode $
+          MAY ( discloseTo $
+                rATTL $
+                isFrozen $
+                isLeafNode $
                 registrationClassification $
                 registrationCreated $
                 registrationInformation $
@@ -2947,9 +2950,6 @@ Coretta                Expires February 23, 2025               [Page 50]
 
    The 'currentAuthorityContext' AUXILIARY class extends attribute types
    intended to store current authority information.
-
-
-
 
 
 
@@ -3035,7 +3035,9 @@ Coretta                Expires February 23, 2025               [Page 52]
           DESC 'Generalized auxiliary class for registrant data'
           SUP top STRUCTURAL
           MUST registrantID
-          MAY ( description $ seeAlso $ rATTL ) )
+          MAY ( description $
+                    seeAlso $
+                      rATTL ) )
 
 2.5.17.  'rADUAConfig'
 
@@ -3068,8 +3070,6 @@ Coretta                Expires February 23, 2025               [Page 52]
    individual registration and/or registrant entries in a more granular
    manner, they are advised to consider the composition and use of one
    (1) or more custom rules of this design.
-
-
 
 Coretta                Expires February 23, 2025               [Page 53]
 
