@@ -1,14 +1,14 @@
 
 
 RADSA                                                         J. Coretta
-Internet-Draft                                         February 29, 2024
+Internet-Draft                                           August 31, 2024
 Intended status: Experimental
 Obsoletes: X660LDAP
-Expires: August 27, 2024
+Expires: February 23, 2025
 
 
                    The OID Directory: The RA DSA
-                 draft-coretta-oiddir-radsa-00.txt
+                 draft-coretta-oiddir-radsa-01.txt
 
 Abstract
 
@@ -33,7 +33,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on August 27, 2024.
+   This Internet-Draft will expire on February 23, 2025.
 
 Copyright Notice
 
@@ -55,9 +55,9 @@ Copyright Notice
 
 
 
-Coretta                Expires August 27, 2024                  [Page 1]
+Coretta                Expires February 23, 2025                [Page 1]
 
-Internet-Draft      The OID Directory: RA Server           February 2024
+Internet-Draft      The OID Directory: RA Server             August 2024
 
 
 Table of Contents
@@ -113,9 +113,9 @@ Table of Contents
    See Section 1.3 of the RADIR I-D for all acronym references.
 
 
-Coretta                Expires August 27, 2024                  [Page 2]
+Coretta                Expires February 23, 2025                [Page 2]
 
-Internet-Draft      The OID Directory: RA Server           February 2024
+Internet-Draft      The OID Directory: RA Server             August 2024
 
 
 1.2.1.  Definitions
@@ -171,9 +171,9 @@ Coretta                Expires August 27, 2024                  [Page 2]
 
 
 
-Coretta                Expires August 27, 2024                  [Page 3]
+Coretta                Expires February 23, 2025                [Page 3]
 
-Internet-Draft      The OID Directory: RA Server           February 2024
+Internet-Draft      The OID Directory: RA Server             August 2024
 
 
    The RA DSA may or may not allow write-based operations -- such as Add
@@ -185,7 +185,7 @@ Coretta                Expires August 27, 2024                  [Page 3]
 
    The core capabilities defined in this section represent features that
    are assumed to be common to virtually any practical implementation of
-   the RA DSA component.  These are REQUIRED in virtually all cases.
+   the RA DSA component.  These are REQUIRED in all cases.
 
 2.2.1.  Schema Availability
 
@@ -201,7 +201,7 @@ Coretta                Expires August 27, 2024                  [Page 3]
 
    The RA DSA MUST have up-to-date knowledge of all attribute types and
    object classes defined in Sections 2.3 and 2.5 of the RASCHEMA I-D
-   respectively.  This is an absolute requirement.  The RA DSA MUST also
+   respectively.  This is a critical requirement.  The RA DSA MUST also
    be prepared to support sub typed attribute types.  See the beginning
    of Section 2.3 of the RASCHEMA I-D for dependency details.
 
@@ -210,16 +210,16 @@ Coretta                Expires August 27, 2024                  [Page 3]
    definition syntaxes respectively.
 
    The inclusion of name form definitions defined in Section 2.7 of the
-   RASCHEMA I-D is RECOMMENDED ONLY if support for DIT structure rules
+   RASCHEMA I-D is ONLY RECOMMENDED if support for DIT structure rules
    is positive within the directory architecture.  These name forms are
    designed to enforce the certain recommended DN syntax schemes based
    on the intended directory structure, however they serve no purpose if
-   they are not referenced by any DIT structure rules.
+   they are not referenced by any active DIT structure rules.
 
    This I-D series does not officially define any DIT structure rules,
    leaving that task to RA DSA administrative personnel because of the
    significant variations in their creation that are likely to manifest
-   among various implementations of this I-D.
+   among the various implementations of this I-D.
 
    Section 4.1.7 of [RFC4512] and clause 13.7 of ITU-T Rec. [X.501]
    cover the DIT structure rule and name form definitions.
@@ -229,9 +229,9 @@ Coretta                Expires August 27, 2024                  [Page 3]
    of definitions are better suited for tailored design rather than mass
    adoption.
 
-Coretta                Expires August 27, 2024                  [Page 4]
+Coretta                Expires February 23, 2025                [Page 4]
 
-Internet-Draft      The OID Directory: RA Server           February 2024
+Internet-Draft      The OID Directory: RA Server             August 2024
 
 
    DIT content rules are covered in Section 4.1.6 of [RFC4512] as well
@@ -287,9 +287,9 @@ Coretta                Expires August 27, 2024                  [Page 4]
    registration or registrant entries previously located in a request
    staging area following an approval process.
 
-Coretta                Expires August 27, 2024                  [Page 5]
+Coretta                Expires February 23, 2025                [Page 5]
 
-Internet-Draft      The OID Directory: RA Server           February 2024
+Internet-Draft      The OID Directory: RA Server             August 2024
 
 
    The DAP Modify Entry or LDAP Modify operations are used for the
@@ -345,9 +345,9 @@ Coretta                Expires August 27, 2024                  [Page 5]
 
 
 
-Coretta                Expires August 27, 2024                  [Page 6]
+Coretta                Expires February 23, 2025                [Page 6]
 
-Internet-Draft      The OID Directory: RA Server           February 2024
+Internet-Draft      The OID Directory: RA Server             August 2024
 
 
 2.3.3.  Attribute Value Constraints
@@ -403,9 +403,9 @@ Coretta                Expires August 27, 2024                  [Page 6]
    ITU-T Rec. [X.518].  Directory replication is discussed throughout
    ITU-T Rec. [X.525].
 
-Coretta                Expires August 27, 2024                  [Page 7]
+Coretta                Expires February 23, 2025                [Page 7]
 
-Internet-Draft      The OID Directory: RA Server           February 2024
+Internet-Draft      The OID Directory: RA Server             August 2024
 
 
 2.3.6.  Root DSE Extensibility
@@ -461,9 +461,9 @@ Coretta                Expires August 27, 2024                  [Page 7]
    AUXILIARY object class, which is expected and required by the RA DUA.
 
 
-Coretta                Expires August 27, 2024                  [Page 8]
+Coretta                Expires February 23, 2025                [Page 8]
 
-Internet-Draft      The OID Directory: RA Server           February 2024
+Internet-Draft      The OID Directory: RA Server             August 2024
 
 
       dn: dc=example,dc=com
@@ -519,9 +519,9 @@ Coretta                Expires August 27, 2024                  [Page 8]
    no official position regarding this strategy.
 
 
-Coretta                Expires August 27, 2024                  [Page 9]
+Coretta                Expires February 23, 2025                [Page 9]
 
-Internet-Draft      The OID Directory: RA Server           February 2024
+Internet-Draft      The OID Directory: RA Server             August 2024
 
 
    Depending on the scope of implementation as well as the potential use
@@ -548,16 +548,16 @@ Coretta                Expires August 27, 2024                  [Page 9]
 5.1.  Normative References
 
    RADIR      Coretta, J., "The OID Directory: A Technical Roadmap",
-              draft-coretta-oiddir-roadmap, February 2024.
+              draft-coretta-oiddir-roadmap,   August 2024.
 
    RADIT      Coretta, J., "The OID Directory: The RA DIT",
-              draft-coretta-oiddir-radit, February 2024.
+              draft-coretta-oiddir-radit,   August 2024.
 
    RADUA      Coretta, J., "The OID Directory: The RA DUA",
-              draft-coretta-oiddir-radua, February 2024.
+              draft-coretta-oiddir-radua,   August 2024.
 
    RASCHEMA   Coretta, J., "The OID Directory: The RA Schema",
-              draft-coretta-oiddir-schema, February 2024.
+              draft-coretta-oiddir-schema,   August 2024.
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119, March 1997.
@@ -577,9 +577,9 @@ Coretta                Expires August 27, 2024                  [Page 9]
               2006.
 
 
-Coretta                Expires August 27, 2024                 [Page 10]
+Coretta                Expires February 23, 2025               [Page 10]
 
-Internet-Draft      The OID Directory: RA Server           February 2024
+Internet-Draft      The OID Directory: RA Server             August 2024
 
 
    [RFC4519]  Sciberras, Ed., A., "Lightweight Directory Access Protocol
@@ -635,9 +635,9 @@ Coretta                Expires August 27, 2024                 [Page 10]
 
 
 
-Coretta                Expires August 27, 2024                 [Page 11]
+Coretta                Expires February 23, 2025               [Page 11]
 
-Internet-Draft      The OID Directory: RA Server           February 2024
+Internet-Draft      The OID Directory: RA Server             August 2024
 
 
 Author's Address
@@ -694,4 +694,4 @@ Author's Address
 
 
 
-Coretta                Expires August 27, 2024                 [Page 12]
+Coretta                Expires February 23, 2025               [Page 12]
