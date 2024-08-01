@@ -55,7 +55,7 @@ Copyright Notice
 
 
 
-Coretta                Expires February 23, 2025                [Page 1]
+Coretta               Expires February 23, 2025                 [Page 1]
 
 Internet-Draft      The OID Directory: RA Server             August 2024
 
@@ -113,7 +113,7 @@ Table of Contents
    See Section 1.3 of the RADIR I-D for all acronym references.
 
 
-Coretta                Expires February 23, 2025                [Page 2]
+Coretta               Expires February 23, 2025                 [Page 2]
 
 Internet-Draft      The OID Directory: RA Server             August 2024
 
@@ -171,7 +171,7 @@ Coretta                Expires February 23, 2025                [Page 2]
 
 
 
-Coretta                Expires February 23, 2025                [Page 3]
+Coretta               Expires February 23, 2025                 [Page 3]
 
 Internet-Draft      The OID Directory: RA Server             August 2024
 
@@ -229,7 +229,7 @@ Coretta                Expires February 23, 2025                [Page 3]
    of definitions are better suited for tailored design rather than mass
    adoption.
 
-Coretta                Expires February 23, 2025                [Page 4]
+Coretta               Expires February 23, 2025                 [Page 4]
 
 Internet-Draft      The OID Directory: RA Server             August 2024
 
@@ -287,7 +287,7 @@ Coretta                Expires February 23, 2025                [Page 4]
    registration or registrant entries previously located in a request
    staging area following an approval process.
 
-Coretta                Expires February 23, 2025                [Page 5]
+Coretta               Expires February 23, 2025                 [Page 5]
 
 Internet-Draft      The OID Directory: RA Server             August 2024
 
@@ -345,7 +345,7 @@ Coretta                Expires February 23, 2025                [Page 5]
 
 
 
-Coretta                Expires February 23, 2025                [Page 6]
+Coretta               Expires February 23, 2025                 [Page 6]
 
 Internet-Draft      The OID Directory: RA Server             August 2024
 
@@ -403,7 +403,7 @@ Coretta                Expires February 23, 2025                [Page 6]
    ITU-T Rec. [X.518].  Directory replication is discussed throughout
    ITU-T Rec. [X.525].
 
-Coretta                Expires February 23, 2025                [Page 7]
+Coretta               Expires February 23, 2025                 [Page 7]
 
 Internet-Draft      The OID Directory: RA Server             August 2024
 
@@ -461,7 +461,7 @@ Coretta                Expires February 23, 2025                [Page 7]
    AUXILIARY object class, which is expected and required by the RA DUA.
 
 
-Coretta                Expires February 23, 2025                [Page 8]
+Coretta               Expires February 23, 2025                 [Page 8]
 
 Internet-Draft      The OID Directory: RA Server             August 2024
 
@@ -519,7 +519,7 @@ Coretta                Expires February 23, 2025                [Page 8]
    no official position regarding this strategy.
 
 
-Coretta                Expires February 23, 2025                [Page 9]
+Coretta               Expires February 23, 2025                 [Page 9]
 
 Internet-Draft      The OID Directory: RA Server             August 2024
 
@@ -577,7 +577,7 @@ Coretta                Expires February 23, 2025                [Page 9]
               2006.
 
 
-Coretta                Expires February 23, 2025               [Page 10]
+Coretta               Expires February 23, 2025                [Page 10]
 
 Internet-Draft      The OID Directory: RA Server             August 2024
 
@@ -635,7 +635,7 @@ Coretta                Expires February 23, 2025               [Page 10]
 
 
 
-Coretta                Expires February 23, 2025               [Page 11]
+Coretta               Expires February 23, 2025                [Page 11]
 
 Internet-Draft      The OID Directory: RA Server             August 2024
 
