@@ -96,14 +96,14 @@ Table of Contents
 
 1.  Introduction
 
-   The X.500 Directory Information Tree is an abstract data structure
+   The [X.500] Directory Information Tree is an abstract data structure
    comprised of hierarchical contexts called entries.  Each entry bears
    an unambiguous reference -- a distinguished name -- to its location
    within the structure.
 
    Within the terms of this I-D series, this structure represents -- or
    houses -- an information base of OID registrations and registrants
-   in the context of ITU-T Recommendations X.660 and X.680, et al.
+   in the context of ITU-T Recommendations [X.660] and [X.680], et al.
 
 1.1.  Conventions
 
@@ -138,9 +138,9 @@ Coretta                Expires February 23, 2025                [Page 2]
 
 1.3.  Intended Audience
 
-   This I-D is specifically geared towards X.500/LDAP professionals,
-   such as administrators, architects or application developers tasked
-   with managing and/or implementing an RA DIT.
+   This I-D is specifically geared towards directory professionals, such
+   as administrators, architects or application developers tasked with
+   managing and/or implementing an RA DIT.
 
    General familiarity with the standards of X.500 and LDAP, as well as
    with the RASCHEMA, RADUA and RADSA I-Ds is STRONGLY RECOMMENDED.
@@ -199,7 +199,7 @@ Coretta                Expires February 23, 2025                [Page 3]
    consideration.  Adopters should decide how thorough their planned RA
    DIT shall be in terms of content.
 
-     - Which of the three (3) ITU-T Rec. X.660 root arcs will
+     - Which of the three (3) ITU-T Rec. [X.660] root arcs will
        be implemented?
      - Will subordinate registrations be retained indiscriminately, or
        are only specific arcs targeted?
@@ -246,7 +246,7 @@ Coretta                Expires February 23, 2025                [Page 4]
    to allow for larger portions of the RA DIT to function independently
    with dedicated resources and specialized security policies.
 
-   ITU-T Rec. X.518 defines the concepts of the distributed directory.
+   ITU-T Rec. [X.518] defines the concepts of the distributed directory.
 
 2.4.  User Base
 
@@ -332,8 +332,8 @@ Coretta                Expires February 23, 2025                [Page 5]
 
 3.  The RA DIT
 
-   The RA DIT is a traditional X.500/LDAP directory information tree
-   served by way of an RA DSA with which clients may interact.
+   The RA DIT is a traditional directory information tree served by way
+   of an RA DSA with which clients may interact.
 
    The RA DIT may or may not contain unrelated content such as employee
    accounts, user groups or other data.  This I-D series has no official
@@ -543,7 +543,7 @@ Coretta                Expires February 23, 2025                [Page 9]
 
 3.2.1.1.  Registrant Strategy
 
-   Per ITU-T Rec. X.660, there are three (3) types of authorities:
+   Per ITU-T Rec. [X.660], there are three (3) types of authorities:
 
      - Current
      - Previous (First)
@@ -660,7 +660,7 @@ Coretta                Expires February 23, 2025               [Page 11]
       mail: jesse.coretta@icloud.com
 
    The drawback of this replacement strategy is that this 'registrant'
-   entry cannot combine the ITU-T Rec. X.660 authority classifications
+   entry cannot combine the ITU-T Rec. [X.660] authority classifications
    within the bounds of a single 'registrant' entry any longer.
 
    For example, observe how two (2) distinct authority contexts reside
@@ -764,10 +764,9 @@ Coretta                Expires February 23, 2025               [Page 13]
    (3) -- meant to represent the absolute superior root context of any
    and all registrations of origin.
 
-   The three (3) root arcs -- defined in ITU-T Rec. X.660 -- are covered
-   in the following subsections and are expressed as LDIF entries.  Some
-   attribute values are both line-wrapped and indented due to character
-   lengths, which is permitted using LDIF.
+   The three (3) root arcs -- defined within ITU-T Rec. [X.660] -- are
+   covered in the following subsections, expressed as LDIF entries.  Use
+   of line-wrapping and indentation is in effect for large values.
 
    These registration forms are dimension neutral, meaning they manifest
    no differently regardless of directory model employed.
@@ -807,6 +806,7 @@ Coretta                Expires February 23, 2025               [Page 13]
       standardizedNameForm: {itu-t}
       additionalUnicodeValue: ITU-R
       registrationClassification: Standards development organization
+
 
 
 Coretta                Expires February 23, 2025               [Page 14]
@@ -1394,7 +1394,7 @@ Coretta                Expires February 23, 2025               [Page 24]
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
-   Specific methodologies relating to use varies greatly among the
+   Specific methodologies relating to use varies greatly among the many
    potential X.500/LDAP DSA products available today.  For the purposes
    of simplicity, this I-D assumes that 'subtreeSpecification' instances
    are assigned to subentries of the relevant directory entry.
