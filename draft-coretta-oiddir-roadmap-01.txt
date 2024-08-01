@@ -271,7 +271,7 @@ Coretta                Expires February 23, 2025                [Page 4]
 
    Alternatives to this I-D series include, but are not limited to:
 
-     - Implementation of ORS, per [X.672]
+     - Implementation of ORS, per ITU-T Rec. [X.672]
      - Use of proprietary end-user applications
      - Use of third party OID registration authority websites
      - Reference raw ASN.1 definitions or relevant standards
@@ -306,40 +306,40 @@ Coretta                Expires February 23, 2025                [Page 5]
    series and only where specificity is not relevant in context.
 
    The DAP Modify Operation is defined in clause 12.3 of ITU-T Rec.
-   X.511.  The LDAP Modify Operation is defined in Section 4.6 of
+   [X.511].  The LDAP Modify Operation is defined in Section 4.6 of
    [RFC4511].  The term "Modify Operation" is used to describe either
    of these operations.
 
    The DAP Modify DN Operation is defined in clause 12.4 of ITU-T Rec.
-   X.511.  The LDAP Modify DN Operation is defined within Section 4.9
+   [X.511].  The LDAP Modify DN Operation is defined within Section 4.9
    of [RFC4511].  The term "Modify DN Operation" is used to describe
    either of these operations.
 
    The DAP Search Operation is defined in clause 11.2 of ITU-T Rec.
-   X.511.  The DAP List Operation, considered an alternative form of
-   DAP Search, is defined in clause 11.1 of ITU-T Rec. X.511.   The
+   [X.511].  The DAP List Operation, considered an alternative form of
+   DAP Search, is defined in clause 11.1 of ITU-T Rec. [X.511].   The
    LDAP Search Operation is defined in Section 4.5 of [RFC4511].  The
    term "Search Operation" is used to describe either DAP or LDAP Search
    Operations.  Similarly, "List Operation" is the term used to describe
    either the DAP List Operation or an LDAP Search Operation using the
    singleLevel scope.
 
-   The DAP Read Operation is defined in clause 10.1 of ITU-T Rec. X.511.
-   The term "Read Operation" is used to describe either this operation
-   or a baseObject-scoped LDAP Search Operation.
+   The DAP Read Operation is defined within clause 10.1 of ITU-T Rec.
+   [X.511].  The term "Read Operation" is used to describe either this
+   operation or a baseObject-scoped LDAP Search Operation.
 
    The DAP Remove Entry Operation is defined in clause 12.2 of ITU-T
-   Rec. X.511.  The LDAP Delete Operation is defined in Section 4.8 of
+   Rec. [X.511].  The LDAP Delete Operation is defined in Section 4.8 of
    [RFC4511].  The term "Delete Operation" is used to describe either
    of these operations.
 
    The DAP Add Entry Operation is defined in clause 12.1 of ITU-T Rec.
-   X.511.  The LDAP Add Operation is defined within Section 4.7 of
+   [X.511].  The LDAP Add Operation is defined within Section 4.7 of
    [RFC4511].  The term "Add Operation" is used to describe either
    of these operations.
 
    The DAP SearchArgumentData.subset parameter is defined in clause
-   11.2.1 of ITU-T Rec. X.511.  The LDAP SearchRequest.scope parameter
+   11.2.1 of ITU-T Rec. [X.511].  The LDAP SearchRequest.scope parameter
    is defined in Section 4.5.1 of [RFC4511].  The terms "scope" and
    "scoped" describe either of these components in the context of a
    "Search Operation".
@@ -351,21 +351,21 @@ Coretta                Expires February 23, 2025                [Page 6]
 
 
    The DAP EntryInformationSelection ASN.1 SET is defined in clause 7.6
-   of ITU-T Rec. X.511.  The LDAP SearchRequest.attributeSelector is
+   of ITU-T Rec. [X.511].  The LDAP SearchRequest.attributeSelector is
    defined in Section 4.5.1.8 in [RFC4511].  The terms "selection" and
    "selector" describe either of these components in the context of
    refining the presentation of attribute types derived from entries
    obtained by way of the Search or Read Operations.
 
    The DAP EntryInformationSelection.infoTypes.attributeTypesOnly
-   parameter is defined within clause 7.6 of ITU-T Rec. X.511.  The
+   parameter is defined within clause 7.6 of ITU-T Rec. [X.511].  The
    equivalent LDAP SearchRequest.typesOnly parameter is defined in
    Section 4.5.1 of [RFC4511].  The term 'typesOnly' refers to either
    of these constructs in the context of occluding values during the
    presentation of entries retrieved using Read or Search Operations.
 
    The concepts of DIT Content Rules, DIT Structure Rules and Name Forms
-   are defined throughout Section 6 of ITU-T Rec. X.501 and in Section
+   are defined throughout Section 6 of ITU-T Rec. [X.501] and in Section
    4.1 of [RFC4512].
 
    The term "Write Operation" is an informal term used within this I-D
@@ -374,13 +374,13 @@ Coretta                Expires February 23, 2025                [Page 6]
    wherever specificity is not required.
 
    The root DSE is discussed in Section 5 of [RFC4512] and within clause
-   23.4.2 of ITU-T Rec. X.501.
+   23.4.2 of ITU-T Rec. [X.501].
 
    The 'subschemaSubentry' is defined in Section 4.2 of [RFC4512].
 
    Collective attributes, including associated subtree and subentry
    mechanics -- including the 'subtreeSpecification' attribute type --
-   are defined throughout [RFC3671], [RFC3672] and ITU-T Rec. X.501.
+   are defined throughout [RFC3671], [RFC3672] and ITU-T Rec. [X.501].
 
 1.8.  Common Operations and Concepts
 
@@ -391,8 +391,8 @@ Coretta                Expires February 23, 2025                [Page 6]
    Not all Operations will necessarily have a direct correlation to any
    specific procedures set forth within this I-D series.  For instance,
    none of the procedures have any specific associations with Extended,
-   Bind or Unbind Operations defined within both ITU-T Rec. X.511 and
-   RFC4511.
+   Bind or Unbind Operations defined within both ITU-T Rec. [X.511] and
+   [RFC4511].
 
 1.8.1.  Read and Search
 
