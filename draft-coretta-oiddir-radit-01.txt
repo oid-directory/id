@@ -12,11 +12,11 @@ Expires: February 23, 2025
 
 Abstract
 
-   In service to the "OID Directory" ID series, this ID covers design
+   In service to the "OID Directory" I-D series, this I-D covers design
    strategies and requirements relating to the Registration Authority
    Directory Information Tree.
 
-   See the RADIR ID for a complete draft series manifest.
+   See the RADIR I-D for a complete draft series manifest.
 
 Status of This Memo
 
@@ -101,7 +101,7 @@ Table of Contents
    an unambiguous reference -- a distinguished name -- to its location
    within the structure.
 
-   Within the terms of this ID series, this structure represents -- or
+   Within the terms of this I-D series, this structure represents -- or
    houses -- an information base of OID registrations and registrants
    in the context of ITU-T Recommendations X.660 and X.680, et al.
 
@@ -120,35 +120,35 @@ Coretta                Expires February 23, 2025                [Page 2]
 
 1.2.  Acronyms Used
 
-   See Section 1.3 of the RADIR ID for all acronym references.
+   See Section 1.3 of the RADIR I-D for all acronym references.
 
 1.2.1.  Definitions
 
-   The composite acronym, "RA DIT", is hereby introduced within this ID.
-   The acronym abbreviates the 'Registration Authority Directory
+   The composite acronym, "RA DIT", is hereby introduced within this
+   I-D.  The acronym abbreviates the 'Registration Authority Directory
    Information Tree' term, which describes the directory tree structure
    that has been created or leveraged for storage of registration and
-   registrant data in accordance with this ID series.
+   registrant data in accordance with this I-D series.
 
-   The composite acronym "RA DSA" used throughout this ID is defined in
-   Section 1.2.1 of the RADSA ID.
+   The composite acronym "RA DSA" used throughout this I-D is defined in
+   Section 1.2.1 of the RADSA I-D.
 
-   The composite acronym "RA DUA" used throughout this ID is defined in
-   Section 1.2.1 of the RADUA ID.
+   The composite acronym "RA DUA" used throughout this I-D is defined in
+   Section 1.2.1 of the RADUA I-D.
 
 1.3.  Intended Audience
 
-   This ID is specifically geared towards X.500/LDAP professionals, such
-   as administrators, architects or application developers tasked with
-   managing and/or implementing an RA DIT.
+   This I-D is specifically geared towards X.500/LDAP professionals,
+   such as administrators, architects or application developers tasked
+   with managing and/or implementing an RA DIT.
 
    General familiarity with the standards of X.500 and LDAP, as well as
-   with the RASCHEMA, RADUA and RADSA IDs is STRONGLY RECOMMENDED.
+   with the RASCHEMA, RADUA and RADSA I-Ds is STRONGLY RECOMMENDED.
 
 1.4.  Allocations
 
-   This specification extends the previously defined ID series OID root
-   '1.3.6.1.4.1.56521.101', defined in Section 1.6 of the RADIR ID, in
+   This specification extends the previously defined I-D series OID root
+   '1.3.6.1.4.1.56521.101', defined in Section 1.6 of the RADIR I-D, in
    the following manner:
 
      - 1.3.6.1.4.1.56521.101.3 (rA-DIT)
@@ -156,16 +156,16 @@ Coretta                Expires February 23, 2025                [Page 2]
      - 1.3.6.1.4.1.56521.101.3.1.2 (twoDimensional)
      - 1.3.6.1.4.1.56521.101.3.1.3 (threeDimensional)
 
-   OIDs defined in this ID correlate to their section numbers of origin.
+   OIDs defined in this I-D correlate to the section numbers of origin.
 
-   Should this ID be elevated to RFC status, the aforementioned ID root
-   OID prefix shall be rendered obsolete in favor of an IANA-assigned
-   OID, at which point this ID will be updated to reference the literal
-   'IANA-ASSIGNED-OID' placeholder prefix where appropriate.
+   Should this I-D be elevated to RFC status, the aforementioned I-D
+   root OID prefix shall be rendered obsolete in favor of an IANA
+   assigned OID, at which point this I-D will be updated to reference
+   the literal 'IANA-ASSIGNED-OID' placeholder prefix where appropriate.
 
 2.  Assessments
 
-   Implementation of this ID should not be taken lightly.  Certain key
+   Implementation of this I-D should not be taken lightly.  Certain key
    design decisions need to be made well in advance of use.
 
    To aid in this process, the following subsections outline relevant
@@ -179,7 +179,7 @@ Coretta                Expires February 23, 2025                [Page 3]
 2.1.  Schema Availability
 
    Complete access and usage capabilities for all schema definitions
-   found throughout Section 2 of the RASCHEMA ID is REQUIRED for
+   found throughout Section 2 of the RASCHEMA I-D is REQUIRED for
    the design and ongoing maintenance of the RA DIT.
 
    Adopters MUST confirm positive access to these definitions.
@@ -189,7 +189,7 @@ Coretta                Expires February 23, 2025                [Page 3]
    respective RA DSA implementation if their use is necessary.
 
    At an absolute minimum, access to all attribute types and object
-   classes defined within Sections 2.3 and 2.5 of the RASCHEMA ID
+   classes defined within Sections 2.3 and 2.5 of the RASCHEMA I-D
    respectively are REQUIRED for the effective construction of the RA
    DIT.
 
@@ -205,7 +205,7 @@ Coretta                Expires February 23, 2025                [Page 3]
        are only specific arcs targeted?
 
    Root arc entries, ostensibly those bearing the 'rootArc' STRUCTURAL
-   class defined in Section 2.5.2 of the RASCHEMA ID, are intended to
+   class defined in Section 2.5.2 of the RASCHEMA I-D, are intended to
    store registrations of like ancestry only.
 
    In the RECOMMENDED three dimensional model, this is REQUIRED.  Here,
@@ -276,9 +276,9 @@ Coretta                Expires February 23, 2025                [Page 4]
 
 2.5.  Class and Attribute Usage
 
-   Not all attribute types defined in the RASCHEMA ID are required
+   Not all attribute types defined in the RASCHEMA I-D are required
    for use within an RA DIT.  For example, only one (1) attribute type
-   -- 'n', per Section 2.3.1 of the RASCHEMA ID -- is truly REQUIRED
+   -- 'n', per Section 2.3.1 of the RASCHEMA I-D -- is truly REQUIRED
    for all registrations.  Naturally, such stringent use of the types
    made available may result in an unhelpful implementation.
 
@@ -292,10 +292,10 @@ Coretta                Expires February 23, 2025                [Page 5]
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
-   Consult Section 2.3 of the RASCHEMA ID for the particulars of the
+   Consult Section 2.3 of the RASCHEMA I-D for the particulars of the
    named attribute types in the following subsections.
 
-   Consult Section 2.5 of the RASCHEMA ID for definitions of object
+   Consult Section 2.5 of the RASCHEMA I-D for definitions of object
    class instances which allow assignment of these types to eligible
    entries.
 
@@ -305,24 +305,24 @@ Coretta                Expires February 23, 2025                [Page 5]
 
 2.6.  Content Sourcing
 
-   This ID acknowledges that -- even in complete implementations -- no
+   This I-D acknowledges that -- even in complete implementations -- no
    single RA manages ALL of the OID tree directly.  Most, if not all of
    this content is under the authority of external entities.
 
-   In lieu of this, this ID assumes some mechanism may be in place meant
-   to obtain and synchronize content from appropriate sources.  While
-   the specifics are well outside the intended scope, this process may
+   As such, this I-D assumes some mechanism may be in place meant to
+   obtain and synchronize content from appropriate sources.  While the
+   specifics are well outside the intended scope, this process may
    resemble any of the following:
 
-     - Native replication agreements spanning implementations of this ID
+     - Replication agreements spanning implementations of this I-D
      - Regular data file receipt and processing (e.g.: LDIF, XML, CSV)
-     - Direct parsing of originating standard, ID or module
+     - Direct parsing of originating standard, I-D or module
      - Remote (proprietary) API requests
      - Remote AXFR or IXFR requests [RFC5936] in the context of ORS
 
    While the particulars of such synchronization and/or incorporation of
-   content external to this ID are well outside of the scope intended,
-   this ID acknowledges that such sourcing methods are often necessary.
+   content external to this I-D are well outside of the scope intended,
+   this I-D acknowledges that such sourcing methods are often necessary.
    Adopters SHOULD determine if any external registration content
    is worthy of incorporation and in what manner.
 
@@ -336,7 +336,7 @@ Coretta                Expires February 23, 2025                [Page 5]
    served by way of an RA DSA with which clients may interact.
 
    The RA DIT may or may not contain unrelated content such as employee
-   accounts, user groups or system data.  This ID series has no official
+   accounts, user groups or other data.  This I-D series has no official
    position as it relates to the presence of such content.
 
 
@@ -354,10 +354,10 @@ Coretta                Expires February 23, 2025                [Page 6]
 
    The appropriate DIT structure for any scenario depends upon the scope
    of implementation in the long-term.  Directory models defined within
-   this ID series are meant to provide an indication to clients (DUAs)
+   this I-D series are meant to provide an indication to clients (DUAs)
    regarding the governing structure of the implementation.
 
-   DUAs optimized for use within the terms of this ID series, known as
+   DUAs optimized for use within the terms of this I-D series, known as
    RA DUAs, will use this information to define the operating methods
    exercised during routine operation.
 
@@ -409,7 +409,7 @@ Coretta                Expires February 23, 2025                [Page 7]
 
 
    Per Section 3.1.1, this model is available for informal, unofficial
-   or otherwise non-standard implementations of this ID.  Use of this
+   or otherwise non-standard implementations of this I-D.  Use of this
    model is STRONGLY DISCOURAGED.
 
    The two dimensional model describes a simple "list" of registration
@@ -478,7 +478,7 @@ Coretta                Expires February 23, 2025                [Page 8]
    root arc registrations superior to all subordinate arc registrations.
 
    Per Section 3.1.1, this model is STRONGLY RECOMMENDED for complete,
-   thorough or official implementations of this ID.  It is also quite
+   thorough or official implementations of this I-D.  It is also quite
    suitable for general use, though at the risk of some administrative
    tedium if a suitable RA DUA is not made available.
 
@@ -517,17 +517,17 @@ Coretta                Expires February 23, 2025                [Page 8]
 3.2.  Entry Content
 
    The following subsections discuss various topics that pertain to DIT
-   content management within the spirit of this ID series.
+   content management within the spirit of this I-D series.
 
 Coretta                Expires February 23, 2025                [Page 9]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
-   Certain examples are defined for consumption by adopters of this ID.
+   Certain examples are defined for consumption by adopters of this I-D.
    These examples are expressed as LDIF, and may employ indenting and
    line-wrapping of attribute values whose lengths exceed the maximum
-   size permitted by the RFC ID standard format.
+   size permitted by the RFC I-D standard format.
 
    This condition does not invalidate the usability or syntactical
    conformity of these instances.
@@ -538,7 +538,7 @@ Coretta                Expires February 23, 2025                [Page 9]
    in the ownership, allocation and/or general management of an OID.
 
    Whether directly or through inheritance, all OIDs have an authority
-   of some form.  This ID allows for flexible and scalable management
+   of some form.  This I-D allows for flexible and scalable management
    of such content.
 
 3.2.1.1.  Registrant Strategy
@@ -550,7 +550,7 @@ Coretta                Expires February 23, 2025                [Page 9]
      - Sponsor
 
    To parallel these authority types, three (3) AUXILIARY object classes
-   are defined within Section 2.5 of the RASCHEMA ID:
+   are defined within Section 2.5 of the RASCHEMA I-D:
 
      - 'currentAuthorityContext'
      - 'firstAuthorityContext'
@@ -564,9 +564,9 @@ Coretta                Expires February 23, 2025                [Page 9]
 
      - An individual
      - A public or private organization, institution or working group
-     - A document (e.g.: a standard or ID, e.g.: [RFC4519])
+     - A document (e.g.: a standard or I-D, e.g.: [RFC4519])
 
-   Implementations of this ID may choose either of the following models
+   Implementations of this I-D may choose either of the following models
    to govern registrant-related DIT content:
 
      - Dedicated (independent) entry model
@@ -601,7 +601,7 @@ Coretta                Expires February 23, 2025               [Page 10]
      - 'sponsorContext'
 
    For example, consider the following 'registrant' entry describing the
-   author of this ID series:
+   author of this I-D series:
 
       dn: registrantID=a0efcce18a,ou=Registrants,o=rA
       objectClass: registrant
@@ -615,7 +615,7 @@ Coretta                Expires February 23, 2025               [Page 10]
 
    The concept of a dedicated registrant entry is unfixed.  Attribute
    types related to authority information extended via the RASCHEMA
-   ID are present largely for convenience and reasons of clarity.
+   I-D are present largely for convenience and reasons of clarity.
 
    Adopters of the RA DIT MAY choose to forego use of some or all of
    these types in favor of those defined within official standards such
@@ -626,7 +626,7 @@ Coretta                Expires February 23, 2025               [Page 10]
    For example, the appropriate replacement type for 'sponsorCommonName'
    is 'cn', because 'cn' is its super type.
 
-   Some types defined within the RASCHEMA ID are unique in nature and
+   Some types defined within the RASCHEMA I-D are unique in nature and
    may not be derived from a super type.  An example of this is the
    'firstAuthorityStartTimestamp' attribute type.  Continued use of
    these types is likely indicated.
@@ -649,7 +649,7 @@ Coretta                Expires February 23, 2025               [Page 11]
    To offer a more complete example of this alternative use, the above
    'registrant' entry bearing the 'registrantID' value of "a0efcce18a"
    implements 'cn' and 'mail' over their sub typed counterparts defined
-   within the RASCHEMA ID.
+   within the RASCHEMA I-D.
 
       dn: registrantID=e2ef220b3b,ou=Registrants,o=rA
       objectClass: registrant
@@ -743,7 +743,7 @@ Coretta                Expires February 23, 2025               [Page 12]
 3.2.2.  Registrations
 
    Registrations are official allocations of ASN.1 object identifiers.
-   Within the context of this ID, a registration manifests through a
+   Within the context of this I-D, a registration manifests through a
    directory entry bearing the 'registration' STRUCTURAL class and
    any number of supporting attribute type instances.
 
@@ -1013,7 +1013,7 @@ Coretta                Expires February 23, 2025               [Page 17]
 3.2.2.2.4.  The "OID Directory"
 
    This section describes a small portion of the OID registrations
-   officiated by this ID series.  Note that the entire ancestry is
+   officiated by this I-D series.  Note that the entire ancestry is
    not shown for reasons of significant brevity.
 
    The same twoDimensional DN syntax scheme shall apply, as mentioned
@@ -1309,7 +1309,7 @@ Coretta                Expires February 23, 2025               [Page 22]
 3.2.3.1.  Composite
 
    Consider the 'nameAndNumberForm' attribute type, per Section 2.3.19
-   of the RASCHEMA ID.  This attribute type combines the 'identifier'
+   of the RASCHEMA I-D.  This attribute type combines the 'identifier'
    and 'n' attribute types to form a complete value, for instance:
 
       identified-organization(3)
@@ -1366,11 +1366,11 @@ Coretta                Expires February 23, 2025               [Page 23]
 
 3.2.3.3.  Collective
 
-   Section 2.3 of the RASCHEMA ID defines collective attribute types
+   Section 2.3 of the RASCHEMA I-D defines collective attribute types
    to parallel certain attribute types which may apply to a great many
    entries in the context of a subtree within the RA DIT.
 
-   In thorough implementations of this ID series, this can often provide
+   In thorough implementations of this I-D series, this can provide
    considerable savings in terms of administrative effort in addition to
    reduced risk relating to large-scale content updates applied manually
    to the RA DIT.  In such cases, collective attributes are RECOMMENDED.
@@ -1384,7 +1384,7 @@ Coretta                Expires February 23, 2025               [Page 23]
    some fashion.  This type is used to limit the influence of collective
    attribute operations within the context of a subtree.
 
-   While this ID series does not delve into the particulars of specific
+   While this I-D series does not delve into the particulars of specific
    implementation steps for any given X.500/LDAP product, it does offer
    certain 'subtreeSpecification' examples where appropriate.
 
@@ -1396,19 +1396,19 @@ Coretta                Expires February 23, 2025               [Page 24]
 
    Specific methodologies relating to use varies greatly among the
    potential X.500/LDAP DSA products available today.  For the purposes
-   of simplicity, this ID assumes that 'subtreeSpecification' instances
+   of simplicity, this I-D assumes that 'subtreeSpecification' instances
    are assigned to subentries of the relevant directory entry.
 
 3.2.4.  Special Attributes
 
    This section outlines certain important attribute types extended via
-   Section 2.3 of the RASCHEMA ID.
+   Section 2.3 of the RASCHEMA I-D.
 
 3.2.4.1.  'n'
 
    This attribute type plays a CRUCIAL role with regards to the syntax
    of DNs used in the three dimensional directory model.  It is the only
-   attribute type defined in this ID REQUIRED for ALL registrations --
+   attribute type defined in this I-D REQUIRED for ALL registrations --
    root or not -- without exception.
 
    Instances of this attribute type SHALL NOT be negative, and SHALL NOT
@@ -1429,13 +1429,13 @@ Coretta                Expires February 23, 2025               [Page 24]
    instance of the 'registrationRange' attribute type, which signifies
    the terminus of an allocated OID range.
 
-   This attribute type is defined in Section 2.3.1 of the RASCHEMA ID.
+   This attribute type is defined in Section 2.3.1 of the RASCHEMA I-D.
 
 3.2.4.2.  'dotNotation'
 
    This attribute type plays a crucial role with regards to DN syntax
    used in the two dimensional directory model described within the
-   RADIT ID.  It cannot be assigned to registration entries which bear
+   RADIT I-D.  It cannot be assigned to registration entries which bear
    the 'rootArc' STRUCTURAL object class.
 
    Instances of this attribute type SHALL NOT appear on entries other
@@ -1444,7 +1444,7 @@ Coretta                Expires February 23, 2025               [Page 24]
    Use of this attribute type is entirely OPTIONAL within RA DITs based
    upon the RECOMMENDED three dimensional directory model.
 
-   This attribute type is defined in Section 2.3.2 of the RASCHEMA ID.
+   This attribute type is defined in Section 2.3.2 of the RASCHEMA I-D.
 
 
 Coretta                Expires February 23, 2025               [Page 25]
@@ -1458,11 +1458,11 @@ Coretta                Expires February 23, 2025               [Page 25]
    any registration.  It is based upon the ASN.1 OCTET STRING syntax.
 
    While use of this syntax does allow for NULL values, it is considered
-   invalid within the context of this ID.  In cases where no extended
+   invalid within the context of this I-D.  In cases where no extended
    information is available for a given registration, instances of this
    attribute type SHOULD NOT be set for the entry.
 
-   This attribute type is defined in Section 2.3.9 of the RASCHEMA ID.
+   This attribute type is defined in Section 2.3.9 of the RASCHEMA I-D.
 
 3.2.4.4.  'registrationModified'
 
@@ -1476,7 +1476,7 @@ Coretta                Expires February 23, 2025               [Page 25]
    Whether multiple dates, or merely the most recent date, are stored in
    the directory is entirely up to the administrator(s) involved.
 
-   This type is defined in Section 2.3.12 of the RASCHEMA ID.
+   This type is defined in Section 2.3.12 of the RASCHEMA I-D.
 
 3.2.4.5.  'registrationRange'
 
@@ -1500,7 +1500,7 @@ Coretta                Expires February 23, 2025               [Page 25]
    an infinite range.  This means, without exception, that no further
    sibling allocations greater than 'n' will be permitted.
 
-   This type is defined in Section 2.3.13 of the RASCHEMA ID.
+   This type is defined in Section 2.3.13 of the RASCHEMA I-D.
 
 
 
@@ -1541,19 +1541,18 @@ Coretta                Expires February 23, 2025               [Page 26]
    Other possible values not listed here MAY be used, however they would
    be wholly proprietary in nature.
 
-   This type is defined in Section 2.3.14 of the RASCHEMA ID.
+   This type is defined in Section 2.3.14 of the RASCHEMA I-D.
 
 3.2.4.7.  'registrationClassification'
 
    This attribute type associates a classification with a registration.
 
    While independent of the 'registrationStatus' attribute type defined
-   in Section 2.3.14 of the RASCHEMA ID, there may be cases of overlap
+   in Section 2.3.14 of the RASCHEMA I-D, there may be cases of overlap
    with respect to the declaration of obsolescence or deallocation for a
-   given registration, as both attribute types recognize and express such
-   states.
+   given registration, as both types recognize and express such states.
 
-   This type is defined in Section 2.3.15 of the RASCHEMA ID.
+   This type is defined in Section 2.3.15 of the RASCHEMA I-D.
 
 3.2.4.8.  'isLeafNode'
 
@@ -1562,6 +1561,7 @@ Coretta                Expires February 23, 2025               [Page 26]
 
    Absence of this attribute type SHOULD be interpreted as an implicit
    FALSE value.  This is the most common scenario.
+
 
 Coretta                Expires February 23, 2025               [Page 27]
 
@@ -1580,7 +1580,7 @@ Coretta                Expires February 23, 2025               [Page 27]
 
    This attribute type is NOT intended to serve in a security capacity.
    Presence of this attribute type is mainly used to alert any RA DUA
-   that is optimized for this ID that neither subordinate enumeration,
+   that is optimized for this I-D that neither subordinate enumeration,
    nor subordinate allocation, be attempted below the indicated entry.
 
    A registration that lacks subordinate entries is not necessarily a
@@ -1588,7 +1588,7 @@ Coretta                Expires February 23, 2025               [Page 27]
    might occur in the future.  Leaf-node status is meant for use in
    permanent contexts.
 
-   This type is defined in Section 2.3.16 of the RASCHEMA ID.
+   This type is defined in Section 2.3.16 of the RASCHEMA I-D.
 
 3.2.4.9.  'isFrozen'
 
@@ -1614,7 +1614,7 @@ Coretta                Expires February 23, 2025               [Page 27]
    attribute type in the context of historical input or another similar
    use case.
 
-   This type is defined in Section 2.3.17 of the RASCHEMA ID.
+   This type is defined in Section 2.3.17 of the RASCHEMA I-D.
 
 3.2.4.10.  'longArc'
 
@@ -1632,11 +1632,11 @@ Coretta                Expires February 23, 2025               [Page 28]
    In other words, OID registrations subordinate to either the itu-t(0)
    or iso(1) roots that bear a 'longArc' instance are considered bogus.
 
-   DUAs optimized for this ID SHALL NOT allow routine presentation or
+   DUAs optimized for this I-D SHALL NOT allow routine presentation or
    modification (beyond corrective removal) of bogus 'longArc' values
    in this context.
 
-   This type is defined in Section 2.3.20 the of the RASCHEMA ID.
+   This type is defined in Section 2.3.20 the of the RASCHEMA I-D.
 
 3.2.4.11.  'discloseTo'
 
@@ -1656,7 +1656,7 @@ Coretta                Expires February 23, 2025               [Page 28]
    that is an intended function of a (current) registration authority.
 
    The 'discloseTo' and 'c-discloseTo' attribute types are defined in
-   Section 2.3.32 and 2.3.33 of the RASCHEMA ID respectively.
+   Section 2.3.32 and 2.3.33 of the RASCHEMA I-D respectively.
 
 3.2.4.12.  'registrantID'
 
@@ -1670,12 +1670,12 @@ Coretta                Expires February 23, 2025               [Page 28]
    Combined registrant entries have no particular use for this attribute
    type.  Instances of this type SHALL NOT appear on entries bearing the
    'registration' ABSTRACT class, defined within Section 2.5.1 of the
-   RASCHEMA ID.
+   RASCHEMA I-D.
 
-   For distinguished registrants -- such as an RFC or ID -- the official
+   For distinguished registrants, such as an RFC or I-D, the official
    identifier MAY be used as an alternative to an auto-generated value.
 
-   This type is defined in Section 2.3.34 of the RASCHEMA ID.
+   This type is defined in Section 2.3.34 of the RASCHEMA I-D.
 
 
 
@@ -1696,13 +1696,13 @@ Coretta                Expires February 23, 2025               [Page 29]
    to 'registration' entries of any kind.
 
    The 'firstAuthority' and 'c-firstAuthority' attribute types are
-   defined in Sections 2.3.35 and 2.3.36 of the RASCHEMA ID.
+   defined in Sections 2.3.35 and 2.3.36 of the RASCHEMA I-D.
 
    The 'currentAuthority' and 'c-currentAuthority' attribute types are
-   defined in Sections 2.3.55 and 2.3.56 of the RASCHEMA ID.
+   defined in Sections 2.3.55 and 2.3.56 of the RASCHEMA I-D.
 
    The 'sponsor' and 'c-sponsor' attribute types are defined in Sections
-   2.3.74 and 2.3.75 of the RASCHEMA ID.
+   2.3.74 and 2.3.75 of the RASCHEMA I-D.
 
    Any combination of these attribute types and their collective forms
    as instances within a common 'registration' entry is acceptable so
@@ -1720,9 +1720,9 @@ Coretta                Expires February 23, 2025               [Page 29]
    Instances of this type MUST NOT be assigned to entries which bear the
    'rARegistration' and/or 'rARegistrant' attribute types.
 
-   See the RADSA ID for details regarding use of this attribute type.
+   See the RADSA I-D for details regarding use of this attribute type.
 
-   This type is defined in Section 2.3.94 of the RASCHEMA ID.
+   This type is defined in Section 2.3.94 of the RASCHEMA I-D.
 
 3.2.4.15.  'rARegistrationBase' and 'rARegistrantBase'
 
@@ -1733,7 +1733,7 @@ Coretta                Expires February 23, 2025               [Page 29]
    Instances of these types MUST NOT be assigned to entries which bear
    the instances of the 'rADITProfile' attribute type.
 
-   See the RADSA ID for details regarding use of this attribute type.
+   See the RADSA I-D for details regarding use of this attribute type.
 
 
 
@@ -1743,7 +1743,7 @@ Coretta                Expires February 23, 2025               [Page 30]
 
 
    These attribute types are defined in Sections 2.3.95 and 2.3.96 of
-   the RASCHEMA ID respectively.
+   the RASCHEMA I-D respectively.
 
 3.2.4.16.  'registeredUUID'
 
@@ -1761,14 +1761,14 @@ Coretta                Expires February 23, 2025               [Page 30]
    represented via hexadecimal encoding.
 
    This type is meant for use in the context of ITU-T Rec. X.667 and is
-   defined within Section 2.3.102 of the RASCHEMA ID.
+   defined within Section 2.3.102 of the RASCHEMA I-D.
 
 3.2.4.17.  'description'
 
    The 'description' attribute type is defined within Section 2.5 of
    [RFC4519] and clause 6.5.1 of ITU-T Rec. X.520.  This attribute type
    is included within the MAY clauses of certain object classes extended
-   by this ID series.
+   by this I-D series.
 
    The purpose of the 'description' attribute type in the context of a
    'registration' entry is to assign the effective "title" of the entry.
@@ -1779,7 +1779,7 @@ Coretta                Expires February 23, 2025               [Page 30]
    the 'registrationInformation' type.
 
    While there is no specific use case for 'registrant' entries within
-   the terms of this ID series, the 'description' attribute type is
+   the terms of this I-D series, the 'description' attribute type is
    nonetheless permitted.
 
 3.2.4.18.  'seeAlso'
@@ -1787,10 +1787,10 @@ Coretta                Expires February 23, 2025               [Page 30]
    The 'seeAlso' attribute type is defined in Section 2.30 of [RFC4519]
    and clause 6.10.6 of ITU-T Rec. X.520.
 
-   Under the terms of this ID series, the 'seeAlso' attribute type is
+   Under the terms of this I-D series, the 'seeAlso' attribute type is
    used to describe associations between multiple entries of related
    context, and is made available through use of certain object classes
-   extended by this ID series.
+   extended by this I-D series.
 
 
 
@@ -1813,12 +1813,12 @@ Coretta                Expires February 23, 2025               [Page 31]
 
 3.2.4.19.  Spatial References
 
-   Section 2.3 of the RASCHEMA ID extends eleven (11) attribute types
+   Section 2.3 of the RASCHEMA I-D extends eleven (11) attribute types
    that describe both the horizontal and vertical arrangement of various
    sibling, superior and subordinate registrations using the respective
    DNs of entries.  These attribute types may be used in any directory
-   model defined in this ID series, and many are extended by way of the
-   'spatialContext' class defined in Section 2.5 of the RASCHEMA ID.
+   model defined in this I-D series, and many are extended by way of the
+   'spatialContext' class defined in Section 2.5 of the RASCHEMA I-D.
 
    The RA DIT SHALL NOT utilize both a non-collective and collective
    spatial attribute type of the same spirit.  For example, it is NOT
@@ -1834,8 +1834,8 @@ Coretta                Expires February 23, 2025               [Page 31]
    part of the RA DSA(s) in question is REQUIRED for use of these types.
 
    With the exception of the 'subArc' attribute type, all spatial types
-   extended through this ID series are meant for SINGLE-VALUE contextual
-   use cases -- including collective spatial types.
+   extended through this I-D series are meant solely for SINGLE-VALUE
+   contextual use cases -- including collective spatial types.
 
 3.2.4.19.1.  Horizontal Sibling References
 
@@ -1887,7 +1887,7 @@ Coretta                Expires February 23, 2025               [Page 32]
    the set of sibling registrations.  The definitive values MUST ALWAYS
    be consistent for ALL sibling registration entries without exception.
 
-   See the RADUA ID for considerations relating to RA DUA queries
+   See the RADUA I-D for considerations relating to RA DUA queries
    of a set of siblings terminated using a 'registrationRange' value,
    whether the range is finite or infinite in nature.
 
@@ -1917,12 +1917,12 @@ Coretta                Expires February 23, 2025               [Page 33]
 
 
    The 'minArc' and 'c-minArc' attribute types are defined in Section
-   2.3.27 and 2.3.28 of the RASCHEMA ID.  The 'leftArc' attribute type
-   is defined in Section 2.3.26 of the RASCHEMA ID.
+   2.3.27 and 2.3.28 of the RASCHEMA I-D.  The 'leftArc' attribute type
+   is defined in Section 2.3.26 of the RASCHEMA I-D.
 
    The 'maxArc' and 'c-maxArc' attribute types are defined in Section
-   2.3.30 and 2.3.31 of the RASCHEMA ID.  The 'rightArc' attribute type
-   is defined in Section 2.3.29 of the RASCHEMA ID.
+   2.3.30 and 2.3.31 of the RASCHEMA I-D.  The 'rightArc' attribute type
+   is defined in Section 2.3.29 of the RASCHEMA I-D.
 
 3.2.4.19.1.1.  Collective Use
 
@@ -1963,10 +1963,10 @@ Coretta                Expires February 23, 2025               [Page 33]
    both values should be specified for optimal client support.
 
    The 'supArc' and 'c-supArc' attribute types are defined in Section
-   2.3.21 and 2.3.22 of the RASCHEMA ID.
+   2.3.21 and 2.3.22 of the RASCHEMA I-D.
 
    The 'topArc' and 'c-topArc' attribute types are defined in Section
-   2.3.23 and 2.3.24 of the RASCHEMA ID.
+   2.3.23 and 2.3.24 of the RASCHEMA I-D.
 
 
 Coretta                Expires February 23, 2025               [Page 34]
@@ -2000,7 +2000,7 @@ Coretta                Expires February 23, 2025               [Page 34]
 
 3.2.4.19.3.  Subordinate Vertical References
 
-   The multi-valued 'subArc' attribute type defined in the RASCHEMA ID
+   The multi-valued 'subArc' attribute type defined in the RASCHEMA I-D
    allows the storage of immediate subordinate registration DNs for a
    (parent) registration.  Client architectures which read the values
    assigned to this type will receive an effective "list" of any and
@@ -2094,7 +2094,7 @@ Coretta                Expires February 23, 2025               [Page 36]
    clause 8.19 of ITU-T Rec. X.690 for details.
 
    The 'dotEncoding' attribute type is defined within Section 2.3.103 of
-   the RASCHEMA ID.
+   the RASCHEMA I-D.
 
 4.  IANA Considerations
 
@@ -2104,7 +2104,7 @@ Coretta                Expires February 23, 2025               [Page 36]
 
 5.1.  Access Control
 
-   See Section 4.3 of the RADSA ID for access control considerations.
+   See Section 4.3 of the RADSA I-D for access control considerations.
 
 5.2.  Creation and Modification Identities
 
@@ -2117,7 +2117,7 @@ Coretta                Expires February 23, 2025               [Page 36]
    An appropriate proxy identity could be the distinguished name of the
    registrant referenced by the 'currentAuthority' or 'sponsor' types,
    or even a given registration entry itself.  In either case, this will
-   require [RFC4370] support -- a topic out of scope for this ID.
+   require [RFC4370] support -- a topic out of scope for this I-D.
 
 6.  References
 
