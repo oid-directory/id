@@ -2065,13 +2065,14 @@ Coretta                Expires February 23, 2025               [Page 35]
    value is Base64-decoded, a (raw) Octet String value of "%x06.01.2B"
    is revealed:
 
-      ASN.1 OID TAG   NUMBER OF BYTES   ENCODED BYTE(S)
+      ASN.1 OID TAG   BE ENCODING LEN   ENCODED BYTE(S)
            |                |                 |
            06               01                2B
 
    The total (decoded) length of a well-formed value SHALL NOT be less
    than three (3).  No limit is imposed on the number of encoded bytes,
-   so long as the number is at least one (1), as shown above.
+   so long as the number is at least one (1), as shown above, expressed
+   as a Big-Endian.
 
    The condition of a 'dotNotation' value not matching the decoded form
    of its corresponding 'dotEncoding' value is considered an error.  No
@@ -2084,21 +2085,20 @@ Coretta                Expires February 23, 2025               [Page 35]
    value is the official ASN.1 OBJECT IDENTIFIER tag (6).  Additional
    measures MAY be implemented at the risk of performance penalities.
 
-
 Coretta                Expires February 23, 2025               [Page 36]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
-   The semantics of encoding an object identifier per ITU-T Rec. X.680
-   are extensive, and are well outside the scope of this ID series.
+   The semantics of encoding an object identifier are extensive. Consult
+   clause 8.19 of ITU-T Rec. X.690 for details.
 
    The 'dotEncoding' attribute type is defined within Section 2.3.103 of
    the RASCHEMA ID.
 
 4.  IANA Considerations
 
-   There are no requests to IANA in this document.
+   There are no requests to IANA in this document at this time.
 
 5.  Security Considerations
 
@@ -2179,6 +2179,12 @@ Coretta                Expires February 23, 2025               [Page 37]
               (ASN.1): Specification of basic notation", ITU-T X.680,
               July 2002.
 
+   [X.690]    International Telecommunication Union - Telecommunication
+              Standardization Sector, "ASN.1 encoding rules:
+              Specification of Basic Encoding Rules (BER), Canonical
+              Encoding Rules (CER) and Distinguished Encoding Rules
+              (DER)", ITU-T X.690, February 2021.
+
 6.2.  Informative References
 
    [RFC1155]  Rose, M., "Structure and Identification of Management
@@ -2193,6 +2199,13 @@ Coretta                Expires February 23, 2025               [Page 37]
               (LDAP): Proxy Authorization Control", RFC 4370, February
               2006.
 
+
+
+Coretta                Expires February 23, 2025               [Page 38]
+
+Internet-Draft        The OID Directory: RA DIT              August 2024
+
+
    [X.500]    International Telecommunication Union - Telecommunication
               Standardization Sector, "The Directory: Overview of
               concepts, models and services", ITU-T X.500, October 2019.
@@ -2200,11 +2213,6 @@ Coretta                Expires February 23, 2025               [Page 37]
    [X.501]    International Telecommunication Union - Telecommunication
               Standardization Sector, "The Directory: Models", ITU-T
               X.501, October 2016.
-
-Coretta                Expires February 23, 2025               [Page 38]
-
-Internet-Draft        The OID Directory: RA DIT              August 2024
-
 
    [X.518]    International Telecommunication Union - Telecommunication
               Standardization Sector, "The Directory: Procedures for
@@ -2228,14 +2236,6 @@ Author's Address
    California, United States
 
    Email: jesse.coretta@icloud.com
-
-
-
-
-
-
-
-
 
 
 
