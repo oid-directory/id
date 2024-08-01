@@ -12,11 +12,11 @@ Expires: February 23, 2025
 
 Abstract
 
-   In service to the "OID Directory" ID series, this ID covers design
+   In service to the "OID Directory" I-D series, this I-D covers design
    strategies, requirements and procedures for the client component of
    the OID Directory Registration Authority client/server model.
 
-   See the RADIR ID for a complete draft series manifest.
+   See the RADIR I-D for a complete draft series manifest.
 
 Status of This Memo
 
@@ -89,7 +89,7 @@ Table of Contents
    the traditional client/server model that interacts with any number of
    X.500 Directory System Agents for the purposes of information access.
 
-   Within the terms of this ID series, the Directory User Agent serves
+   Within the terms of this I-D series, the Directory User Agent serves
    as a client of OID registration and registrant content, as retrieved
    from a Registration Authority Directory Information Tree.
 
@@ -103,9 +103,9 @@ Table of Contents
 
 1.2.  Acronyms Used
 
-   See Section 1.3 of the RADIR ID for all acronym references.  Also,
-   see Sections 1.7 and 1.8 of the RADIR ID for generalized terms and
-   descriptions of significance to this ID series.
+   See Section 1.3 of the RADIR I-D for all acronym references.  Also,
+   see Sections 1.7 and 1.8 of the RADIR I-D for generalized terms and
+   descriptions of significance to this I-D series.
 
 
 
@@ -120,31 +120,31 @@ Coretta                Expires February 23, 2025                [Page 2]
 
 1.2.1.  Definitions
 
-   The composite acronym "RA DUA" is hereby introduced within this ID.
+   The composite acronym "RA DUA" is hereby introduced within this I-D.
    The acronym abbreviates the aforementioned 'Registration Authority
    Directory User Agent' term, which describes the 'client' component
-   implied within the client/server model relevant to this ID series.
+   implied within the client/server model relevant to this I-D series.
 
-   The composite acronym "RA DSA" used throughout this ID is defined in
-   Section 1.2.1 of the RADSA ID.
+   The composite acronym "RA DSA" used throughout this I-D is defined in
+   Section 1.2.1 of the RADSA I-D.
 
-   The composite acronym "RA DIT" used throughout this ID is defined in
-   Section 1.2.1 of the RADIT ID.
+   The composite acronym "RA DIT" used throughout this I-D is defined in
+   Section 1.2.1 of the RADIT I-D.
 
 1.3.  Intended Audience
 
-   This ID is intended for application designers, X.500/LDAP architects,
+   This I-D is intended for application designers, X.500/LDAP architects
    and other personnel tasked with supporting or designing components
-   related to the RA client/server model in service to this ID series.
+   related to the RA client/server model in service to this I-D series.
 
    General familiarity with the broad X.500/LDAP specification, as well
-   all supporting IDs cited in Section 2 of the RADIR ID is STRONGLY
+   all supporting I-Ds cited in Section 2 of the RADIR I-D is STRONGLY
    RECOMMENDED.
 
 1.4.  Parameter Abstraction
 
    For simplicity in describing certain request or argument parameters
-   involving either DAP or LDAP operations in this ID, a simplified
+   involving either DAP or LDAP operations in this I-D, a simplified
    abstraction of ASN.1 parameters is shown to aid RA DUA adopter.
 
    For example, the following structure may be used to outline the
@@ -168,7 +168,7 @@ Coretta                Expires February 23, 2025                [Page 2]
    The RA DUA is a traditional X.500/LDAP client -- supporting most or
    all of the standard operations defined throughout clauses 9 through
    12 of ITU-T Rec. X.511, and throughout Section 4 of [RFC4511] --
-   that has been OPTIMIZED for use within the terms of this ID series.
+   that has been OPTIMIZED for use within the terms of this I-D series.
 
 
 Coretta                Expires February 23, 2025                [Page 3]
@@ -244,8 +244,8 @@ Coretta                Expires February 23, 2025                [Page 4]
 
    The RA DUA MUST obtain -- or possess complete foreknowledge of -- all
    schema definitions officially defined in Section 2 of the RASCHEMA
-   ID as well as the schema definitions serving as super types for many
-   of the attribute types defined in Section 2.3 of the RASCHEMA ID.
+   I-D as well as the schema definitions serving as super types for many
+   of the attribute types defined in Section 2.3 of the RASCHEMA I-D.
 
    In addition, the RA DUA MUST both recognize and honor any additional
    DIT content rules, DIT structure rules and/or (additional) name forms
@@ -256,7 +256,7 @@ Coretta                Expires February 23, 2025                [Page 4]
 
       - Through a direct Read of the 'subschemaSubentry' of the RA DSA
       - Through manual processing of the (approved) schema file(s) based
-        upon the complete contents of the RASCHEMA ID
+        upon the complete contents of the RASCHEMA I-D
 
    When obtaining the schema through use of a Read or Search Operation,
    the schema SHOULD be refreshed at the commencement of a new RA DUA
@@ -275,7 +275,7 @@ Coretta                Expires February 23, 2025                [Page 4]
 
    There are two (2) modes of RA DUA configuration: automatic or manual.
 
-   Section 2.3 of the RASCHEMA ID introduces a small handful of types
+   Section 2.3 of the RASCHEMA I-D introduces a small handful of types
    intended for "advertisement" by the RA DSA and for consumption by the
    RA DUA.  These attributes are as follows:
 
@@ -293,7 +293,7 @@ Coretta                Expires February 23, 2025                [Page 5]
 
 
    These attribute types are extended through use of the 'rADUAConfig'
-   AUXILIARY object class.  See Section 2.3.6 of the RADSA ID for
+   AUXILIARY object class.  See Section 2.3.6 of the RADSA I-D for
    usable examples involving this class.
 
    Auto-discovery of these attribute types will require disclosure
@@ -301,7 +301,7 @@ Coretta                Expires February 23, 2025                [Page 5]
    'rADUAConfig' object class.
 
    Though the particulars of the root DSE are well outside the scope of
-   this ID series, it is typically accessed by way of the Read Operation
+   this I-D series, it is typically accessed via the Read Operation
    executed upon a NULL baseObject.
 
    Retrieval SHOULD be made conditional using the 'rADUAConfig' object
@@ -331,7 +331,7 @@ Coretta                Expires February 23, 2025                [Page 5]
    configured for automatic input.  The RA DUA SHOULD choose to proceed
    with configuration using the values provided.
 
-   See Section 2.3.6 of the RADSA ID regarding the possible methods
+   See Section 2.3.6 of the RADSA I-D regarding the possible methods
    for implementation of this entry with respect to multiple RA DITs
    served by an RA DSA as opposed to a single RA DIT.
 
@@ -475,10 +475,10 @@ Coretta                Expires February 23, 2025                [Page 8]
    object class should be located exactly one (1) level below each
    specified 'rARegistrantBase' DN value within the RA DIT.
 
-   Depending on the nature of implementation of this ID series, it may
+   Depending on the nature of implementation of this I-D series, it may
    or may not be advisable to populate the 'rARegistrantBase' Attribute
    Type for consumption by all clients indiscriminately.  See Section
-   5.2 of the RADIT ID for security considerations on this topic.
+   5.2 of the RADIT I-D for security considerations on this topic.
 
 2.2.2.1.4.  'rADirectoryModel'
 
@@ -492,7 +492,7 @@ Coretta                Expires February 23, 2025                [Page 8]
    which MUST be a numeric OID, is declared using the 'rADirectoryModel'
    attribute type.
 
-   Sections 3.1.2 and 3.1.3 of the RADIT ID define two (2) official
+   Sections 3.1.2 and 3.1.3 of the RADIT I-D define two (2) official
    directory models and DN syntax schemes identified by the following
    numeric OIDs:
 
@@ -502,11 +502,11 @@ Coretta                Expires February 23, 2025                [Page 8]
    In virtually every case, the 'threeDimensional' model is STRONGLY
    RECOMMENDED for implementation and use, however RA DUAs SHOULD be
    prepared to incorporate other models that could be defined in any
-   future extensions to this ID series.
+   future extensions to this I-D series.
 
    The RA DUA MUST support use of the 'threeDimensional' model without
    exception and to the letter of every recommendation set forth within
-   this ID series.
+   this I-D series.
 
    As stated clearly and in no uncertain terms within the originating
    document, the 'twoDimensional' model is STRONGLY DISCOURAGED aside
@@ -532,11 +532,11 @@ Coretta                Expires February 23, 2025                [Page 9]
           'threeDimensional' model is to be enforced by DEFAULT
       1b. If a numeric OID has been specified, identify the value as a
           known and supported model OID and adjust RA DUA behavior in
-          accordance with prescribed procedures of the RADIT ID
+          accordance with prescribed procedures of the RADIT I-D
       1c. If a numeric OID has been specified and is not immediately
-          identifiable within the terms of this ID series -- such as
+          identifiable within the terms of this I-D series -- such as
           a future extension of this standard -- the RA DUA MAY defer
-          to the specifics of the recommendation or ID from which the
+          to the specifics of the recommendation or I-D from which the
           OID originates OR the RA DUA MAY choose to fail the session
       2.  Preserve the value for the remainder of the session, as it
           will influence the specifics of operations that may occur
@@ -573,7 +573,7 @@ Coretta                Expires February 23, 2025                [Page 9]
 2.2.3.1.  Retrieving Entries
 
    The RECOMMENDED procedure for retrieving an entry -- in any directory
-   model defined in this ID series -- is a Read Operation of the entry
+   model defined in this I-D series -- is a Read Operation of the entry
    by way of its DN.  This will return either one (1) entry, or none.
 
 
@@ -591,7 +591,7 @@ Coretta                Expires February 23, 2025               [Page 10]
 
    'registration' entries may reference other 'registration' entries
    using the spatial attribute types defined in Section 2.3 of the
-   RASCHEMA ID and discussed further in Section 2.2.3.3.
+   RASCHEMA I-D and discussed further in Section 2.2.3.3.
 
    'registrant' entries, however, aren't resolvable in any standard
    manner.  These are dedicated authority entries that are normally
@@ -613,7 +613,7 @@ Coretta                Expires February 23, 2025               [Page 10]
    Use of a List Operation or subtree Search Operation may be indicated.
 
    While this method of searching is not generally recommended within
-   the spirit of this ID series, the RA DUA MAY allow this capability
+   the spirit of this I-D series, the RA DUA MAY allow this capability
    where appropriate.
 
    If the RA DUA encounters difficulty relating to a particularly large
@@ -633,7 +633,7 @@ Coretta                Expires February 23, 2025               [Page 10]
    Given a successfully conducted Read or Search Operation, and assuming
    a single entry -- whether 'registration' or 'registrant' -- has been
    returned, the RA DUA SHOULD first read the 'objectClass' values and
-   make note of all that originate in Section 2.5 of the RASCHEMA ID.
+   make note of all that originate in Section 2.5 of the RASCHEMA I-D.
 
 Coretta                Expires February 23, 2025               [Page 11]
 
@@ -716,17 +716,17 @@ Coretta                Expires February 23, 2025               [Page 12]
 2.2.3.2.2.  Attribute Types Used
 
    At a minimum, the RA DUA SHOULD only expect Attribute Types defined
-   within Section 2.3 of the RASCHEMA ID, and/or their respective
+   within Section 2.3 of the RASCHEMA I-D, and/or their respective
    super types defined in [RFC4519], [RFC4524] and [RFC2079], to be
-   assigned to entries within the terms of this ID series.
+   assigned to entries within the terms of this I-D series.
 
-   See Section 3.2 of the RADIT ID for numerous examples regarding
+   See Section 3.2 of the RADIT I-D for numerous examples regarding
    various attribute type use cases and requirements.
 
    The RA DIT MAY use other attribute type and object class definitions
-   unrelated to this ID series, for supplemental reasons, however their
+   unrelated to this I-D series, for supplemental reasons, however their
    incorporation would be wholly proprietary and would have no official
-   standing per this ID series.
+   standing per this I-D series.
 
 2.2.3.2.3.  Value Syntax
 
@@ -734,17 +734,17 @@ Coretta                Expires February 23, 2025               [Page 12]
    a syntax definition in terms of the allowed value(s) to be set for
    an entry.
 
-   As mentioned in Section 2.1 of the RASCHEMA ID, standard syntaxes
+   As mentioned in Section 2.1 of the RASCHEMA I-D, standard syntaxes
    do not necessarily align perfectly with the syntactical requirements
-   of the standards upon which this ID series is based -- namely ITU-T
+   of the standards upon which this I-D series is based -- namely ITU-T
    Recommendations X.660 and X.680.
 
    To ease the difficulty in implementing an RA DUA which honors the
    syntactical characteristics of the underlying subject matter -- as
    opposed to only recognizing the syntax alone -- Section 2.3 of the
-   RASCHEMA ID includes ABNF productions for every attribute type
+   RASCHEMA I-D includes ABNF productions for every attribute type
    defined, whether by reference or in literal form, intended for use by
-   those tasked with implementation of this ID series in some manner.
+   those tasked with implementation of this I-D series in some manner.
 
    The RA DUA MUST recognize these ABNF productions when reading values
    that were retrieved through use of the Read or Search Operation.
@@ -777,7 +777,7 @@ Coretta                Expires February 23, 2025               [Page 13]
    is one that can dramatically improve the user experience.
 
    The RA DUA SHOULD NOT assume positive support for this practice in
-   all implementations of this ID series.
+   all implementations of this I-D series.
 
 2.2.3.3.1. Superior Vertical References
 
@@ -818,7 +818,7 @@ Coretta                Expires February 23, 2025               [Page 14]
 
    Subordinate vertical references tend to be the most challenging among
    all the various attribute types related to spatial navigation within
-   the terms of this ID series.
+   the terms of this I-D series.
 
    The RA DUA MAY request the 'subArc' attribute type as part of the
    Read or Search Operation used for retrieval of a 'registration'
@@ -832,7 +832,7 @@ Coretta                Expires February 23, 2025               [Page 14]
    a complete manifest of all references for 'registration' entries
    that are direct subordinates of the bearer.  This instance SHOULD
    be requested in baseObject-scoped context, and is the only multi
-   valued spatial attribute type defined within this ID series.
+   valued spatial attribute type defined within this I-D series.
 
    The RA DUA SHOULD prefer 'subArc' enumeration to a List Operation
    beneath a 'registration'.  This method of searching is a potentially
@@ -886,11 +886,11 @@ Coretta                Expires February 23, 2025               [Page 15]
 
 2.2.3.4.  Client Entry Caching
 
-   For particularly large or busy implementations of this ID series, the
+   For particularly large or busy implementations of the I-D series, the
    RA DUA MAY support basic client-driven entry caching of any retrieved
    'registration' and 'registrant' entries by way of either the 'rATTL'
    or 'c-rATTL' integer attribute types, as defined within Section 2.3
-   of the RASCHEMA ID.
+   of the RASCHEMA I-D.
 
    A valid use case for caching involves serving IANA PEN registrations
    [PRIVATE], which number in the tens of thousands.  Caching may yield
@@ -898,7 +898,7 @@ Coretta                Expires February 23, 2025               [Page 15]
    particularly large numbers of static entries being retrieved in a
    repeating manner.
 
-   This ID makes no assumptions regarding the design or implementation
+   This I-D makes no assumptions regarding the design or implementation
    of the underlying caching subsystem.  The only abstract requirement
    relates to the ability to cache a single directory entry for a span
    of time equivalent to the effective TTL value in minutes.
@@ -1233,19 +1233,19 @@ Coretta                Expires February 23, 2025               [Page 21]
    of a favorable outcome, the submission of the allocation details may
    be indicated.
 
-   This ID assumes that any requisite review or approval processes that
+   This I-D assumes that any requisite review or approval processes that
    are practiced by those who serve in authority over the RA have been
    performed.
 
    Creation of a directory entry, based upon decided allocation details,
    is the last step necessary for a proper submission.  Please see the
-   RADIT ID for details and many examples regarding entry composition.
+   RADIT I-D for details and many examples regarding entry composition.
 
    The Add Operation is the intended means for submission of the entry.
 
-   If the particular implementation of this ID series does not support
+   If the particular implementation of this I-D series does not support
    this operation in this manner, the RA DSA may be expected to support
-   another means out of scope for this ID series.
+   another means out of scope for this I-D series.
 
    Upon submission of the composed entry to the receiving RA DSA, the
    RA DUA SHOULD retrieve the newly added entry to verify attribute type
@@ -1285,7 +1285,7 @@ Coretta                Expires February 23, 2025               [Page 22]
    an administratively focused use case.
 
    The semantics for either of these operations are well outside the
-   scope of this ID series.
+   scope of this I-D series.
 
 3.  IANA Considerations
 
@@ -1325,7 +1325,7 @@ Coretta                Expires February 23, 2025               [Page 22]
    RASCHEMA   Coretta, J., "The OID Directory: The RA Schema",
               draft-coretta-oiddir-schema, February 2024.
 
-   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate       
+   [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119, March 1997.
 
 
@@ -1364,7 +1364,7 @@ Coretta                Expires February 23, 2025               [Page 23]
 
 5.2.  Informative References
 
-   [PRIVATE]  IANA, "Private Enterprise Numbers",                       
+   [PRIVATE]  IANA, "Private Enterprise Numbers",
               https://www.iana.org/assignments/enterprise-numbers.
 
    [RFC2079]  Smith, M., "Definition of an X.500 Attribute Type and an
@@ -1375,10 +1375,10 @@ Coretta                Expires February 23, 2025               [Page 23]
               RFC 3062, February 2001.
 
    [RFC4519]  Sciberras, Ed., A., "Lightweight Directory Access Protocol
-              (LDAP): Schema for User Applications", RFC 4519, June     
-              2006.                                                     
-                                                                        
-   [RFC4524]  Zeilenga, K., "Lightweight Directory Access Protocol      
+              (LDAP): Schema for User Applications", RFC 4519, June
+              2006.
+
+   [RFC4524]  Zeilenga, K., "Lightweight Directory Access Protocol
               (LDAP): COSINE LDAP/X.500 Schema", RFC 4524, June 2006
 
    [X.500]    International Telecommunication Union - Telecommunication
