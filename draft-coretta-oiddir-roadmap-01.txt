@@ -205,6 +205,7 @@ Coretta                Expires February 23, 2025                [Page 3]
       ASN.1  Abstract Syntax Notation one
       AVA    Attribute Value Assertion
       AXFR   (DNS) Authoritative Zone Transfer
+      BE     Big-Endian
       DAP    Directory Access Protocol
       DIB    Directory Information Base
       DISP   Directory Information Shadowing Protocol
@@ -226,7 +227,6 @@ Coretta                Expires February 23, 2025                [Page 3]
       LDIF   LDAP Data Interchange Format
       OID    ASN.1 Object Identifier
       ORS    OID Resolution Service
-
 
 
 Coretta                Expires February 23, 2025                [Page 4]
