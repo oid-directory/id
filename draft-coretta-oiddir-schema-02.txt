@@ -653,7 +653,7 @@ Coretta                Expires February 23, 2025               [Page 11]
 
    The 'registrationRange' attribute type allows for the expression of
    an OID sibling allocation range, such as "100" to indicate 'up to
-   100', or "-1" to indicate 'to infinity'.
+   and including 100', or "-1" to indicate 'to infinity'.
 
    A practical ABNF production, labeled 'number', is defined in Section
    1.4 of [RFC4512].  This satisfies the unsigned form of instances of
