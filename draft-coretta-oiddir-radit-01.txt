@@ -55,7 +55,7 @@ Copyright Notice
 
 
 
-Coretta                Expires February 23, 2025                [Page 1]
+Coretta               Expires February 23, 2025                 [Page 1]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -113,7 +113,7 @@ Table of Contents
    in BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in
    all capitals, as shown here.
 
-Coretta                Expires February 23, 2025                [Page 2]
+Coretta               Expires February 23, 2025                 [Page 2]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -171,7 +171,7 @@ Coretta                Expires February 23, 2025                [Page 2]
    To aid in this process, the following subsections outline relevant
    assessment categories for consideration.
 
-Coretta                Expires February 23, 2025                [Page 3]
+Coretta               Expires February 23, 2025                 [Page 3]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -229,7 +229,7 @@ Coretta                Expires February 23, 2025                [Page 3]
 
 
 
-Coretta                Expires February 23, 2025                [Page 4]
+Coretta               Expires February 23, 2025                 [Page 4]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -287,7 +287,7 @@ Coretta                Expires February 23, 2025                [Page 4]
 
 
 
-Coretta                Expires February 23, 2025                [Page 5]
+Coretta               Expires February 23, 2025                 [Page 5]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -345,7 +345,7 @@ Coretta                Expires February 23, 2025                [Page 5]
 
 
 
-Coretta                Expires February 23, 2025                [Page 6]
+Coretta               Expires February 23, 2025                 [Page 6]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -403,7 +403,7 @@ Coretta                Expires February 23, 2025                [Page 6]
      1.3.6.1.4.1.56521.101.3.1.2
 
 
-Coretta                Expires February 23, 2025                [Page 7]
+Coretta               Expires February 23, 2025                 [Page 7]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -461,7 +461,7 @@ Coretta                Expires February 23, 2025                [Page 7]
 
 
 
-Coretta                Expires February 23, 2025                [Page 8]
+Coretta               Expires February 23, 2025                 [Page 8]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -519,7 +519,7 @@ Coretta                Expires February 23, 2025                [Page 8]
    The following subsections discuss various topics that pertain to DIT
    content management within the spirit of this I-D series.
 
-Coretta                Expires February 23, 2025                [Page 9]
+Coretta               Expires February 23, 2025                 [Page 9]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -577,7 +577,7 @@ Coretta                Expires February 23, 2025                [Page 9]
 
 
 
-Coretta                Expires February 23, 2025               [Page 10]
+Coretta               Expires February 23, 2025                [Page 10]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -635,7 +635,7 @@ Coretta                Expires February 23, 2025               [Page 10]
 
 
 
-Coretta                Expires February 23, 2025               [Page 11]
+Coretta               Expires February 23, 2025                [Page 11]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -693,7 +693,7 @@ Coretta                Expires February 23, 2025               [Page 11]
 
 
 
-Coretta                Expires February 23, 2025               [Page 12]
+Coretta               Expires February 23, 2025                [Page 12]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -751,7 +751,7 @@ Coretta                Expires February 23, 2025               [Page 12]
 
 
 
-Coretta                Expires February 23, 2025               [Page 13]
+Coretta               Expires February 23, 2025                [Page 13]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -809,7 +809,7 @@ Coretta                Expires February 23, 2025               [Page 13]
 
 
 
-Coretta                Expires February 23, 2025               [Page 14]
+Coretta               Expires February 23, 2025                [Page 14]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -867,7 +867,7 @@ Coretta                Expires February 23, 2025               [Page 14]
 
 
 
-Coretta                Expires February 23, 2025               [Page 15]
+Coretta               Expires February 23, 2025                [Page 15]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -925,7 +925,7 @@ Coretta                Expires February 23, 2025               [Page 15]
 
 
 
-Coretta                Expires February 23, 2025               [Page 16]
+Coretta               Expires February 23, 2025                [Page 16]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -983,7 +983,7 @@ Coretta                Expires February 23, 2025               [Page 16]
 
 
 
-Coretta                Expires February 23, 2025               [Page 17]
+Coretta               Expires February 23, 2025                [Page 17]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -1041,7 +1041,7 @@ Coretta                Expires February 23, 2025               [Page 17]
 
 
 
-Coretta                Expires February 23, 2025               [Page 18]
+Coretta               Expires February 23, 2025                [Page 18]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -1099,7 +1099,7 @@ Coretta                Expires February 23, 2025               [Page 18]
 
 
 
-Coretta                Expires February 23, 2025               [Page 19]
+Coretta               Expires February 23, 2025                [Page 19]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -1157,7 +1157,7 @@ Coretta                Expires February 23, 2025               [Page 19]
 
 
 
-Coretta                Expires February 23, 2025               [Page 20]
+Coretta               Expires February 23, 2025                [Page 20]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -1215,7 +1215,7 @@ Coretta                Expires February 23, 2025               [Page 20]
 
 
 
-Coretta                Expires February 23, 2025               [Page 21]
+Coretta               Expires February 23, 2025                [Page 21]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -1273,7 +1273,7 @@ Coretta                Expires February 23, 2025               [Page 21]
 
 
 
-Coretta                Expires February 23, 2025               [Page 22]
+Coretta               Expires February 23, 2025                [Page 22]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -1331,7 +1331,7 @@ Coretta                Expires February 23, 2025               [Page 22]
 
 
 
-Coretta                Expires February 23, 2025               [Page 23]
+Coretta               Expires February 23, 2025                [Page 23]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -1389,7 +1389,7 @@ Coretta                Expires February 23, 2025               [Page 23]
    certain 'subtreeSpecification' examples where appropriate.
 
 
-Coretta                Expires February 23, 2025               [Page 24]
+Coretta               Expires February 23, 2025                [Page 24]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -1447,7 +1447,7 @@ Coretta                Expires February 23, 2025               [Page 24]
    This attribute type is defined in Section 2.3.2 of the RASCHEMA I-D.
 
 
-Coretta                Expires February 23, 2025               [Page 25]
+Coretta               Expires February 23, 2025                [Page 25]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -1505,7 +1505,7 @@ Coretta                Expires February 23, 2025               [Page 25]
 
 
 
-Coretta                Expires February 23, 2025               [Page 26]
+Coretta               Expires February 23, 2025                [Page 26]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -1563,7 +1563,7 @@ Coretta                Expires February 23, 2025               [Page 26]
    FALSE value.  This is the most common scenario.
 
 
-Coretta                Expires February 23, 2025               [Page 27]
+Coretta               Expires February 23, 2025                [Page 27]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -1621,7 +1621,7 @@ Coretta                Expires February 23, 2025               [Page 27]
    This attribute type allows Long Arc instances to be assigned to a
    registration.
 
-Coretta                Expires February 23, 2025               [Page 28]
+Coretta               Expires February 23, 2025                [Page 28]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -1679,7 +1679,7 @@ Coretta                Expires February 23, 2025               [Page 28]
 
 
 
-Coretta                Expires February 23, 2025               [Page 29]
+Coretta               Expires February 23, 2025                [Page 29]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -1737,7 +1737,7 @@ Coretta                Expires February 23, 2025               [Page 29]
 
 
 
-Coretta                Expires February 23, 2025               [Page 30]
+Coretta               Expires February 23, 2025                [Page 30]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -1795,7 +1795,7 @@ Coretta                Expires February 23, 2025               [Page 30]
 
 
 
-Coretta                Expires February 23, 2025               [Page 31]
+Coretta               Expires February 23, 2025                [Page 31]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -1853,7 +1853,7 @@ Coretta                Expires February 23, 2025               [Page 31]
                  |            |       |            |
               minimum        left   right       maximum
 
-Coretta                Expires February 23, 2025               [Page 32]
+Coretta               Expires February 23, 2025                [Page 32]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -1911,7 +1911,7 @@ Coretta                Expires February 23, 2025               [Page 32]
 
 
 
-Coretta                Expires February 23, 2025               [Page 33]
+Coretta               Expires February 23, 2025                [Page 33]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -1969,7 +1969,7 @@ Coretta                Expires February 23, 2025               [Page 33]
    2.3.23 and 2.3.24 of the RASCHEMA I-D.
 
 
-Coretta                Expires February 23, 2025               [Page 34]
+Coretta               Expires February 23, 2025                [Page 34]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -2027,7 +2027,7 @@ Coretta                Expires February 23, 2025               [Page 34]
 
 
 
-Coretta                Expires February 23, 2025               [Page 35]
+Coretta               Expires February 23, 2025                [Page 35]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -2085,7 +2085,7 @@ Coretta                Expires February 23, 2025               [Page 35]
    value is the official ASN.1 OBJECT IDENTIFIER tag (6).  Additional
    measures MAY be implemented at the risk of performance penalities.
 
-Coretta                Expires February 23, 2025               [Page 36]
+Coretta               Expires February 23, 2025                [Page 36]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -2143,7 +2143,7 @@ Coretta                Expires February 23, 2025               [Page 36]
               2003.
 
 
-Coretta                Expires February 23, 2025               [Page 37]
+Coretta               Expires February 23, 2025                [Page 37]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -2201,7 +2201,7 @@ Coretta                Expires February 23, 2025               [Page 37]
 
 
 
-Coretta                Expires February 23, 2025               [Page 38]
+Coretta               Expires February 23, 2025                [Page 38]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
@@ -2260,4 +2260,4 @@ Author's Address
 
 
 
-Coretta                Expires February 23, 2025               [Page 39]
+Coretta               Expires February 23, 2025                [Page 39]
