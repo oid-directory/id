@@ -55,7 +55,7 @@ Copyright Notice
 
 
 
-Coretta                Expires February 23, 2025                [Page 1]
+Coretta               Expires February 23, 2025                 [Page 1]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -113,7 +113,7 @@ Table of Contents
          2.3.40. 'currentAuthorityCountryName' .......................23
          2.3.41. 'currentAuthorityEmail' .............................23
 
-Coretta                Expires February 23, 2025                [Page 2]
+Coretta               Expires February 23, 2025                 [Page 2]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -171,7 +171,7 @@ Coretta                Expires February 23, 2025                [Page 2]
          2.3.92. 'sponsorTitle' ......................................42
          2.3.93. 'sponsorURI' ........................................42
 
-Coretta                Expires February 23, 2025                [Page 3]
+Coretta               Expires February 23, 2025                 [Page 3]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -229,7 +229,7 @@ Coretta                Expires February 23, 2025                [Page 3]
 
 
 
-Coretta                Expires February 23, 2025                [Page 4]
+Coretta               Expires February 23, 2025                 [Page 4]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -287,7 +287,7 @@ Coretta                Expires February 23, 2025                [Page 4]
      - 1.3.6.1.1.16.1 (UUID syntax, matching rule and ordering rule, per
        Sections 2.1, 2.2 and 2.3 of [RFC4530] respectively)
 
-Coretta                Expires February 23, 2025                [Page 5]
+Coretta               Expires February 23, 2025                 [Page 5]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -345,7 +345,7 @@ Coretta                Expires February 23, 2025                [Page 5]
 
 
 
-Coretta                Expires February 23, 2025                [Page 6]
+Coretta               Expires February 23, 2025                 [Page 6]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -403,7 +403,7 @@ Coretta                Expires February 23, 2025                [Page 6]
    The 'iRI' attribute type allows the assignment of one (1) or more
    OID-IRI values to a registration.
 
-Coretta                Expires February 23, 2025                [Page 7]
+Coretta               Expires February 23, 2025                 [Page 7]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -461,7 +461,7 @@ Coretta                Expires February 23, 2025                [Page 7]
 
 
 
-Coretta                Expires February 23, 2025                [Page 8]
+Coretta               Expires February 23, 2025                 [Page 8]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -519,7 +519,7 @@ Coretta                Expires February 23, 2025                [Page 8]
 
 
 
-Coretta                Expires February 23, 2025                [Page 9]
+Coretta               Expires February 23, 2025                 [Page 9]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -577,7 +577,7 @@ Coretta                Expires February 23, 2025                [Page 9]
 
 
 
-Coretta                Expires February 23, 2025               [Page 10]
+Coretta               Expires February 23, 2025                [Page 10]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -635,7 +635,7 @@ Coretta                Expires February 23, 2025               [Page 10]
    A practical ABNF production for this attribute type is defined within
    Section 3.3.13 of [RFC4517].
 
-Coretta                Expires February 23, 2025               [Page 11]
+Coretta               Expires February 23, 2025                [Page 11]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -693,7 +693,7 @@ Coretta                Expires February 23, 2025               [Page 11]
    A practical ABNF production for the super type, 'description', can be
    found within Section 3.3.6 in [RFC4517].
 
-Coretta                Expires February 23, 2025               [Page 12]
+Coretta               Expires February 23, 2025                [Page 12]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -751,7 +751,7 @@ Coretta                Expires February 23, 2025               [Page 12]
    value is considered standardized.
 
 
-Coretta                Expires February 23, 2025               [Page 13]
+Coretta               Expires February 23, 2025                [Page 13]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -809,7 +809,7 @@ Coretta                Expires February 23, 2025               [Page 13]
 
    A practical ABNF production for this attribute type is as follows:
 
-Coretta                Expires February 23, 2025               [Page 14]
+Coretta               Expires February 23, 2025                [Page 14]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -867,7 +867,7 @@ Coretta                Expires February 23, 2025               [Page 14]
 
 
 
-Coretta                Expires February 23, 2025               [Page 15]
+Coretta               Expires February 23, 2025                [Page 15]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -925,7 +925,7 @@ Coretta                Expires February 23, 2025               [Page 15]
           COLLECTIVE )
 
 
-Coretta                Expires February 23, 2025               [Page 16]
+Coretta               Expires February 23, 2025                [Page 16]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -983,7 +983,7 @@ Coretta                Expires February 23, 2025               [Page 16]
 
 
 
-Coretta                Expires February 23, 2025               [Page 17]
+Coretta               Expires February 23, 2025                [Page 17]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -1041,7 +1041,7 @@ Coretta                Expires February 23, 2025               [Page 17]
    [RFC4519], is a super type of this attribute type.
 
 
-Coretta                Expires February 23, 2025               [Page 18]
+Coretta               Expires February 23, 2025                [Page 18]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -1099,7 +1099,7 @@ Coretta                Expires February 23, 2025               [Page 18]
 
 
 
-Coretta                Expires February 23, 2025               [Page 19]
+Coretta               Expires February 23, 2025                [Page 19]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -1157,7 +1157,7 @@ Coretta                Expires February 23, 2025               [Page 19]
 
    No specific syntax is implied for values of this type.
 
-Coretta                Expires February 23, 2025               [Page 20]
+Coretta               Expires February 23, 2025                [Page 20]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -1215,7 +1215,7 @@ Coretta                Expires February 23, 2025               [Page 20]
    [RFC4519], is a super type of this attribute type.
 
 
-Coretta                Expires February 23, 2025               [Page 21]
+Coretta               Expires February 23, 2025                [Page 21]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -1273,7 +1273,7 @@ Coretta                Expires February 23, 2025               [Page 21]
    The attribute type 'c', as defined in Section 2.2 of [RFC4519],
    is a super type of this attribute type.
 
-Coretta                Expires February 23, 2025               [Page 22]
+Coretta               Expires February 23, 2025                [Page 22]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -1331,7 +1331,7 @@ Coretta                Expires February 23, 2025               [Page 22]
    of a facsimile telephone number to a current authority entry.
 
 
-Coretta                Expires February 23, 2025               [Page 23]
+Coretta               Expires February 23, 2025                [Page 23]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -1389,7 +1389,7 @@ Coretta                Expires February 23, 2025               [Page 23]
 
 
 
-Coretta                Expires February 23, 2025               [Page 24]
+Coretta               Expires February 23, 2025                [Page 24]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -1447,7 +1447,7 @@ Coretta                Expires February 23, 2025               [Page 24]
 
 
 
-Coretta                Expires February 23, 2025               [Page 25]
+Coretta               Expires February 23, 2025                [Page 25]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -1505,7 +1505,7 @@ Coretta                Expires February 23, 2025               [Page 25]
    is a super type of this attribute type.
 
 
-Coretta                Expires February 23, 2025               [Page 26]
+Coretta               Expires February 23, 2025                [Page 26]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -1563,7 +1563,7 @@ Coretta                Expires February 23, 2025               [Page 26]
    one (1) or more URI values to a current authority entry.
 
 
-Coretta                Expires February 23, 2025               [Page 27]
+Coretta               Expires February 23, 2025                [Page 27]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -1621,7 +1621,7 @@ Coretta                Expires February 23, 2025               [Page 27]
 
 
 
-Coretta                Expires February 23, 2025               [Page 28]
+Coretta               Expires February 23, 2025                [Page 28]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -1679,7 +1679,7 @@ Coretta                Expires February 23, 2025               [Page 28]
    The 'firstAuthorityCommonName' attribute type allows for a common
    name to be assigned to a previous registration authority entry.
 
-Coretta                Expires February 23, 2025               [Page 29]
+Coretta               Expires February 23, 2025                [Page 29]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -1737,7 +1737,7 @@ Coretta                Expires February 23, 2025               [Page 29]
 
 
 
-Coretta                Expires February 23, 2025               [Page 30]
+Coretta               Expires February 23, 2025                [Page 30]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -1795,7 +1795,7 @@ Coretta                Expires February 23, 2025               [Page 30]
 
 
 
-Coretta                Expires February 23, 2025               [Page 31]
+Coretta               Expires February 23, 2025                [Page 31]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -1853,7 +1853,7 @@ Coretta                Expires February 23, 2025               [Page 31]
 
 
 
-Coretta                Expires February 23, 2025               [Page 32]
+Coretta               Expires February 23, 2025                [Page 32]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -1911,7 +1911,7 @@ Coretta                Expires February 23, 2025               [Page 32]
 
    Examples: "92262", "34216"
 
-Coretta                Expires February 23, 2025               [Page 33]
+Coretta               Expires February 23, 2025                [Page 33]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -1969,7 +1969,7 @@ Coretta                Expires February 23, 2025               [Page 33]
 
 
 
-Coretta                Expires February 23, 2025               [Page 34]
+Coretta               Expires February 23, 2025                [Page 34]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -2027,7 +2027,7 @@ Coretta                Expires February 23, 2025               [Page 34]
    Section 3 of [RFC4514].
 
 
-Coretta                Expires February 23, 2025               [Page 35]
+Coretta               Expires February 23, 2025                [Page 35]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -2085,7 +2085,7 @@ Coretta                Expires February 23, 2025               [Page 35]
    Example: "20130105135904Z"
 
 
-Coretta                Expires February 23, 2025               [Page 36]
+Coretta               Expires February 23, 2025                [Page 36]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -2143,7 +2143,7 @@ Coretta                Expires February 23, 2025               [Page 36]
           SUP c
           SINGLE-VALUE )
 
-Coretta                Expires February 23, 2025               [Page 37]
+Coretta               Expires February 23, 2025                [Page 37]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -2201,7 +2201,7 @@ Coretta                Expires February 23, 2025               [Page 37]
 
 
 
-Coretta                Expires February 23, 2025               [Page 38]
+Coretta               Expires February 23, 2025                [Page 38]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -2259,7 +2259,7 @@ Coretta                Expires February 23, 2025               [Page 38]
    The attribute type 'o', as defined in Section 2.19 of [RFC4519],
    is a super type of this attribute type.
 
-Coretta                Expires February 23, 2025               [Page 39]
+Coretta               Expires February 23, 2025                [Page 39]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -2317,7 +2317,7 @@ Coretta                Expires February 23, 2025               [Page 39]
    The 'sponsorPostalCode' attribute type allows for a postal code
    to be assigned to a sponsor.
 
-Coretta                Expires February 23, 2025               [Page 40]
+Coretta               Expires February 23, 2025                [Page 40]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -2375,7 +2375,7 @@ Coretta                Expires February 23, 2025               [Page 40]
 
 
 
-Coretta                Expires February 23, 2025               [Page 41]
+Coretta               Expires February 23, 2025                [Page 41]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -2433,7 +2433,7 @@ Coretta                Expires February 23, 2025               [Page 41]
           DESC 'Uniform Resource Identifier for a sponsor'
           SUP labeledURI )
 
-Coretta                Expires February 23, 2025               [Page 42]
+Coretta               Expires February 23, 2025                [Page 42]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -2491,7 +2491,7 @@ Coretta                Expires February 23, 2025               [Page 42]
 
 
 
-Coretta                Expires February 23, 2025               [Page 43]
+Coretta               Expires February 23, 2025                [Page 43]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -2549,7 +2549,7 @@ Coretta                Expires February 23, 2025               [Page 43]
    type of this attribute type.
 
 
-Coretta                Expires February 23, 2025               [Page 44]
+Coretta               Expires February 23, 2025                [Page 44]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -2607,7 +2607,7 @@ Coretta                Expires February 23, 2025               [Page 44]
           SYNTAX 1.3.6.1.4.1.1466.115.121.1.27
           COLLECTIVE )
 
-Coretta                Expires February 23, 2025               [Page 45]
+Coretta               Expires February 23, 2025                [Page 45]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -2665,7 +2665,7 @@ Coretta                Expires February 23, 2025               [Page 45]
 
 
 
-Coretta                Expires February 23, 2025               [Page 46]
+Coretta               Expires February 23, 2025                [Page 46]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -2723,7 +2723,7 @@ Coretta                Expires February 23, 2025               [Page 46]
 
 
 
-Coretta                Expires February 23, 2025               [Page 47]
+Coretta               Expires February 23, 2025                [Page 47]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -2781,7 +2781,7 @@ Coretta                Expires February 23, 2025               [Page 47]
           MAY dotEncoding )
 
 
-Coretta                Expires February 23, 2025               [Page 48]
+Coretta               Expires February 23, 2025                [Page 48]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -2839,7 +2839,7 @@ Coretta                Expires February 23, 2025               [Page 48]
    Standardization (ISO) and the International Telecommunications Union
    (ITU-T) in cooperative fashion.
 
-Coretta                Expires February 23, 2025               [Page 49]
+Coretta               Expires February 23, 2025                [Page 49]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -2897,7 +2897,7 @@ Coretta                Expires February 23, 2025               [Page 49]
 
 
 
-Coretta                Expires February 23, 2025               [Page 50]
+Coretta               Expires February 23, 2025                [Page 50]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -2955,7 +2955,7 @@ Coretta                Expires February 23, 2025               [Page 50]
 
 
 
-Coretta                Expires February 23, 2025               [Page 51]
+Coretta               Expires February 23, 2025                [Page 51]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -3013,7 +3013,7 @@ Coretta                Expires February 23, 2025               [Page 51]
 
 
 
-Coretta                Expires February 23, 2025               [Page 52]
+Coretta               Expires February 23, 2025                [Page 52]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -3071,7 +3071,7 @@ Coretta                Expires February 23, 2025               [Page 52]
    manner, they are advised to consider the composition and use of one
    (1) or more custom rules of this design.
 
-Coretta                Expires February 23, 2025               [Page 53]
+Coretta               Expires February 23, 2025                [Page 53]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -3129,7 +3129,7 @@ Coretta                Expires February 23, 2025               [Page 53]
    series.
 
 
-Coretta                Expires February 23, 2025               [Page 54]
+Coretta               Expires February 23, 2025                [Page 54]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -3187,7 +3187,7 @@ Coretta                Expires February 23, 2025               [Page 54]
 
 
 
-Coretta                Expires February 23, 2025               [Page 55]
+Coretta               Expires February 23, 2025                [Page 55]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -3245,7 +3245,7 @@ Coretta                Expires February 23, 2025               [Page 55]
 
 
 
-Coretta                Expires February 23, 2025               [Page 56]
+Coretta               Expires February 23, 2025                [Page 56]
 
 Internet-Draft        The OID Directory: Schema              August 2024
 
@@ -3304,4 +3304,4 @@ Author's Address
 
 
 
-Coretta                Expires February 23, 2025               [Page 57]
+Coretta               Expires February 23, 2025                [Page 57]
