@@ -2640,8 +2640,8 @@ Coretta                Expires February 23, 2025               [Page 45]
    A practical ABNF production for this attribute type is as follows:
 
      dotEncoding   = tag length bytes
-     tag           = %x06             ; ASN.1 OBJECT IDENTIFIER tag (6)
-     length        = 1*OCTET          ; number of (encoded) bytes
+     tag           = "%x06"           ; ASN.1 OBJECT IDENTIFIER tag (6)
+     length        = 1*OCTET          ; BE number of encoded bytes
      bytes         = 1*OCTET          ; encoded bytes
 
    The 'OCTET' ABNF production is defined within RFC 4512 Section 1.4.
@@ -2650,7 +2650,7 @@ Coretta                Expires February 23, 2025               [Page 45]
 
       ( 1.3.6.1.4.1.56521.101.2.3.103
           NAME 'dotEncoding'
-          DESC 'ASN.1 encoded numeric OID'
+          DESC 'X.690 cl. 8.19: encoded numeric OID'
           EQUALITY octetStringMatch
           SYNTAX 1.3.6.1.4.1.1466.115.121.1.40
           SINGLE-VALUE )
@@ -2852,13 +2852,15 @@ Coretta                Expires February 23, 2025               [Page 49]
    This class extends use of the 'longArc' attribute type, as defined in
    Section 2.3.20.
 
-   The 'x660Context' (Section 2.5.4), 'x680Context' (Section 2.5.6) and
-   'x690Context' (Section 2.5.7) are super classes of this class.
+   The 'x660Context' (Section 2.5.4), 'x667Context' (Section 2.5.5),
+   'x680Context' (Section 2.5.6) and 'x690Context' (Section 2.5.7)
+   object classes are super classes of this class.
 
       ( 1.3.6.1.4.1.56521.101.2.5.10
           NAME 'jointISOITUTRegistration'
           DESC 'X.660, cl. A.2: Joint ISO/ITU-T Administration'
           SUP ( x660Context $
+                x667Context $
                 x680Context $
                 x690Context )
           AUXILIARY
@@ -2892,8 +2894,6 @@ Coretta                Expires February 23, 2025               [Page 49]
 
    The 'registrationSupplement' AUXILIARY class extends a variety of
    miscellaneous and non-standard attribute types for OPTIONAL.
-
-
 
 
 
