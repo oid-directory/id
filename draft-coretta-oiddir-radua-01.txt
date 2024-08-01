@@ -57,7 +57,7 @@ Copyright Notice
 
 Coretta                Expires February 23, 2025                [Page 1]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
 Table of Contents
@@ -115,7 +115,7 @@ Table of Contents
 
 Coretta                Expires February 23, 2025                [Page 2]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
 1.2.1.  Definitions
@@ -173,7 +173,7 @@ Coretta                Expires February 23, 2025                [Page 2]
 
 Coretta                Expires February 23, 2025                [Page 3]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
 2.1.  Defined Parameters
@@ -231,7 +231,7 @@ Coretta                Expires February 23, 2025                [Page 3]
 
 Coretta                Expires February 23, 2025                [Page 4]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
 2.2.  Procedures
@@ -289,7 +289,7 @@ Coretta                Expires February 23, 2025                [Page 4]
 
 Coretta                Expires February 23, 2025                [Page 5]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
    These attribute types are extended through use of the 'rADUAConfig'
@@ -347,7 +347,7 @@ Coretta                Expires February 23, 2025                [Page 5]
 
 Coretta                Expires February 23, 2025                [Page 6]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
 2.2.2.1.  Processing
@@ -405,7 +405,7 @@ Coretta                Expires February 23, 2025                [Page 6]
 
 Coretta                Expires February 23, 2025                [Page 7]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
       1.  Verify presence and accessibility of entries identified by the
@@ -463,7 +463,7 @@ Coretta                Expires February 23, 2025                [Page 7]
 
 Coretta                Expires February 23, 2025                [Page 8]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
    In the case of "2b", the RA DUA SHOULD include all attribute types
@@ -521,7 +521,7 @@ Coretta                Expires February 23, 2025                [Page 8]
 
 Coretta                Expires February 23, 2025                [Page 9]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
    The RA DUA MUST handle the value of this instance as follows:
@@ -579,7 +579,7 @@ Coretta                Expires February 23, 2025                [Page 9]
 
 Coretta                Expires February 23, 2025               [Page 10]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
    Foreknowledge of the DN is required for a Read Operation attempt of
@@ -637,7 +637,7 @@ Coretta                Expires February 23, 2025               [Page 10]
 
 Coretta                Expires February 23, 2025               [Page 11]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
    The 'registration' ABSTRACT object class is a required class for any
@@ -695,7 +695,7 @@ Coretta                Expires February 23, 2025               [Page 11]
 
 Coretta                Expires February 23, 2025               [Page 12]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
    Presence of the 'firstAuthorityContext', 'currentAuthorityContext',
@@ -753,7 +753,7 @@ Coretta                Expires February 23, 2025               [Page 12]
 
 Coretta                Expires February 23, 2025               [Page 13]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
    The RA DUA MAY decide how to handle the case of reading a previously
@@ -811,7 +811,7 @@ Coretta                Expires February 23, 2025               [Page 13]
 
 Coretta                Expires February 23, 2025               [Page 14]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
 2.2.3.3.2. Subordinate Vertical References
@@ -869,7 +869,7 @@ Coretta                Expires February 23, 2025               [Page 14]
 
 Coretta                Expires February 23, 2025               [Page 15]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
    The 'minArc' and 'c-minArc' attribute types are used to reference the
@@ -927,7 +927,7 @@ Coretta                Expires February 23, 2025               [Page 15]
 
 Coretta                Expires February 23, 2025               [Page 16]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
       - A value less than or equal to "0" is equivalent to a TTL being
@@ -985,7 +985,7 @@ Coretta                Expires February 23, 2025               [Page 16]
 
 Coretta                Expires February 23, 2025               [Page 17]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
 2.2.4.1.  Verification
@@ -1043,7 +1043,7 @@ Coretta                Expires February 23, 2025               [Page 17]
 
 Coretta                Expires February 23, 2025               [Page 18]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
       baseObject = n=4,n=1,n=6,n=3,n=1,ou=Registrations,o=rA
@@ -1101,7 +1101,7 @@ Coretta                Expires February 23, 2025               [Page 18]
 
 Coretta                Expires February 23, 2025               [Page 19]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
 2.2.4.1.2.  Number Form Uniqueness
@@ -1159,7 +1159,7 @@ Coretta                Expires February 23, 2025               [Page 19]
 
 Coretta                Expires February 23, 2025               [Page 20]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
 2.2.4.1.3.  Ranged Allocations
@@ -1217,7 +1217,7 @@ Coretta                Expires February 23, 2025               [Page 20]
 
 Coretta                Expires February 23, 2025               [Page 21]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
    The RA DUA MAY opt to impose a 'typesOnly' value of FALSE to allow
@@ -1275,7 +1275,7 @@ Coretta                Expires February 23, 2025               [Page 21]
 
 Coretta                Expires February 23, 2025               [Page 22]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
    In an even more exceptional (and unlikely) scenario, the correction
@@ -1333,7 +1333,7 @@ Coretta                Expires February 23, 2025               [Page 22]
 
 Coretta                Expires February 23, 2025               [Page 23]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
    [RFC2696]  C. Weider, A. Herron, A. Anantha, Microsoft, T. Howes
@@ -1391,7 +1391,7 @@ Coretta                Expires February 23, 2025               [Page 23]
 
 Coretta                Expires February 23, 2025               [Page 24]
 
-Internet-Draft      The OID Directory: RA Client             August 2024
+Internet-Draft       The OID Directory: RA Client            August 2024
 
 
    [X.660]    International Telecommunication Union - Telecommunication
