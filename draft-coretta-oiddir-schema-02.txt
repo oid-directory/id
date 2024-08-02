@@ -2860,7 +2860,6 @@ Coretta               Expires February 23, 2025                [Page 49]
           NAME 'jointISOITUTRegistration'
           DESC 'X.660, cl. A.2: Joint ISO/ITU-T Administration'
           SUP ( x660Context $
-                x667Context $
                 x680Context $
                 x690Context )
           AUXILIARY
@@ -2894,6 +2893,7 @@ Coretta               Expires February 23, 2025                [Page 49]
 
    The 'registrationSupplement' AUXILIARY class extends a variety of
    miscellaneous and non-standard attribute types for OPTIONAL.
+
 
 
 
