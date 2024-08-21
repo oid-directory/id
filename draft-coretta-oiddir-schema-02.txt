@@ -315,6 +315,9 @@ Coretta               Expires February 23, 2025                 [Page 5]
    LDAP description formats [RFC4512].  These elements are line-wrapped
    and indented for readability when needed.
 
+   ALL definitions declared throughout the following subsections are to
+   be considered "leaf nodes" (no subordinate registrations).
+
 2.1.  LDAP Syntaxes
 
    No LDAP syntaxes are defined anywhere in this I-D series.  However,
@@ -335,15 +338,12 @@ Coretta               Expires February 23, 2025                 [Page 5]
 
 2.2.  Matching Rules
 
-   No LDAP matching rule definitions are defined anywhere in this
-   I-D series.
+   No LDAP matching rules are defined anywhere in this I-D series.
 
 2.3.  Attribute Types
 
    The following subsections detail one hundred three (103) attribute
    types created for use within implementations of this specification.
-
-
 
 Coretta               Expires February 23, 2025                 [Page 6]
 
@@ -372,7 +372,7 @@ Coretta               Expires February 23, 2025                 [Page 6]
    1.4 of [RFC4512].
 
       ( 1.3.6.1.4.1.56521.101.2.3.1
-          NAME ( 'n' 'numberForm' )
+          NAME 'n'
           DESC 'X.680, cl. 32.3: NumberForm'
           EQUALITY integerMatch
           ORDERING integerOrderingMatch
@@ -505,7 +505,7 @@ Coretta               Expires February 23, 2025                 [Page 8]
 2.3.7.  'identifier'
 
    The 'identifier' attribute type allows for the assignment of one (1)
-   non-numeric, non-Unicode identifier, or nameForm, to a registration.
+   non-numeric, non-Unicode identifier to a registration.
 
    Per clause 12.3 of ITU-T Rec. [X.680]:
 
@@ -538,7 +538,7 @@ Coretta               Expires February 23, 2025                 [Page 9]
    is a super type of this attribute type.
 
       ( 1.3.6.1.4.1.56521.101.2.3.7
-          NAME ( 'identifier' 'nameForm' )
+          NAME 'identifier'
           DESC 'X.680, cl. 12.3: Identifier'
           SUP name
           SINGLE-VALUE )
@@ -2518,7 +2518,7 @@ Coretta               Expires February 23, 2025                [Page 43]
           SYNTAX 1.3.6.1.4.1.1466.115.121.1.38
           SINGLE-VALUE )
 
-   Example: "1.3.6.1.4.1.56521.101.3.3"
+   Example: "1.3.6.1.4.1.56521.101.3.1.3"
 
 2.3.98.  'rAServiceMail'
 
@@ -2615,7 +2615,7 @@ Coretta               Expires February 23, 2025                [Page 45]
 2.3.102.  'registeredUUID'
 
    The 'registeredUUID' attribute type assigns a hexadecimal UUID value
-   to a registration.
+   to a registration, as covered in ITU-T Rec. [X.667].
 
    A practical ABNF production for this attribute type is defined within
    Section 3 of [RFC4122].
@@ -2644,9 +2644,9 @@ Coretta               Expires February 23, 2025                [Page 45]
      length        = 1*OCTET          ; BE number of encoded bytes
      bytes         = 1*OCTET          ; encoded bytes
 
-   The 'OCTET' ABNF production is defined within RFC 4512 Section 1.4.
+   The 'OCTET' ABNF production is defined within [RFC4512] Section 1.4.
    The OID encoding scheme is defined within clause 8.19 of ITU-T Rec.
-   X.690.
+   [X.690].
 
       ( 1.3.6.1.4.1.56521.101.2.3.103
           NAME 'dotEncoding'
@@ -3080,7 +3080,7 @@ Coretta               Expires February 23, 2025                [Page 53]
 
    This section defines three (3) Name Forms for use in the composition
    of any DIT Structure Rules required, if supported by the X.500/LDAP
-   product(s) in question.  See Section 4.1.7.2 of [RFC4512] for
+   product(s) in question.  See Section 4.1.7.2 of [RFC4512] for further
    details.
 
 2.7.1.  'nRootArcForm'
@@ -3136,7 +3136,7 @@ Coretta               Expires February 23, 2025                [Page 54]
 
    The name form definitions per Section 2.7 may be used in the creation
    of custom DIT structure rules by the directory administrator(s) if
-   desired.  See Section 4.1.7.1 of [RFC4512] for details.
+   desired.  See Section 4.1.7.1 of [RFC4512] for further details.
 
 3.  IANA Considerations
 

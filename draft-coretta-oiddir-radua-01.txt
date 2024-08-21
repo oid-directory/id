@@ -160,8 +160,8 @@ Coretta                Expires February 23, 2025                [Page 2]
                                ; and RFC4512 'AttributeSelector'
 
    While the abstraction has favored the use of LDAP-focused parameters
-   derived from [RFC4511], adopters MAY assume similar directives
-   are applicable within the context of DAP unless otherwise indicated.
+   derived from [RFC4511], adopters MAY assume similar directives are
+   applicable within the context of DAP unless otherwise indicated.
 
 2.  The RA DUA
 
@@ -385,7 +385,7 @@ Coretta                Expires February 23, 2025                [Page 6]
    entries is considered a "Duplicate RA Context Error" and represents
    a serious operational deficiency that MUST be reported to the end
    user.  The RA DUA SHOULD fail the session or (optionally) allow for
-   administrative override if corrective measures are to be taken.
+   administrative override if corrective measures may be taken.
 
 2.2.2.1.2.  'rARegistrationBase'
 
@@ -476,8 +476,8 @@ Coretta                Expires February 23, 2025                [Page 8]
    specified 'rARegistrantBase' DN value within the RA DIT.
 
    Depending on the nature of implementation of this I-D series, it may
-   or may not be advisable to populate the 'rARegistrantBase' Attribute
-   Type for consumption by all clients indiscriminately.  See Section
+   or may not be advisable to populate the 'rARegistrantBase' attribute
+   type for consumption by all clients indiscriminately.  See Section
    5.2 of the RADIT I-D for security considerations on this topic.
 
 2.2.2.1.4.  'rADirectoryModel'
@@ -610,7 +610,7 @@ Coretta                Expires February 23, 2025               [Page 10]
       - An unsupported or incoherent DN syntax is indicated
       - Administrative operations are underway
 
-   Use of a List Operation or subtree Search Operation may be indicated.
+   ... use of List or subtree Search operations may be indicated.
 
    While this method of searching is not generally recommended within
    the spirit of this I-D series, the RA DUA MAY allow this capability
@@ -620,7 +620,7 @@ Coretta                Expires February 23, 2025               [Page 10]
    number of entries retrieved through a Search Operation, support for
    Simple Paged Results Manipulation by the RA DUA may be indicated if
    supported by the RA DSA.  For details, see clause 7.9 of ITU-T Rec.
-   X.511 and the entirety of [RFC2696].
+   [X.511] and the entirety of [RFC2696].
 
 2.2.3.2.  Reading Entries
 
@@ -644,22 +644,23 @@ Coretta                Expires February 23, 2025               [Page 11]
    OID allocation.  This class MUST only appear on entries which bear
    the 'rootArc' or 'arc' STRUCTURAL class.  It is a sub type of the
    'top' ABSTRACT class, defined in Section 2.4.1 of [RFC4512] and in
-   clause 13.3.3 of ITU-T Rec. X.501.
+   clause 13.3.3 of ITU-T Rec. [X.501].
 
    The 'registrant' STRUCTURAL object class is only used for dedicated
    registrants, which are associated through DN references held by
    associated 'registration' entries, if any.  Appearance upon any
    other form of entry is a suboptimal or illogical state.
 
-   Presence of the 'x660Context' and/or 'x680Context' AUXILIARY classes
-   for a 'registration' entry is permitted.  These object classes extend
-   multiple attribute types which conceptually relate to ITU-T Rec.
-   X.660 and X.680 respectively.
+   Presence of the 'x660Context', 'x680Context' and/or 'x690Context'
+   AUXILIARY classes for a 'registration' entry is permitted.  These
+   classes extend multiple attribute types which conceptually derive
+   from ITU-T Recs. [X.660], [X.680] and [X.690].
 
    Presence of the 'x667Context' AUXILIARY class for a 'registration'
    entry is only expected in cases where an OID allocation involves a
    'registeredUUID' attribute type instance and where the assigned 'n'
-   value is the equivalent unsigned 128-bit integer.
+   value is the equivalent unsigned 128-bit integer.  See ITU-T Rec.
+   [X.667] for information on this topic.
 
    Presence of the 'iTUTRegistration' AUXILIARY class is only permitted
    for allocations bearing the 'arc' STRUCTURAL class and describe an
@@ -692,7 +693,6 @@ Coretta                Expires February 23, 2025               [Page 11]
 
 
 
-
 Coretta                Expires February 23, 2025               [Page 12]
 
 Internet-Draft       The OID Directory: RA Client            August 2024
@@ -715,7 +715,7 @@ Coretta                Expires February 23, 2025               [Page 12]
 
 2.2.3.2.2.  Attribute Types Used
 
-   At a minimum, the RA DUA SHOULD only expect Attribute Types defined
+   At a minimum, the RA DUA SHOULD only expect attribute types defined
    within Section 2.3 of the RASCHEMA I-D, and/or their respective
    super types defined in [RFC4519], [RFC4524] and [RFC2079], to be
    assigned to entries within the terms of this I-D series.
@@ -737,7 +737,7 @@ Coretta                Expires February 23, 2025               [Page 12]
    As mentioned in Section 2.1 of the RASCHEMA I-D, standard syntaxes
    do not necessarily align perfectly with the syntactical requirements
    of the standards upon which this I-D series is based -- namely ITU-T
-   Recommendations X.660 and X.680.
+   Recs. [X.660] and [X.680].
 
    To ease the difficulty in implementing an RA DUA which honors the
    syntactical characteristics of the underlying subject matter -- as
@@ -798,11 +798,11 @@ Coretta                Expires February 23, 2025               [Page 13]
    The 'topArc' and 'c-topArc' attribute types describe the absolute
    root registration in terms of ancestral lineage.  Only one (1) of
    each of these attribute types should be present for any given
-   'registration' entry, never both.
+   'registration' entry -- never both.
 
    Use of Collective attribute types -- namely those prefaced using the
-   requisite 'c-' flag -- is not practical in the two dimensional model
-   and thus need not be requested.
+   requisite 'c-' flag -- may not be practical in the two dimensional
+   model and thus need not be requested.
 
    At no point are the above attribute types to be requested for entries
    that bear the 'rootArc' STRUCTURAL object class.  Root registrations
@@ -874,14 +874,14 @@ Coretta                Expires February 23, 2025               [Page 15]
 
    The 'minArc' and 'c-minArc' attribute types are used to reference the
    'registration' entry bearing the lowest magnitude Number Form ('n')
-   value within a set of siblings.  Only one (1) of these Attribute
-   Types should be present for any given 'registration' entry, never
+   value within a set of siblings.  Only one (1) of these attribute
+   types should be present for any given 'registration' entry, never
    both.
 
    The 'maxArc' and 'c-maxArc' attribute types are used to reference the
    'registration' entry bearing the highest magnitude Number Form ('n')
-   value within a set of siblings.  Only one (1) of these Attribute
-   Types should be present for any given 'registration' entry, never
+   value within a set of siblings.  Only one (1) of these attribute
+   types should be present for any given 'registration' entry, never
    both.
 
 2.2.3.4.  Client Entry Caching
@@ -990,7 +990,7 @@ Coretta                Expires February 23, 2025               [Page 17]
 
 2.2.4.1.  Verification
 
-   Certain preallocation checks MUST be conducted prior to any attempt
+   Certain pre-allocation checks MUST be conducted prior to any attempt
    at creating an allocation.  The following subsections describe these
    procedures.  Please note that only the three dimensional directory
    model is covered due to its STRONGLY RECOMMENDED status over the
@@ -1126,7 +1126,7 @@ Coretta                Expires February 23, 2025               [Page 19]
 
    Use of the 'typesOnly' option is merely for bandwidth efficiency,
    as the goal of this request is to see if ANY entry exists by this
-   DN -- not to examine any particular attribute type values.
+   DN -- not to examine any particular attribute values.
 
    If zero (0) entries are returned alongside a 'noSuchObject' error,
    the Number Form is unique.
@@ -1168,7 +1168,7 @@ Coretta                Expires February 23, 2025               [Page 20]
    search for any range-based registrations present that might overlap
    with the intended 'n' value of the entry.  This requirement MAY be
    relaxed if it is known that ranged allocations are not supported in
-   the target location.
+   the target location, but this is generally discouraged.
 
    For example, to determine if a ranged allocation resides within the
    1.3 OID registration that would overlap with a desired Number Form,
@@ -1180,6 +1180,9 @@ Coretta                Expires February 23, 2025               [Page 20]
       filter     = (&(n<=X)
        (|(registrationRange>=X)(registrationRange=-1)))
       attributes = registrationRange
+
+   Note that 'filter' contains a line-break and indenting due to the
+   format requirements normally imposed upon I-Ds.
 
    Given these parameters, where the filter AVA "X" represents the 'n'
    (Number Form) chosen -- for example "100" -- the search will return
@@ -1211,9 +1214,6 @@ Coretta                Expires February 23, 2025               [Page 20]
 
    Doing so accomplishes the goals of this section and Section 2.2.4.1.2
    in a single action.
-
-
-
 
 Coretta                Expires February 23, 2025               [Page 21]
 
@@ -1270,8 +1270,8 @@ Coretta                Expires February 23, 2025               [Page 21]
       - Addition of object class values
       - Addition of attribute type instances or values
       - Removal of undesirable or invalid attribute instances or values
-      - Correction of bogus attribute type values
-      - Relegation of a currentAuthority to a firstAuthority
+      - Correction of bogus attribute values
+      - Relegation of a 'currentAuthority' to a 'firstAuthority'
 
 Coretta                Expires February 23, 2025               [Page 22]
 
@@ -1399,6 +1399,13 @@ Coretta                Expires February 23, 2025               [Page 24]
               of the international object identifier tree", ITU-T X.660,
               July 2011.
 
+   [X.667]    International Telecommunication Union - Telecommunication 
+              Standardization Sector, "Information technology -         
+              Procedures for the operation of object identifier         
+              registration authorities: Generation of universally unique
+              identifiers and their use in object identifiers", ITU-T   
+              X.667, October 2012.
+
    [X.680]    International Telecommunication Union - Telecommunication
               Standardization Sector, "Abstract Syntax Notation One
               (ASN.1): Specification of basic notation", ITU-T X.680,
@@ -1410,13 +1417,6 @@ Author's Address
    California, United States
 
    Email: jesse.coretta@icloud.com
-
-
-
-
-
-
-
 
 
 

@@ -139,8 +139,7 @@ Coretta               Expires February 23, 2025                 [Page 2]
    number of RA DSAs within the terms of this I-D series.
 
    General familiarity with the broad X.500/LDAP specification, as well
-   as with the RASCHEMA, RADUA and RADIT I-Ds is STRONGLY
-   RECOMMENDED.
+   as with the RASCHEMA, RADUA and RADIT I-Ds is STRONGLY RECOMMENDED.
 
 2.  The RA DSA
 
@@ -167,7 +166,8 @@ Coretta               Expires February 23, 2025                 [Page 2]
    In the operational terms of this I-D series, the RA DSA MUST fully
    support the Search and Read operations -- as executed by any RA DUAs
    interacting with the service -- for the purpose of entry retrieval as
-   it pertains to registration and registrant contexts.
+   it pertains to registration and registrant contexts.  This is a hard
+   requirement.
 
 
 
@@ -179,7 +179,7 @@ Coretta               Expires February 23, 2025                 [Page 3]
    The RA DSA may or may not allow write-based operations -- such as Add
    or Modify -- to be executed by client entities.  This may be due to
    the access control model employed by the RA DSA, shadowing contexts
-   or some other condition in effect.
+   or some other condition in effect that would preclude writes.
 
 2.2.  Core Capabilities
 
@@ -323,7 +323,9 @@ Coretta               Expires February 23, 2025                 [Page 5]
    ITU-T Rec. [X.501].
 
    In particularly large and mission-critical implementations of this
-   I-D series, this may be a CRITICAL feature.
+   I-D series, this may be a CRITICAL feature.  This may also benefit
+   large implementations which are maintained by engineers subject to
+   significant time constraints.
 
    The RASCHEMA I-D defines several collective types for use within the
    terms of this I-D series.  The RADIT I-D provides examples regarding
@@ -343,8 +345,6 @@ Coretta               Expires February 23, 2025                 [Page 5]
 
 
 
-
-
 Coretta               Expires February 23, 2025                 [Page 6]
 
 Internet-Draft      The OID Directory: RA Server             August 2024
@@ -361,11 +361,11 @@ Coretta               Expires February 23, 2025                 [Page 6]
 
    Section 2.3 of the RASCHEMA I-D references or defines appropriate
    ABNF productions for every attribute type defined.  This is done to
-   aid adopters in constraining values to conform with originating
+   aid adopters in constraining values for conformance with originating
    standards, as opposed to reliance upon attribute syntax alone.
 
    If it is not possible to constrain values using the ABNF productions
-   as recommended by some reasonable means, this I-D series may not be
+   as recommended, by some reasonable means, this I-D series may not be
    practical for adoption in certain mission-critical scenarios.
 
 2.3.4.  Proxy Authorization
@@ -477,8 +477,9 @@ Coretta               Expires February 23, 2025                 [Page 8]
       rARegistrationBase: ou=OIDs,o=example
 
    The 'domain' STRUCTURAL object class is defined in Section 3.4 of
-   [RFC4524].  The 'organization' STRUCTURAL object class is defined
-   in Section 3.8 of [RFC4519].
+   [RFC4524].  The 'organization' STRUCTURAL object class is defined in
+   Section 3.8 of [RFC4519].  These classes are used here merely for the
+   sake of example, and will vary among real-life DITs in the wild.
 
 2.3.7.  Content Replication
 
@@ -489,7 +490,7 @@ Coretta               Expires February 23, 2025                 [Page 8]
 
    This may be especially important in public-facing RA implementations
    in which various registration subtrees are sourced from appropriate
-   authorities and served as shadowed information.
+   authorities and served as shadowed contexts.
 
    DISP originates in ITU-T Rec. [X.525].
 
@@ -517,7 +518,6 @@ Coretta               Expires February 23, 2025                 [Page 8]
 
    While there may be precedents for this sort of exposure, this I-D has
    no official position regarding this strategy.
-
 
 Coretta               Expires February 23, 2025                 [Page 9]
 
