@@ -145,7 +145,7 @@ Coretta               Expires February 23, 2025                 [Page 2]
 
    The RA DSA is a traditional X.500/LDAP server -- fully compliant with
    the core standards defined throughout ITU-T Rec. [X.500], [RFC4510],
-   et al., that has been OPTIMIZED for use within the terms of this I-D
+   et al, that has been OPTIMIZED for use within the terms of this I-D
    series.
 
 2.1.  Defined Parameters
@@ -196,8 +196,8 @@ Coretta               Expires February 23, 2025                 [Page 3]
    Section 2 of the RASCHEMA I-D defines many suitable attribute type,
    object class and name form definitions for use in creating a viable
    RA DIT to be served by way of the RA DSA.  Examples involving use of
-   these definitions can be found throughout the RADIT I-D as well
-   as this document.
+   these definitions can be found throughout the RADIT I-D as well as
+   this document.
 
    The RA DSA MUST have up-to-date knowledge of all attribute types and
    object classes defined in Sections 2.3 and 2.5 of the RASCHEMA I-D
@@ -244,7 +244,7 @@ Coretta               Expires February 23, 2025                 [Page 4]
    other DSAs.
 
    Facilitation may involve local storage of content, or distributed
-   sourcing from external sources into a backend, or storage area.
+   sourcing from external sources into a backend or storage area.
 
    This I-D makes no recommendations that specifically influence the
    design or operation of any content source facility.  These concepts,
@@ -319,7 +319,7 @@ Coretta               Expires February 23, 2025                 [Page 5]
 2.3.1.  Collective Attributes
 
    Attribute types can be applied for an entire subtree context by way
-   of collective attributes, defined within [RFC3671], [RFC3672] and
+   of collective attributes, described within [RFC3671], [RFC3672] and
    ITU-T Rec. [X.501].
 
    In particularly large and mission-critical implementations of this
@@ -359,7 +359,7 @@ Coretta               Expires February 23, 2025                 [Page 6]
    series is conceptually based.  This concern is mentioned in Section
    2.1 of the RASCHEMA I-D.
 
-   Section 2.3 of the RASCHEMA I-D references or defines appropriate
+   Section 2.3 of the RASCHEMA I-D references, or devises, appropriate
    ABNF productions for every attribute type defined.  This is done to
    aid adopters in constraining values for conformance with originating
    standards, as opposed to reliance upon attribute syntax alone.
@@ -486,7 +486,7 @@ Coretta               Expires February 23, 2025                 [Page 8]
    Depending on the desired fault tolerance of an implementation, as
    well as the authoritative layout and placement of registration data,
    use of a directory replication system -- such as DISP or some other
-   proprietary solution of similar design -- may be indicated.
+   proprietary solution of a similar design -- may be indicated.
 
    This may be especially important in public-facing RA implementations
    in which various registration subtrees are sourced from appropriate

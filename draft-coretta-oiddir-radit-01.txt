@@ -222,8 +222,8 @@ Coretta               Expires February 23, 2025                 [Page 3]
    entire ancestry.  The result is a collection of sibling entries
    with no hierarchically significant placement.
 
-   With these considerations in mind, adopters should decide the
-   extent to which adoption shall occur in terms of directory content
+   With these considerations in mind, adopters should decide the extent
+   to which such incorporation shall occur in terms of directory content
    maintained and its effective footprint.
 
 
@@ -236,12 +236,12 @@ Coretta               Expires February 23, 2025                 [Page 4]
 
 2.3.  Content Capacity and Location
 
-   Adopters are advised to consider the long-term implications of
-   the planned RA DIT in terms of capacity provided by the hosting RA
-   DSA(s) and take measures to ensure a suitable operating environment.
+   Adopters are advised to consider the long-term implications of the
+   planned RA DIT in terms of capacity provided by the hosting RA DSA(s)
+   and take measures to ensure a scalable operating environment.
 
-   Based on the assessments made in Section 2.2, adopters may wish
-   to consider whether a particularly large RA DIT may be better suited
+   Based on the assessments made in Section 2.2, adopters may wish to
+   consider whether a particularly large RA DIT may be better suited
    for context segmentation, whether or not distribution is indicated,
    to allow for larger portions of the RA DIT to function independently
    with dedicated resources and specialized security policies.
@@ -284,8 +284,8 @@ Coretta               Expires February 23, 2025                 [Page 4]
    would likely result in an unhelpful implementation.
 
    While attribute types have been defined for most contingencies, the
-   adoption of these types is entirely up to the adopter(s).
-
+   incorporation of these types within an RA DIT is entirely up to the
+   adopter(s).
 
 Coretta               Expires February 23, 2025                 [Page 5]
 
@@ -775,7 +775,7 @@ Coretta               Expires February 23, 2025                [Page 13]
    object class.  Be advised that root registration entries cannot bear
    instances of the 'dotNotation' attribute type due to syntactical
    limitations.  The standard OID syntax for LDAP requires at least two
-   (2) number form instances in dot notation for a legal OID value.
+   (2) number form instances in dot notation for any legal OID value.
 
    Because 'dotNotation' was defined upon this syntax, this precludes
    any single root arc -- such as 2 -- being used to identify a root
@@ -785,7 +785,8 @@ Coretta               Expires February 23, 2025                [Page 13]
    It is generally discouraged to use any attribute type OTHER THAN 'n'
    for the RDN attribute type of the 'registration' DN within the three
    dimensional model.  Using types such as 'identifier', 'unicodeValue'
-   or others, can interfere with DN/OID conversion and extrapolation.
+   or others, can interfere with DN/OID conversion and extrapolation,
+   and may introduce ambiguity in large implementations.
 
 3.2.2.1.1.  ITU-T
 
@@ -806,7 +807,6 @@ Coretta               Expires February 23, 2025                [Page 13]
       standardizedNameForm: {itu-t}
       additionalUnicodeValue: ITU-R
       registrationClassification: Standards development organization
-
 
 
 Coretta               Expires February 23, 2025                [Page 14]
@@ -921,8 +921,8 @@ Coretta               Expires February 23, 2025                [Page 15]
       - 'dotNotation'
       - 'isLeafNode'
       - 'registrationRange'
-      - '[c-]topArc'
-      - '[c-]supArc'
+      - 'topArc' or 'c-topArc'
+      - 'supArc' or 'c-supArc'
 
 
 Coretta               Expires February 23, 2025                [Page 16]
@@ -1336,7 +1336,7 @@ Coretta               Expires February 23, 2025                [Page 23]
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
-   The most obvious benefit to the composite approach is the reduced
+   The most obvious benefit of the composite approach is the reduced
    storage space required for preservation of literal attribute values.
    The degree of "savings" is naturally proportional to the overall size
    of the RA DIT.
@@ -1344,7 +1344,8 @@ Coretta               Expires February 23, 2025                [Page 23]
    A significant drawback, however, is (likely) limited client support.
    In order for composite values to be extrapolated by any client, the
    client must first be aware of the necessary "component" types which
-   are required in order to produce a composite value.
+   are required in order to produce a composite value.  Mitigation of
+   this drawback MAY be achievable through server-side functionality.
 
    Performance may also be a concern when composite values are assembled
    using a lengthy sequence of superior entries, or if the operational
@@ -1387,7 +1388,6 @@ Coretta               Expires February 23, 2025                [Page 23]
    While this I-D series does not delve into the particulars of specific
    implementation steps for any given directory product, it does offer
    certain (basic) 'subtreeSpecification' examples where appropriate.
-
 
 Coretta               Expires February 23, 2025                [Page 24]
 
@@ -1436,7 +1436,7 @@ Coretta               Expires February 23, 2025                [Page 24]
 
    This attribute type plays a crucial role with regards to DN syntax
    used in the two dimensional directory model described within the
-   RADIT I-D.  It cannot be assigned to registration entries which bear
+   RADIT I-D.  It cannot be assigned to 'registration' entries that bear
    the 'rootArc' STRUCTURAL object class.
 
    Instances of this attribute type SHALL NOT appear on entries other
@@ -1586,7 +1586,7 @@ Coretta               Expires February 23, 2025                [Page 27]
    A registration that lacks subordinate entries is not necessarily a
    leaf-node.  Lack of this status could mean subordinate allocations
    might occur in the future.  Leaf-node status is meant for use in
-   permanent contexts.
+   permanent and definitive contexts.
 
    This type is defined in Section 2.3.16 of the RASCHEMA I-D.
 
@@ -1687,7 +1687,7 @@ Coretta               Expires February 23, 2025                [Page 29]
 3.2.4.13.  'firstAuthority', 'currentAuthority' and 'sponsor'
 
    These attribute types -- and their collective counterparts -- are for
-   use in identifying registrant entries which describe individuals,
+   use in identifying 'registrant' entries which describe individuals,
    groups and other entities that serve in authority over registrations.
 
    These attribute types are only intended for use in referencing
@@ -1780,7 +1780,7 @@ Coretta               Expires February 23, 2025                [Page 30]
 
    While there is no specific use case for 'registrant' entries within
    the terms of this I-D series, the 'description' attribute type is
-   nonetheless permitted.
+   nonetheless permitted for generalized use.
 
 3.2.4.18.  'seeAlso'
 
@@ -1808,8 +1808,8 @@ Coretta               Expires February 23, 2025                [Page 31]
    associative context to registrants in terms of which registrations
    are subject to its ministrations.  This is the reversed concept of
    'firstAuthority', 'currentAuthority' and 'sponsor' type instances,
-   however this use case is typically not required outside of certain
-   audit related activities.
+   however this use case is typically not relevant outside of certain
+   audit-related activities.
 
 3.2.4.19.  Spatial References
 
@@ -1901,14 +1901,14 @@ Coretta               Expires February 23, 2025                [Page 32]
    Contrary to minimum and maximum values, the effective left and right
    values are always registration specific, and shall not be considered
    valid candidates for collective assignment.  This exposes a potential
-   administrative challenge in the midst of many sibling entries.
+   administrative challenge in the midst of many sibling entries being
+   managed.
 
    In cases where 'leftArc' and 'minArc' would share a common value,
-   both values should be specified for optimal client support.
+   both values SHOULD be specified for optimal client support.
 
    In cases where 'rightArc' and 'maxArc' would share a common value,
-   both values should be specified for optimal client support.
-
+   both values SHOULD be specified for optimal client support.
 
 
 Coretta               Expires February 23, 2025                [Page 33]
@@ -2074,9 +2074,9 @@ Coretta               Expires February 23, 2025                [Page 35]
    so long as the number is at least one (1), as shown above, expressed
    as a Big-Endian.
 
-   The condition of a 'dotNotation' value not matching the decoded form
-   of its corresponding 'dotEncoding' value is considered an error.  No
-   valid 'registration' entry shall exist in this state.
+   The condition of a 'dotNotation' value not matching the (effective)
+   decoded form of its corresponding 'dotEncoding' value is considered
+   an error.  No valid 'registration' entry shall exist in this state.
 
    Implementations MAY opt to impose content verification procedures to
    ensure that only valid byte sequences are present within instances of
@@ -2148,9 +2148,6 @@ Coretta               Expires February 23, 2025                [Page 37]
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
 
-   [RFC4511]  J. Sermersheim, Ed. "Lightweight Directory Access Protocol
-              (LDAP): The Protocol", RFC 4511, June 2006.
-
    [RFC4512]  Zeilenga, K., "Lightweight Directory Access Protocol
               (LDAP): Directory Information Models", RFC 4512, June
               2006.
@@ -2194,22 +2191,6 @@ Coretta               Expires February 23, 2025                [Page 37]
 
 6.2.  Informative References
 
-   [RFC1155]  Rose, M., "Structure and Identification of Management
-              Information for TCP/IP-based Internets", RFC 1155, May
-              1990.
-
-
-
-
-Coretta               Expires February 23, 2025                [Page 38]
-
-Internet-Draft        The OID Directory: RA DIT              August 2024
-
-
-   [RFC2696]  C. Weider, A. Herron, A. Anantha, Microsoft, T. Howes
-              and Netscape, "LDAP Control Extension for Simple Paged
-              Results Manipulation", RFC 2696, September 1999.
-
    [RFC4370]  Weltman, R., "Lightweight Directory Access Protocol
               (LDAP): Proxy Authorization Control", RFC 4370, February
               2006.
@@ -2218,9 +2199,12 @@ Coretta               Expires February 23, 2025                [Page 38]
               Standardization Sector, "The Directory: Overview of
               concepts, models and services", ITU-T X.500, October 2019.
 
-   [X.501]    International Telecommunication Union - Telecommunication
-              Standardization Sector, "The Directory: Models", ITU-T
-              X.501, October 2016.
+
+
+Coretta               Expires February 23, 2025                [Page 38]
+
+Internet-Draft        The OID Directory: RA DIT              August 2024
+
 
    [X.518]    International Telecommunication Union - Telecommunication
               Standardization Sector, "The Directory: Procedures for
@@ -2229,15 +2213,6 @@ Coretta               Expires February 23, 2025                [Page 38]
    [X.520]    International Telecommunication Union - Telecommunication
               Standardization Sector, "The Directory: Selected attribute
               types", ITU-T X.520, October 2019.
-
-   [X.525]    International Telecommunication Union - Telecommunication
-              Standardization Sector, "The Directory: Replication",
-              ITU-T X.525, October 2019.
-
-   [X.672]    International Telecommunication Union - Telecommunication
-              Standardization Sector, "OID resolution system: Problems,
-              requirements and potential solutions", ITU-T X.672, March
-              2020.
 
    [PRIVATE]  IANA, "Private Enterprise Numbers",
               https://www.iana.org/assignments/enterprise-numbers.
@@ -2248,6 +2223,31 @@ Author's Address
    California, United States
 
    Email: jesse.coretta@icloud.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
