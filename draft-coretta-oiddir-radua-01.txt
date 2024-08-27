@@ -1171,18 +1171,18 @@ Coretta                Expires February 23, 2025               [Page 20]
    the target location, but this is generally discouraged.
 
    For example, to determine if a ranged allocation resides within the
-   1.3 OID registration that would overlap with a desired Number Form,
+   '1.3' OID registration that would overlap with a desired Number Form,
    the RA DUA MUST perform a List Operation of the following form:
 
       baseObject = n=3,n=1,ou=Registrations,o=rA
       scope      = 1
       typesOnly  = TRUE
-      filter     = (&(n<=X)
-       (|(registrationRange>=X)(registrationRange=-1)))
+      filter     =
+       (&(n<=X)(|(registrationRange>=X)(registrationRange=-1)))
       attributes = registrationRange
 
-   Note that 'filter' contains a line-break and indenting due to the
-   format requirements normally imposed upon I-Ds.
+   Note that 'filter' contains a leading line-break and indent due to
+   the maximum I-D line length being exceeded by the size of the value.
 
    Given these parameters, where the filter AVA "X" represents the 'n'
    (Number Form) chosen -- for example "100" -- the search will return
@@ -1411,18 +1411,18 @@ Coretta                Expires February 23, 2025               [Page 24]
               (ASN.1): Specification of basic notation", ITU-T X.680,
               July 2002.
 
+   [X.690]    International Telecommunication Union - Telecommunication 
+              Standardization Sector, "ASN.1 encoding rules:            
+              Specification of Basic Encoding Rules (BER), Canonical    
+              Encoding Rules (CER) and Distinguished Encoding Rules     
+              (DER)", ITU-T X.690, February 2021.
+
 Author's Address
 
    Jesse Coretta
    California, United States
 
    Email: jesse.coretta@icloud.com
-
-
-
-
-
-
 
 
 

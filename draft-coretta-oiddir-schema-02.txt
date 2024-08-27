@@ -12,7 +12,7 @@ Expires: February 23, 2025
 
 Abstract
 
-   In service to the "OID Directory" I-D series, this I-D defines schema
+   In service to the "OID Directory" I-D series, this I-D extends schema
    definitions for use within an implementation of the Registration
    Authority Directory Information Tree.
 
@@ -2770,7 +2770,7 @@ Coretta               Expires February 23, 2025                [Page 47]
 2.5.7.  'x690Context'
 
    The 'x690Context' AUXILIARY class extends a collection of attribute
-   types derived from ITU-T Rec. [X.690].  Additional encoding types
+   types derived from ITU-T Rec. [X.690].  Any additional encoding types
    that may be added in future revisions or extensions of this I-D will
    be specified in the MAY clause of this class.
 
@@ -3260,17 +3260,17 @@ Coretta               Expires February 23, 2025                [Page 56]
               Standardization Sector, "The Directory: Overview of
               concepts, models and services", ITU-T X.500, October 2019.
 
-   [X.672]    International Telecommunication Union - Telecommunication
-              Standardization Sector, "OID resolution system: Problems,
-              requirements and potential solutions", ITU-T X.672, March
-              2020.
-
 Author's Address
 
    Jesse Coretta
    California, United States
 
    Email: jesse.coretta@icloud.com
+
+
+
+
+
 
 
 
