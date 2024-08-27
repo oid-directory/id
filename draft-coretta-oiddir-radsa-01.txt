@@ -1,7 +1,7 @@
 
 
 RADSA                                                         J. Coretta
-Internet-Draft                                           August 31, 2024
+Internet-Draft                                           August 27, 2024
 Intended status: Experimental
 Obsoletes: X660LDAP
 Expires: February 23, 2025

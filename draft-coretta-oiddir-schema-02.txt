@@ -2618,7 +2618,8 @@ Coretta               Expires February 23, 2025                [Page 45]
    to a registration, as covered in ITU-T Rec. [X.667].
 
    A practical ABNF production for this attribute type is defined within
-   Section 3 of [RFC4122].
+   [RFC9562], but will depend on the UUID version supported by the given
+   RA DSA(s).
 
       ( 1.3.6.1.4.1.56521.101.2.3.102
           NAME 'registeredUUID'
@@ -2661,7 +2662,6 @@ Coretta               Expires February 23, 2025                [Page 45]
 
    No LDAP Matching Rule Uses definitions are defined anywhere in this
    I-D series.
-
 
 
 
@@ -3182,8 +3182,8 @@ Coretta               Expires February 23, 2025                [Page 54]
    [RFC3987]  Duerst, M., "Internationalized Resource Identifiers
               (IRIs)", RFC 3987, January 2005.
 
-   [RFC4122]  Leach, P., "A Universally Unique IDentifier (UUID) URN
-              Namespace", RFC 4122, July 2005.
+   [RFC9562]  K. Davis., et al, "Universally Unique IDentifiers (UUIDs)"
+              RFC 9562, May 2024.
 
 
 

@@ -316,7 +316,7 @@ Coretta               Expires February 23, 2025                 [Page 5]
      - Regular data file receipt and processing (e.g.: LDIF, XML, CSV)
      - Direct parsing of originating standard, I-D or module
      - Remote (proprietary) API requests
-     - Remote AXFR or IXFR requests [RFC5936] in the context of ORS
+     - Remote AXFR [RFC5936] or IXFR [RFC1995] requests for ORS
 
    While the particulars of such synchronization and/or incorporation of
    content external to this I-D are well outside of the scope intended,
@@ -2152,10 +2152,6 @@ Coretta               Expires February 23, 2025                [Page 37]
               (LDAP): Directory Information Models", RFC 4512, June
               2006.
 
-   [RFC4517]  Legg, Ed., S., "Lightweight Directory Access Protocol
-              (LDAP): Syntaxes and Matching Rules", RFC 4517, June
-              2006.
-
    [RFC4519]  Sciberras, Ed., A., "Lightweight Directory Access Protocol
               (LDAP): Schema for User Applications", RFC 4519, June
               2006.
@@ -2191,20 +2187,28 @@ Coretta               Expires February 23, 2025                [Page 37]
 
 6.2.  Informative References
 
+   [RFC1995]  M. Ohta, "Incremental Zone Transfer in DNS", RFC 1995,
+              August 1996.
+
+   [RFC2578]  Rose, M., et al, "Structure of Management Information
+              Version 2 (SMIv2)", RFC 2578, April 1999.
+
    [RFC4370]  Weltman, R., "Lightweight Directory Access Protocol
               (LDAP): Proxy Authorization Control", RFC 4370, February
               2006.
 
-   [X.500]    International Telecommunication Union - Telecommunication
-              Standardization Sector, "The Directory: Overview of
-              concepts, models and services", ITU-T X.500, October 2019.
-
+   [RFC5936]  E. Lewis., et al, "DNS Zone Transfer Protocol (AXFR)",
+              RFC 5936, June 2010.
 
 
 Coretta               Expires February 23, 2025                [Page 38]
 
 Internet-Draft        The OID Directory: RA DIT              August 2024
 
+
+   [X.500]    International Telecommunication Union - Telecommunication
+              Standardization Sector, "The Directory: Overview of
+              concepts, models and services", ITU-T X.500, October 2019.
 
    [X.518]    International Telecommunication Union - Telecommunication
               Standardization Sector, "The Directory: Procedures for
@@ -2214,16 +2218,12 @@ Coretta               Expires February 23, 2025                [Page 38]
               Standardization Sector, "The Directory: Selected attribute
               types", ITU-T X.520, October 2019.
 
-   [PRIVATE]  IANA, "Private Enterprise Numbers",
-              https://www.iana.org/assignments/enterprise-numbers.
-
 Author's Address
 
    Jesse Coretta
    California, United States
 
    Email: jesse.coretta@icloud.com
-
 
 
 
