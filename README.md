@@ -4,7 +4,7 @@ This repository contains multiple documents, each in service of the overall OID 
 
 ### Warning
 
-The "OID Directory" I-D series is EXPERIMENTAL and should NOT be used in mission-critical implementations. The material provided for the OID Directory I-D series, including utilities and schema files, are provided for non-production PoC, testing or work-in-progress scenarios. Use at your own risk!
+The "OID Directory" I-D series is EXPERIMENTAL and should NOT be used in mission-critical implementations. The material provided for the OID Directory I-D series, including utilities and schema files, is intended for non-production PoC, testing or work-in-progress scenarios. Use at your own risk!
 
 ### Contributors
 
